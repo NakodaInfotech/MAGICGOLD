@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PrintJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <QLabelSDKVersion>1.2.5.2</QLabelSDKVersion>
+  <Label>
+    <SerialFormat>
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+    </SerialFormat>
+    <VariableFormat>
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+      <string xsi:nil="true" />
+    </VariableFormat>
+    <qlabel>
+      <GraphicShape xsi:type="Text" Style="Cross" Locked="false" bStroke="true" bFill="true" Direction="Angle0" X="404.534668" Y="108" Alignment="Left" AlignPointX="404.534668" AlignPointY="108" FontCmd="Microsoft Sans Serif,18&#xD;&#xA;" FontType="BuiltIn_Bitmap_Font" TextSpace="0" Encoding="Default" FontId="B" FontHeight="1" FontWidth="1" IsInverse="false">
+        <qHitOnCircumferance>false</qHitOnCircumferance>
+        <Selected>false</Selected>
+        <iBackground_color>4294967295</iBackground_color>
+        <Id>1</Id>
+        <Name>A</Name>
+        <DataField>None</DataField>
+        <Prompt>None</Prompt>
+        <DispData>MFG-99999/99/99</DispData>
+        <Data>MFG-99999/99/99</Data>
+        <BoundRectWidth>178.5459</BoundRectWidth>
+        <BoundRectHeight>24.578125</BoundRectHeight>
+        <BoundRect>
+          <Location>
+            <X>404.534668</X>
+            <Y>108</Y>
+          </Location>
+          <Size>
+            <Width>178.5459</Width>
+            <Height>24.578125</Height>
+          </Size>
+          <X>404.534668</X>
+          <Y>108</Y>
+          <Width>178.5459</Width>
+          <Height>24.578125</Height>
+        </BoundRect>
+      </GraphicShape>
+      <GraphicShape xsi:type="Text" Style="Cross" Locked="false" bStroke="true" bFill="true" Direction="Angle0" X="404.534668" Y="32" Alignment="Left" AlignPointX="404.534668" AlignPointY="32" FontCmd="Microsoft Sans Serif,18&#xD;&#xA;" FontType="BuiltIn_Bitmap_Font" TextSpace="0" Encoding="Default" FontId="B" FontHeight="1" FontWidth="1" IsInverse="false">
+        <qHitOnCircumferance>false</qHitOnCircumferance>
+        <Selected>false</Selected>
+        <iBackground_color>4294967295</iBackground_color>
+        <Id>1</Id>
+        <Name>A</Name>
+        <DataField>None</DataField>
+        <Prompt>None</Prompt>
+        <DispData>HIG-7/SH-7/4WAY/IND-7</DispData>
+        <Data>HIG-7/SH-7/4WAY/IND-7</Data>
+        <BoundRectWidth>246.930664</BoundRectWidth>
+        <BoundRectHeight>24.578125</BoundRectHeight>
+        <BoundRect>
+          <Location>
+            <X>404.534668</X>
+            <Y>32</Y>
+          </Location>
+          <Size>
+            <Width>246.930664</Width>
+            <Height>24.578125</Height>
+          </Size>
+          <X>404.534668</X>
+          <Y>32</Y>
+          <Width>246.930664</Width>
+          <Height>24.578125</Height>
+        </BoundRect>
+      </GraphicShape>
+      <GraphicShape xsi:type="BarCode" Style="Cross" Locked="false" bStroke="true" bFill="true" Direction="Angle0" X="405" Y="55" Alignment="Left" AlignPointX="405" AlignPointY="55" FontCmd="Calibri,8.25&#xD;&#xA;" Symbology="Code128Auto" CaptionAlignment="None" Height="53" Width="2" Narrow="2" Offset="1" bDisplayChecksum="false" bDisplayStartStopChar="false" bBuiltinFont="false" Code128Subset="Auto">
+        <qHitOnCircumferance>false</qHitOnCircumferance>
+        <Selected>false</Selected>
+        <iBackground_color>4294967295</iBackground_color>
+        <Id>0</Id>
+        <Name>B</Name>
+        <DataField>None</DataField>
+        <Prompt>None</Prompt>
+        <DispData>MFG-99999/99/99</DispData>
+        <Data>MFG-99999/99/99</Data>
+        <BoundRectWidth>400</BoundRectWidth>
+        <BoundRectHeight>53</BoundRectHeight>
+        <BoundRect>
+          <Location>
+            <X>405</X>
+            <Y>55</Y>
+          </Location>
+          <Size>
+            <Width>400</Width>
+            <Height>53</Height>
+          </Size>
+          <X>405</X>
+          <Y>55</Y>
+          <Width>400</Width>
+          <Height>53</Height>
+        </BoundRect>
+      </GraphicShape>
+    </qlabel>
+    <VariableOpFormat />
+    <DateFormat>y2-me-dd</DateFormat>
+    <TimeFormat>h:m:s</TimeFormat>
+    <DataBaseFormat>None</DataBaseFormat>
+    <DataBaseFilePath />
+    <DataBaseSelection />
+    <UserID />
+    <Password />
+    <IntegratedSecurity>false</IntegratedSecurity>
+    <RowIndex>0</RowIndex>
+  </Label>
+  <Setup LabelLength="17" LabelWidth="106" LeftMargin="10" TopMargin="0" LabelType="0" GapLength="3" FeedLength="0" ZSign="45" BlackMark="0" Position="0" Speed="3" Copy="1" bCopyDataBase="false" CopyField="None" Stripper="0" LabelsPerCut="0" Rotate180="200" Stop="12" Darkness="8" Number="1" bNumberDataBase="false" NumberField="None" PageDirection="Portrait" PrintMode="1">
+    <Layout Shape="0" AcrossType="Copied" PageDirection="Portrait" HorAcross="1" VerAcross="1" HorGap="0" VerGap="0" />
+    <Description>Label Design</Description>
+    <UnitType>Mm</UnitType>
+    <Dpi>203</Dpi>
+  </Setup>
+  <DriverName />
+  <PrinterModel>G300</PrinterModel>
+  <PrinterLanguage>EZPL</PrinterLanguage>
+  <USBName>GODEX G300#1404020A</USBName>
+  <COMName />
+  <CommunicationType>USB</CommunicationType>
+  <NetworkIPAddress>0</NetworkIPAddress>
+  <NetworkPort>9100</NetworkPort>
+  <BaudRate>9600</BaudRate>
+  <ComSettings>N81</ComSettings>
+</PrintJob>
