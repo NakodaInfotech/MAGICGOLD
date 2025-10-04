@@ -105,7 +105,7 @@ Public Class LoginForm
                 '        GoTo LINE1
                 '    End If
             ElseIf ClientName = "MONOGRAM" Then
-                If Now.Date > DateTime.Parse("15.09.2025 00:00") Then
+                If Now.Date > DateTime.Parse("15.09.2026 00:00") Then
                     tempcmd = New OleDbCommand("UPDATE VERSION SET VERSION_NO=1.0.0000", tempconn)
                     tempcmd.ExecuteNonQuery()
                     GoTo LINE1
