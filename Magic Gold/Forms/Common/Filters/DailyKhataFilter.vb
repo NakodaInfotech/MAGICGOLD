@@ -83,7 +83,7 @@ Public Class dailykhatafilter
 
     Private Sub dailykhatafilter_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
         fillac()
-        If ClientName = "MONOGRAM" Or ClientName = "ORIENTAL" Then
+        If ClientName = "MONOGRAM" Or ClientName = "ORIENTAL" Or ClientName = "BALAJI" Then
             chkitem.CheckState = CheckState.Unchecked
             chkpurity.CheckState = CheckState.Unchecked
             chkwastage.CheckState = CheckState.Unchecked

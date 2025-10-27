@@ -27,15 +27,17 @@ Partial Class CashBook
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CashBook))
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CashBook))
         Me.BlendPanel1 = New VbPowerPack.BlendPanel()
+        Me.LBLGRIDBALFINEWT = New System.Windows.Forms.Label()
+        Me.LBLGRIDBALAMT = New System.Windows.Forms.Label()
         Me.lblamtbal = New System.Windows.Forms.Label()
         Me.lblfinebal = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.LBLAMT = New System.Windows.Forms.Label()
+        Me.LBLFINE = New System.Windows.Forms.Label()
         Me.tstxtbillno = New System.Windows.Forms.TextBox()
         Me.TXTTOTALAMT = New System.Windows.Forms.TextBox()
         Me.TXTAMOUNT = New System.Windows.Forms.TextBox()
@@ -54,6 +56,12 @@ Partial Class CashBook
         Me.cmdok = New System.Windows.Forms.Button()
         Me.TXTSRNO = New System.Windows.Forms.TextBox()
         Me.GRIDCASH = New System.Windows.Forms.DataGridView()
+        Me.GSRNO = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GCODE = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GNARR = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GAMOUNT = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GBALFINEWT = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GBALAMOUNT = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.OpenToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
@@ -65,14 +73,6 @@ Partial Class CashBook
         Me.toolnext = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.EP = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.LBLGRIDBALAMT = New System.Windows.Forms.Label()
-        Me.LBLGRIDBALFINEWT = New System.Windows.Forms.Label()
-        Me.GSRNO = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GCODE = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GNARR = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GAMOUNT = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GBALFINEWT = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GBALAMOUNT = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BlendPanel1.SuspendLayout()
         CType(Me.GRIDCASH, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
@@ -86,8 +86,8 @@ Partial Class CashBook
         Me.BlendPanel1.Controls.Add(Me.LBLGRIDBALAMT)
         Me.BlendPanel1.Controls.Add(Me.lblamtbal)
         Me.BlendPanel1.Controls.Add(Me.lblfinebal)
-        Me.BlendPanel1.Controls.Add(Me.Label8)
-        Me.BlendPanel1.Controls.Add(Me.Label7)
+        Me.BlendPanel1.Controls.Add(Me.LBLAMT)
+        Me.BlendPanel1.Controls.Add(Me.LBLFINE)
         Me.BlendPanel1.Controls.Add(Me.tstxtbillno)
         Me.BlendPanel1.Controls.Add(Me.TXTTOTALAMT)
         Me.BlendPanel1.Controls.Add(Me.TXTAMOUNT)
@@ -113,6 +113,28 @@ Partial Class CashBook
         Me.BlendPanel1.Size = New System.Drawing.Size(1034, 562)
         Me.BlendPanel1.TabIndex = 0
         '
+        'LBLGRIDBALFINEWT
+        '
+        Me.LBLGRIDBALFINEWT.BackColor = System.Drawing.Color.Transparent
+        Me.LBLGRIDBALFINEWT.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLGRIDBALFINEWT.Location = New System.Drawing.Point(794, 104)
+        Me.LBLGRIDBALFINEWT.Name = "LBLGRIDBALFINEWT"
+        Me.LBLGRIDBALFINEWT.Size = New System.Drawing.Size(94, 15)
+        Me.LBLGRIDBALFINEWT.TabIndex = 763
+        Me.LBLGRIDBALFINEWT.Text = "0.000"
+        Me.LBLGRIDBALFINEWT.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'LBLGRIDBALAMT
+        '
+        Me.LBLGRIDBALAMT.BackColor = System.Drawing.Color.Transparent
+        Me.LBLGRIDBALAMT.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLGRIDBALAMT.Location = New System.Drawing.Point(897, 104)
+        Me.LBLGRIDBALAMT.Name = "LBLGRIDBALAMT"
+        Me.LBLGRIDBALAMT.Size = New System.Drawing.Size(94, 15)
+        Me.LBLGRIDBALAMT.TabIndex = 762
+        Me.LBLGRIDBALAMT.Text = "0.000"
+        Me.LBLGRIDBALAMT.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'lblamtbal
         '
         Me.lblamtbal.BackColor = System.Drawing.Color.Transparent
@@ -135,29 +157,29 @@ Partial Class CashBook
         Me.lblfinebal.Text = "0.000"
         Me.lblfinebal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label8
+        'LBLAMT
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(526, 68)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(34, 14)
-        Me.Label8.TabIndex = 759
-        Me.Label8.Text = "Amt :"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.LBLAMT.AutoSize = True
+        Me.LBLAMT.BackColor = System.Drawing.Color.Transparent
+        Me.LBLAMT.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLAMT.Location = New System.Drawing.Point(526, 68)
+        Me.LBLAMT.Name = "LBLAMT"
+        Me.LBLAMT.Size = New System.Drawing.Size(34, 14)
+        Me.LBLAMT.TabIndex = 759
+        Me.LBLAMT.Text = "Amt :"
+        Me.LBLAMT.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label7
+        'LBLFINE
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(523, 39)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(37, 14)
-        Me.Label7.TabIndex = 758
-        Me.Label7.Text = "Fine :"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.LBLFINE.AutoSize = True
+        Me.LBLFINE.BackColor = System.Drawing.Color.Transparent
+        Me.LBLFINE.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLFINE.Location = New System.Drawing.Point(523, 39)
+        Me.LBLFINE.Name = "LBLFINE"
+        Me.LBLFINE.Size = New System.Drawing.Size(37, 14)
+        Me.LBLFINE.TabIndex = 758
+        Me.LBLFINE.Text = "Fine :"
+        Me.LBLFINE.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'tstxtbillno
         '
@@ -371,7 +393,6 @@ Partial Class CashBook
         Me.GRIDCASH.AllowUserToDeleteRows = False
         Me.GRIDCASH.AllowUserToResizeColumns = False
         Me.GRIDCASH.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.Empty
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black
         Me.GRIDCASH.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.GRIDCASH.BackgroundColor = System.Drawing.Color.White
@@ -411,6 +432,66 @@ Partial Class CashBook
         Me.GRIDCASH.Size = New System.Drawing.Size(1002, 373)
         Me.GRIDCASH.TabIndex = 735
         Me.GRIDCASH.TabStop = False
+        '
+        'GSRNO
+        '
+        Me.GSRNO.HeaderText = "Sr."
+        Me.GSRNO.Name = "GSRNO"
+        Me.GSRNO.ReadOnly = True
+        Me.GSRNO.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GSRNO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.GSRNO.Width = 40
+        '
+        'GCODE
+        '
+        Me.GCODE.HeaderText = "To (A/C Code)"
+        Me.GCODE.Name = "GCODE"
+        Me.GCODE.ReadOnly = True
+        Me.GCODE.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GCODE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.GCODE.Width = 150
+        '
+        'GNARR
+        '
+        Me.GNARR.HeaderText = "Narration"
+        Me.GNARR.Name = "GNARR"
+        Me.GNARR.ReadOnly = True
+        Me.GNARR.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GNARR.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.GNARR.Width = 500
+        '
+        'GAMOUNT
+        '
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        Me.GAMOUNT.DefaultCellStyle = DataGridViewCellStyle3
+        Me.GAMOUNT.HeaderText = "Amount"
+        Me.GAMOUNT.Name = "GAMOUNT"
+        Me.GAMOUNT.ReadOnly = True
+        Me.GAMOUNT.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GAMOUNT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.GAMOUNT.Width = 80
+        '
+        'GBALFINEWT
+        '
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.Linen
+        Me.GBALFINEWT.DefaultCellStyle = DataGridViewCellStyle4
+        Me.GBALFINEWT.HeaderText = "Bal Fine Wt"
+        Me.GBALFINEWT.Name = "GBALFINEWT"
+        Me.GBALFINEWT.ReadOnly = True
+        Me.GBALFINEWT.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GBALFINEWT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
+        'GBALAMOUNT
+        '
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.Linen
+        Me.GBALAMOUNT.DefaultCellStyle = DataGridViewCellStyle5
+        Me.GBALAMOUNT.HeaderText = "Bal Amount"
+        Me.GBALAMOUNT.Name = "GBALAMOUNT"
+        Me.GBALAMOUNT.ReadOnly = True
+        Me.GBALAMOUNT.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GBALAMOUNT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
         'ToolStrip1
         '
@@ -499,88 +580,6 @@ Partial Class CashBook
         Me.EP.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink
         Me.EP.ContainerControl = Me
         '
-        'LBLGRIDBALAMT
-        '
-        Me.LBLGRIDBALAMT.BackColor = System.Drawing.Color.Transparent
-        Me.LBLGRIDBALAMT.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLGRIDBALAMT.Location = New System.Drawing.Point(897, 104)
-        Me.LBLGRIDBALAMT.Name = "LBLGRIDBALAMT"
-        Me.LBLGRIDBALAMT.Size = New System.Drawing.Size(94, 15)
-        Me.LBLGRIDBALAMT.TabIndex = 762
-        Me.LBLGRIDBALAMT.Text = "0.000"
-        Me.LBLGRIDBALAMT.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'LBLGRIDBALFINEWT
-        '
-        Me.LBLGRIDBALFINEWT.BackColor = System.Drawing.Color.Transparent
-        Me.LBLGRIDBALFINEWT.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLGRIDBALFINEWT.Location = New System.Drawing.Point(794, 104)
-        Me.LBLGRIDBALFINEWT.Name = "LBLGRIDBALFINEWT"
-        Me.LBLGRIDBALFINEWT.Size = New System.Drawing.Size(94, 15)
-        Me.LBLGRIDBALFINEWT.TabIndex = 763
-        Me.LBLGRIDBALFINEWT.Text = "0.000"
-        Me.LBLGRIDBALFINEWT.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'GSRNO
-        '
-        Me.GSRNO.HeaderText = "Sr."
-        Me.GSRNO.Name = "GSRNO"
-        Me.GSRNO.ReadOnly = True
-        Me.GSRNO.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GSRNO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.GSRNO.Width = 40
-        '
-        'GCODE
-        '
-        Me.GCODE.HeaderText = "To (A/C Code)"
-        Me.GCODE.Name = "GCODE"
-        Me.GCODE.ReadOnly = True
-        Me.GCODE.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GCODE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.GCODE.Width = 150
-        '
-        'GNARR
-        '
-        Me.GNARR.HeaderText = "Narration"
-        Me.GNARR.Name = "GNARR"
-        Me.GNARR.ReadOnly = True
-        Me.GNARR.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GNARR.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.GNARR.Width = 500
-        '
-        'GAMOUNT
-        '
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        Me.GAMOUNT.DefaultCellStyle = DataGridViewCellStyle3
-        Me.GAMOUNT.HeaderText = "Amount"
-        Me.GAMOUNT.Name = "GAMOUNT"
-        Me.GAMOUNT.ReadOnly = True
-        Me.GAMOUNT.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GAMOUNT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.GAMOUNT.Width = 80
-        '
-        'GBALFINEWT
-        '
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.Linen
-        Me.GBALFINEWT.DefaultCellStyle = DataGridViewCellStyle4
-        Me.GBALFINEWT.HeaderText = "Bal Fine Wt"
-        Me.GBALFINEWT.Name = "GBALFINEWT"
-        Me.GBALFINEWT.ReadOnly = True
-        Me.GBALFINEWT.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GBALFINEWT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'GBALAMOUNT
-        '
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.Linen
-        Me.GBALAMOUNT.DefaultCellStyle = DataGridViewCellStyle5
-        Me.GBALAMOUNT.HeaderText = "Bal Amount"
-        Me.GBALAMOUNT.Name = "GBALAMOUNT"
-        Me.GBALAMOUNT.ReadOnly = True
-        Me.GBALAMOUNT.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GBALAMOUNT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
         'CashBook
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -633,8 +632,8 @@ Partial Class CashBook
     Friend WithEvents GRIDCASH As System.Windows.Forms.DataGridView
     Friend WithEvents lblamtbal As Label
     Friend WithEvents lblfinebal As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
+    Friend WithEvents LBLAMT As Label
+    Friend WithEvents LBLFINE As Label
     Friend WithEvents LBLGRIDBALFINEWT As Label
     Friend WithEvents LBLGRIDBALAMT As Label
     Friend WithEvents GSRNO As DataGridViewTextBoxColumn

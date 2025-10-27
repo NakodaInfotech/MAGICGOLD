@@ -90,16 +90,53 @@ Public Class dailykhata
         closingbalance()
         GRIDDESCRIPTION.RowCount = 1
 
-        If ClientName = "MONOGRAM" Or ClientName = "ORIENTAL" Then
+        If ClientName = "MONOGRAM" Or ClientName = "ORIENTAL" Or ClientName = "BALAJI" Then
+            DGITEMDESC.Width = 300
             dggrosswt.Visible = False
             DGLESSWT.Visible = False
             DGNETTWT.Visible = False
             dgpurity.Visible = False
             dgwastage.Visible = False
             DGFINEWT.Visible = False
-            dglabour.Visible = False
-            dgpieces.Visible = False
+            If ClientName <> "BALAJI" Then
+                dglabour.Visible = False
+                dgpieces.Visible = False
+            Else
+                dglabour.HeaderText = "Rate"
+                dglabour.Width = 150
+                dgpieces.HeaderText = "Qty"
+            End If
             dgBullion.Visible = False
+            dgamt.Width = 150
+            GPBHAVCUT.Visible = False
+            LBLTOTALGROSS.Visible = False
+            lblstockingross.Visible = False
+            LBLTOTALNETT.Visible = False
+            lblstockinnett.Visible = False
+            lblbalbfgrosswtjama.Visible = False
+            lblbalbfnettwtjama.Visible = False
+            lblbalbfgrosswtissue.Visible = False
+            lblbalbfnettwtissue.Visible = False
+            lbltotalgrossjama.Visible = False
+            lbltotalnettjama.Visible = False
+            lbltotalgrossissue.Visible = False
+            lbltotalnettissue.Visible = False
+            lblbalcfgrosswtjama.Visible = False
+            lblbalcfnettwtjama.Visible = False
+            lblbalcfgrosswtissue.Visible = False
+            lblbalcfnettwtissue.Visible = False
+            lblgrosswttotal.Visible = False
+            LBLLESSWTTOTAL.Visible = False
+            LBLNETTWTTOTAL.Visible = False
+            LBLFINEWTTOTAL.Visible = False
+            lblpiecestotal.Width = dgpieces.Width
+            Dim rect As Rectangle = GRIDDESCRIPTION.GetColumnDisplayRectangle(dgpieces.Index, False)
+            lblpiecestotal.Left = GRIDDESCRIPTION.Left + rect.Left
+
+            lblamounttotal.Width = dgamt.Width
+            rect = GRIDDESCRIPTION.GetColumnDisplayRectangle(dgamt.Index, False)
+            lblamounttotal.Left = GRIDDESCRIPTION.Left + rect.Left
+
         End If
 
         'If account = True Then
@@ -271,22 +308,24 @@ Public Class dailykhata
 
         With gridledger
             .Columns(0).HeaderText = "Ledger"
-            .Columns(0).Width = 125
+            If ClientName = "MONOGRAM" Or ClientName = "ORIENTAL" Or ClientName = "BALAJI" Then .Columns(0).Width = 200 Else .Columns(0).Width = 125
 
             .Columns(1).HeaderText = "Gross"
             .Columns(1).Width = 95
             .Columns(1).DefaultCellStyle.Format = "0.000"
             .Columns(1).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+            If ClientName = "MONOGRAM" Or ClientName = "ORIENTAL" Or ClientName = "BALAJI" Then .Columns(1).Visible = False
 
             .Columns(2).HeaderText = "Fine Wt."
             .Columns(2).Width = 90
             .Columns(2).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
             .Columns(2).DefaultCellStyle.Format = "0.000"
+            If ClientName = "MONOGRAM" Or ClientName = "ORIENTAL" Or ClientName = "BALAJI" Then .Columns(2).Visible = False
 
             .Columns(3).HeaderText = "Bal Amt"
-            .Columns(3).Width = 90
             .Columns(3).DefaultCellStyle.Format = "0.000"
             .Columns(3).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+            If ClientName = "MONOGRAM" Or ClientName = "ORIENTAL" Or ClientName = "BALAJI" Then .Columns(3).Width = 140 Else .Columns(3).Width = 90
 
             .Columns(4).HeaderText = "Pcs"
             .Columns(4).Width = 65
@@ -536,27 +575,31 @@ Public Class dailykhata
 
             .Columns(0).HeaderText = ""
             .Columns(0).Width = 20
+
             If chkname.Checked = False Then
                 .Columns(1).HeaderText = "Code"
             Else
                 .Columns(1).HeaderText = "Date"
             End If
-            .Columns(1).Width = 65
+            If ClientName = "MONOGRAM" Or ClientName = "ORIENTAL" Or ClientName = "BALAJI" Then .Columns(1).Width = 100 Else .Columns(1).Width = 65
 
             .Columns(2).HeaderText = "Gr. Wt."
             .Columns(2).Width = 75
             .Columns(2).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
             .Columns(2).DefaultCellStyle.Format = "0.000"
+            If ClientName = "MONOGRAM" Or ClientName = "ORIENTAL" Or ClientName = "BALAJI" Then .Columns(2).Visible = False
+
 
             .Columns(3).HeaderText = "Fn. Wt."
             .Columns(3).Width = 75
             .Columns(3).DefaultCellStyle.Format = "0.000"
             .Columns(3).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+            If ClientName = "MONOGRAM" Or ClientName = "ORIENTAL" Or ClientName = "BALAJI" Then .Columns(3).Visible = False
 
             .Columns(4).HeaderText = "Amount"
             .Columns(4).DefaultCellStyle.Format = "0.00"
-            .Columns(4).Width = 80
             .Columns(4).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+            If ClientName = "MONOGRAM" Or ClientName = "ORIENTAL" Or ClientName = "BALAJI" Then .Columns(1).Width = 190 Else .Columns(1).Width = 80
 
             .Columns(5).HeaderText = "type"
             .Columns(5).Width = 1000
@@ -2982,7 +3025,7 @@ LINE1:
         txtbalamt.Text = "0.00"
         txtbalwt.Text = "0.000"
         txtcashrec.Text = "0.00"
-        If ClientName <> "MONOGRAM" And ClientName <> "ORIENTAL" Then GRIDDESCRIPTION.CurrentCell = GRIDDESCRIPTION.Rows(0).Cells(dggrosswt.Index)
+        If GRIDDESCRIPTION.Columns(dggrosswt.Index).Visible = True Then GRIDDESCRIPTION.CurrentCell = GRIDDESCRIPTION.Rows(0).Cells(dggrosswt.Index)
         GRIDDESCRIPTION.RowCount = 1
         txtbillno.Text = Val(gridissue.Item(6, gridissue.CurrentRow.Index).Value)
         types = gridissue.Item(5, gridissue.CurrentRow.Index).Value.ToString
@@ -3236,7 +3279,7 @@ LINE1:
         txtbalwt.Text = "0.000"
         txtcashrec.Text = "0.00"
 
-        GRIDDESCRIPTION.CurrentCell = GRIDDESCRIPTION.Rows(0).Cells(dggrosswt.Index)
+        If GRIDDESCRIPTION.Columns(dggrosswt.Index).Visible = True Then GRIDDESCRIPTION.CurrentCell = GRIDDESCRIPTION.Rows(0).Cells(dggrosswt.Index)
         GRIDDESCRIPTION.RowCount = 1
         txtbillno.Text = Val(gridjama.Item(6, gridjama.CurrentRow.Index).Value)
         types = gridjama.Item(5, gridjama.CurrentRow.Index).Value.ToString
@@ -3295,7 +3338,7 @@ LINE1:
                     If IsDBNull(dr("account_narration")) = False Then txtnarration.Text = dr("account_narration")
                     If IsDBNull(dr("account_PROCESS")) = False Then CMBPROCESS.Text = dr("account_PROCESS")
                     dtpickerkhata.Value = Format(dr("account_date"), "dd/MM/yyyy")
-                    GRIDDESCRIPTION.CurrentCell = GRIDDESCRIPTION.Rows(0).Cells(dggrosswt.Index)
+                    If GRIDDESCRIPTION.Columns(dggrosswt.Index).Visible = True Then GRIDDESCRIPTION.CurrentCell = GRIDDESCRIPTION.Rows(0).Cells(dggrosswt.Index)
                     GRIDDESCRIPTION.Rows.Add(tempitemcode, dr("ACCOUNT_ITEMDESC"), Format(Val(dr("account_grosswt")), "0.000"), Format(Val(dr("ACCOUNT_LESSWT")), "0.000"), Format(Val(dr("account_GROSSLESS")), "0.000"), Format(Val(dr("account_purity")), "0.00"), Format(Val(dr("account_wastage")), "0.00"), Format(Val(dr("account_nettwt")), "0.000"), Format(Val(dr("account_labour")), "0.00"), Val(dr("account_pieces")), Format(Val(dr("account_bullion")), "0.000"), Format(Val(dr("account_amount")), "0.00"))
 
 

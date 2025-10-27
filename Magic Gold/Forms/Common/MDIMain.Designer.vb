@@ -171,7 +171,6 @@ Partial Class MDIMain
         Me.REPAIRADD = New System.Windows.Forms.ToolStripMenuItem()
         Me.REPAIREDIT = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator53 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator52 = New System.Windows.Forms.ToolStripSeparator()
         Me.Reportsmenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.ACCOUNTREPORT = New System.Windows.Forms.ToolStripMenuItem()
         Me.TBWTREPORT = New System.Windows.Forms.ToolStripMenuItem()
@@ -835,7 +834,7 @@ Partial Class MDIMain
         '
         'Transactionsmenu
         '
-        Me.Transactionsmenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DAILYKHATA_MASTER, Me.RECEIPT_MASTER, Me.ISSUE_MASTER, Me.JOURNAL_MASTER, Me.CASHREC_MASTER, Me.CASHISSUE_MASTER, Me.ToolStripSeparator63, Me.SALARY_MASTER, Me.SALARY_TOOLSEPERATOR, Me.MELTING_MASTER, Me.MFG_MASTER, Me.LABELLING_MASTER, Me.STOCKTRANSFER_MASTER, Me.STOCKTRANSFER_TOOLSEPERATOR, Me.SO_MASTER, Me.MATERIALREC_MASTER, Me.MATERIALRET_MASTER, Me.FILLING_MASTER, Me.PREPOLISH_MASTER, Me.SETTING_MASTER, Me.FINALPOLISH_MASTER, Me.TOOLSTRIPORDER, Me.REPAIR_MASTER, Me.ToolStripSeparator52})
+        Me.Transactionsmenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DAILYKHATA_MASTER, Me.RECEIPT_MASTER, Me.ISSUE_MASTER, Me.JOURNAL_MASTER, Me.CASHREC_MASTER, Me.CASHISSUE_MASTER, Me.ToolStripSeparator63, Me.SALARY_MASTER, Me.SALARY_TOOLSEPERATOR, Me.MELTING_MASTER, Me.MFG_MASTER, Me.LABELLING_MASTER, Me.STOCKTRANSFER_MASTER, Me.STOCKTRANSFER_TOOLSEPERATOR, Me.SO_MASTER, Me.MATERIALREC_MASTER, Me.MATERIALRET_MASTER, Me.FILLING_MASTER, Me.PREPOLISH_MASTER, Me.SETTING_MASTER, Me.FINALPOLISH_MASTER, Me.REPAIR_MASTER, Me.TOOLSTRIPORDER})
         Me.Transactionsmenu.Name = "Transactionsmenu"
         Me.Transactionsmenu.Size = New System.Drawing.Size(87, 20)
         Me.Transactionsmenu.Text = "&Transactions"
@@ -1018,19 +1017,19 @@ Partial Class MDIMain
         'LABELLINGADD
         '
         Me.LABELLINGADD.Name = "LABELLINGADD"
-        Me.LABELLINGADD.Size = New System.Drawing.Size(168, 22)
+        Me.LABELLINGADD.Size = New System.Drawing.Size(180, 22)
         Me.LABELLINGADD.Text = "&Add New Entry"
         '
         'LABELLINGEDIT
         '
         Me.LABELLINGEDIT.Name = "LABELLINGEDIT"
-        Me.LABELLINGEDIT.Size = New System.Drawing.Size(168, 22)
+        Me.LABELLINGEDIT.Size = New System.Drawing.Size(180, 22)
         Me.LABELLINGEDIT.Text = "&Edit Existing Entry"
         '
         'ToolStripSeparator5
         '
         Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-        Me.ToolStripSeparator5.Size = New System.Drawing.Size(165, 6)
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(177, 6)
         '
         'STOCKTRANSFER_MASTER
         '
@@ -1213,20 +1212,20 @@ Partial Class MDIMain
         '
         Me.SETTINGADD.Enabled = False
         Me.SETTINGADD.Name = "SETTINGADD"
-        Me.SETTINGADD.Size = New System.Drawing.Size(168, 22)
+        Me.SETTINGADD.Size = New System.Drawing.Size(180, 22)
         Me.SETTINGADD.Text = "&Add New Entry"
         '
         'SETTINGEDIT
         '
         Me.SETTINGEDIT.Enabled = False
         Me.SETTINGEDIT.Name = "SETTINGEDIT"
-        Me.SETTINGEDIT.Size = New System.Drawing.Size(168, 22)
+        Me.SETTINGEDIT.Size = New System.Drawing.Size(180, 22)
         Me.SETTINGEDIT.Text = "&Edit Existing Entry"
         '
         'ToolStripSeparator48
         '
         Me.ToolStripSeparator48.Name = "ToolStripSeparator48"
-        Me.ToolStripSeparator48.Size = New System.Drawing.Size(165, 6)
+        Me.ToolStripSeparator48.Size = New System.Drawing.Size(177, 6)
         '
         'FINALPOLISH_MASTER
         '
@@ -1240,20 +1239,20 @@ Partial Class MDIMain
         '
         Me.FINALPOLISHADD.Enabled = False
         Me.FINALPOLISHADD.Name = "FINALPOLISHADD"
-        Me.FINALPOLISHADD.Size = New System.Drawing.Size(176, 22)
+        Me.FINALPOLISHADD.Size = New System.Drawing.Size(180, 22)
         Me.FINALPOLISHADD.Text = "&Add New Polish"
         '
         'FINALPOLISHEDIT
         '
         Me.FINALPOLISHEDIT.Enabled = False
         Me.FINALPOLISHEDIT.Name = "FINALPOLISHEDIT"
-        Me.FINALPOLISHEDIT.Size = New System.Drawing.Size(176, 22)
+        Me.FINALPOLISHEDIT.Size = New System.Drawing.Size(180, 22)
         Me.FINALPOLISHEDIT.Text = "Edit Existing Polish"
         '
         'ToolStripSeparator51
         '
         Me.ToolStripSeparator51.Name = "ToolStripSeparator51"
-        Me.ToolStripSeparator51.Size = New System.Drawing.Size(173, 6)
+        Me.ToolStripSeparator51.Size = New System.Drawing.Size(177, 6)
         '
         'TOOLSTRIPORDER
         '
@@ -1272,25 +1271,20 @@ Partial Class MDIMain
         '
         Me.REPAIRADD.Enabled = False
         Me.REPAIRADD.Name = "REPAIRADD"
-        Me.REPAIRADD.Size = New System.Drawing.Size(168, 22)
+        Me.REPAIRADD.Size = New System.Drawing.Size(180, 22)
         Me.REPAIRADD.Text = "&Add New Entry"
         '
         'REPAIREDIT
         '
         Me.REPAIREDIT.Enabled = False
         Me.REPAIREDIT.Name = "REPAIREDIT"
-        Me.REPAIREDIT.Size = New System.Drawing.Size(168, 22)
+        Me.REPAIREDIT.Size = New System.Drawing.Size(180, 22)
         Me.REPAIREDIT.Text = "&Edit Existing Entry"
         '
         'ToolStripSeparator53
         '
         Me.ToolStripSeparator53.Name = "ToolStripSeparator53"
-        Me.ToolStripSeparator53.Size = New System.Drawing.Size(165, 6)
-        '
-        'ToolStripSeparator52
-        '
-        Me.ToolStripSeparator52.Name = "ToolStripSeparator52"
-        Me.ToolStripSeparator52.Size = New System.Drawing.Size(231, 6)
+        Me.ToolStripSeparator53.Size = New System.Drawing.Size(177, 6)
         '
         'Reportsmenu
         '
@@ -2381,7 +2375,6 @@ Partial Class MDIMain
     Friend WithEvents REPAIRADD As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents REPAIREDIT As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator53 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripSeparator52 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents LOTREPORT As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents STOCKREPORT As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents STOCKS As System.Windows.Forms.ToolStripMenuItem

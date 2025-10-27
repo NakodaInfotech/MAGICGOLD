@@ -762,4 +762,44 @@ Public Class JournalVoucher
         End Try
     End Sub
 
+    Private Sub JournalVoucher_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        Try
+            If ClientName = "MONOGRAM" Or ClientName = "ORIENTAL" Or ClientName = "BALAJI" Then
+                LBLFINE.Visible = False
+                lblfinebal.Visible = False
+                LBLAMT.Visible = False
+                lblamtbal.Visible = False
+                TXTGROSSWT.Visible = False
+                GGROSSWT.Visible = False
+                TXTTOTALGROSSWT.Visible = False
+                TXTLESSWT.Visible = False
+                GLESSWT.Visible = False
+                TXTTOTALLESSWT.Visible = False
+                TXTNETTWT.Visible = False
+                GNETTWT.Visible = False
+                TXTTOTALNETTWT.Visible = False
+                TXTPURITY.Visible = False
+                GMELTING.Visible = False
+                TXTWASTAGE.Visible = False
+                GWASTAGE.Visible = False
+                TXTFINEWT.Visible = False
+                GFINEWT.Visible = False
+                TXTTOTALFINEWT.Visible = False
+                GITEMDESC.Width = 300
+                TXTITEMDESC.Width = 300
+                TXTPCS.Left = TXTITEMDESC.Left + TXTITEMDESC.Width
+                TXTTOTALPCS.Left = TXTPCS.Left
+                TXTAMOUNT.Left = TXTPCS.Left + TXTPCS.Width
+                TXTAMOUNT.Width = 200
+                GAMOUNT.Width = 200
+                TXTTOTALAMT.Width = 200
+                TXTTOTALAMT.Left = TXTAMOUNT.Left
+                CMBCODE.Left = TXTAMOUNT.Left + TXTAMOUNT.Width
+                GBALFINEWT.Visible = False
+                GBALAMOUNT.Visible = False
+            End If
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
 End Class

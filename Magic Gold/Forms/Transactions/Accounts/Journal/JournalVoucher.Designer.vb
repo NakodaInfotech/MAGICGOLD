@@ -37,6 +37,10 @@ Partial Class JournalVoucher
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.BlendPanel1 = New VbPowerPack.BlendPanel()
+        Me.TXTTOTALNETTWT = New System.Windows.Forms.TextBox()
+        Me.TXTTOTALLESSWT = New System.Windows.Forms.TextBox()
+        Me.TXTNETTWT = New System.Windows.Forms.TextBox()
+        Me.TXTLESSWT = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TXTPRINTSRNO = New System.Windows.Forms.TextBox()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
@@ -51,8 +55,8 @@ Partial Class JournalVoucher
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.lblamtbal = New System.Windows.Forms.Label()
         Me.lblfinebal = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.LBLAMT = New System.Windows.Forms.Label()
+        Me.LBLFINE = New System.Windows.Forms.Label()
         Me.tstxtbillno = New System.Windows.Forms.TextBox()
         Me.TXTTOTALAMT = New System.Windows.Forms.TextBox()
         Me.TXTTOTALFINEWT = New System.Windows.Forms.TextBox()
@@ -82,7 +86,6 @@ Partial Class JournalVoucher
         Me.TXTGROSSWT = New System.Windows.Forms.TextBox()
         Me.TXTSRNO = New System.Windows.Forms.TextBox()
         Me.GRIDJV = New System.Windows.Forms.DataGridView()
-        Me.EP = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.GSRNO = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GITEMCODE = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GITEMDESC = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -97,10 +100,7 @@ Partial Class JournalVoucher
         Me.GCODE = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GBALFINEWT = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GBALAMOUNT = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TXTNETTWT = New System.Windows.Forms.TextBox()
-        Me.TXTLESSWT = New System.Windows.Forms.TextBox()
-        Me.TXTTOTALNETTWT = New System.Windows.Forms.TextBox()
-        Me.TXTTOTALLESSWT = New System.Windows.Forms.TextBox()
+        Me.EP = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.BlendPanel1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -120,8 +120,8 @@ Partial Class JournalVoucher
         Me.BlendPanel1.Controls.Add(Me.ToolStrip1)
         Me.BlendPanel1.Controls.Add(Me.lblamtbal)
         Me.BlendPanel1.Controls.Add(Me.lblfinebal)
-        Me.BlendPanel1.Controls.Add(Me.Label8)
-        Me.BlendPanel1.Controls.Add(Me.Label7)
+        Me.BlendPanel1.Controls.Add(Me.LBLAMT)
+        Me.BlendPanel1.Controls.Add(Me.LBLFINE)
         Me.BlendPanel1.Controls.Add(Me.tstxtbillno)
         Me.BlendPanel1.Controls.Add(Me.TXTTOTALAMT)
         Me.BlendPanel1.Controls.Add(Me.TXTTOTALFINEWT)
@@ -155,6 +155,50 @@ Partial Class JournalVoucher
         Me.BlendPanel1.Name = "BlendPanel1"
         Me.BlendPanel1.Size = New System.Drawing.Size(1284, 562)
         Me.BlendPanel1.TabIndex = 0
+        '
+        'TXTTOTALNETTWT
+        '
+        Me.TXTTOTALNETTWT.BackColor = System.Drawing.Color.Linen
+        Me.TXTTOTALNETTWT.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTTOTALNETTWT.Location = New System.Drawing.Point(578, 459)
+        Me.TXTTOTALNETTWT.Name = "TXTTOTALNETTWT"
+        Me.TXTTOTALNETTWT.ReadOnly = True
+        Me.TXTTOTALNETTWT.Size = New System.Drawing.Size(80, 23)
+        Me.TXTTOTALNETTWT.TabIndex = 769
+        Me.TXTTOTALNETTWT.TabStop = False
+        Me.TXTTOTALNETTWT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'TXTTOTALLESSWT
+        '
+        Me.TXTTOTALLESSWT.BackColor = System.Drawing.Color.Linen
+        Me.TXTTOTALLESSWT.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTTOTALLESSWT.Location = New System.Drawing.Point(498, 459)
+        Me.TXTTOTALLESSWT.Name = "TXTTOTALLESSWT"
+        Me.TXTTOTALLESSWT.ReadOnly = True
+        Me.TXTTOTALLESSWT.Size = New System.Drawing.Size(80, 23)
+        Me.TXTTOTALLESSWT.TabIndex = 768
+        Me.TXTTOTALLESSWT.TabStop = False
+        Me.TXTTOTALLESSWT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'TXTNETTWT
+        '
+        Me.TXTNETTWT.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTNETTWT.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.TXTNETTWT.Location = New System.Drawing.Point(578, 100)
+        Me.TXTNETTWT.Name = "TXTNETTWT"
+        Me.TXTNETTWT.Size = New System.Drawing.Size(80, 23)
+        Me.TXTNETTWT.TabIndex = 7
+        Me.TXTNETTWT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'TXTLESSWT
+        '
+        Me.TXTLESSWT.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTLESSWT.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.TXTLESSWT.Location = New System.Drawing.Point(498, 100)
+        Me.TXTLESSWT.Name = "TXTLESSWT"
+        Me.TXTLESSWT.Size = New System.Drawing.Size(80, 23)
+        Me.TXTLESSWT.TabIndex = 6
+        Me.TXTLESSWT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label2
         '
@@ -281,29 +325,29 @@ Partial Class JournalVoucher
         Me.lblfinebal.Text = "0.000"
         Me.lblfinebal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label8
+        'LBLAMT
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(683, 68)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(34, 14)
-        Me.Label8.TabIndex = 763
-        Me.Label8.Text = "Amt :"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.LBLAMT.AutoSize = True
+        Me.LBLAMT.BackColor = System.Drawing.Color.Transparent
+        Me.LBLAMT.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLAMT.Location = New System.Drawing.Point(683, 68)
+        Me.LBLAMT.Name = "LBLAMT"
+        Me.LBLAMT.Size = New System.Drawing.Size(34, 14)
+        Me.LBLAMT.TabIndex = 763
+        Me.LBLAMT.Text = "Amt :"
+        Me.LBLAMT.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label7
+        'LBLFINE
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(680, 39)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(37, 14)
-        Me.Label7.TabIndex = 762
-        Me.Label7.Text = "Fine :"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.LBLFINE.AutoSize = True
+        Me.LBLFINE.BackColor = System.Drawing.Color.Transparent
+        Me.LBLFINE.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLFINE.Location = New System.Drawing.Point(680, 39)
+        Me.LBLFINE.Name = "LBLFINE"
+        Me.LBLFINE.Size = New System.Drawing.Size(37, 14)
+        Me.LBLFINE.TabIndex = 762
+        Me.LBLFINE.Text = "Fine :"
+        Me.LBLFINE.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'tstxtbillno
         '
@@ -681,12 +725,6 @@ Partial Class JournalVoucher
         Me.GRIDJV.TabIndex = 735
         Me.GRIDJV.TabStop = False
         '
-        'EP
-        '
-        Me.EP.BlinkRate = 0
-        Me.EP.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink
-        Me.EP.ContainerControl = Me
-        '
         'GSRNO
         '
         Me.GSRNO.HeaderText = "Sr."
@@ -831,49 +869,11 @@ Partial Class JournalVoucher
         Me.GBALAMOUNT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         Me.GBALAMOUNT.Width = 80
         '
-        'TXTNETTWT
+        'EP
         '
-        Me.TXTNETTWT.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTNETTWT.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.TXTNETTWT.Location = New System.Drawing.Point(578, 100)
-        Me.TXTNETTWT.Name = "TXTNETTWT"
-        Me.TXTNETTWT.Size = New System.Drawing.Size(80, 23)
-        Me.TXTNETTWT.TabIndex = 7
-        Me.TXTNETTWT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'TXTLESSWT
-        '
-        Me.TXTLESSWT.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTLESSWT.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.TXTLESSWT.Location = New System.Drawing.Point(498, 100)
-        Me.TXTLESSWT.Name = "TXTLESSWT"
-        Me.TXTLESSWT.Size = New System.Drawing.Size(80, 23)
-        Me.TXTLESSWT.TabIndex = 6
-        Me.TXTLESSWT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'TXTTOTALNETTWT
-        '
-        Me.TXTTOTALNETTWT.BackColor = System.Drawing.Color.Linen
-        Me.TXTTOTALNETTWT.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTTOTALNETTWT.Location = New System.Drawing.Point(578, 459)
-        Me.TXTTOTALNETTWT.Name = "TXTTOTALNETTWT"
-        Me.TXTTOTALNETTWT.ReadOnly = True
-        Me.TXTTOTALNETTWT.Size = New System.Drawing.Size(80, 23)
-        Me.TXTTOTALNETTWT.TabIndex = 769
-        Me.TXTTOTALNETTWT.TabStop = False
-        Me.TXTTOTALNETTWT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'TXTTOTALLESSWT
-        '
-        Me.TXTTOTALLESSWT.BackColor = System.Drawing.Color.Linen
-        Me.TXTTOTALLESSWT.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTTOTALLESSWT.Location = New System.Drawing.Point(498, 459)
-        Me.TXTTOTALLESSWT.Name = "TXTTOTALLESSWT"
-        Me.TXTTOTALLESSWT.ReadOnly = True
-        Me.TXTTOTALLESSWT.Size = New System.Drawing.Size(80, 23)
-        Me.TXTTOTALLESSWT.TabIndex = 768
-        Me.TXTTOTALLESSWT.TabStop = False
-        Me.TXTTOTALLESSWT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.EP.BlinkRate = 0
+        Me.EP.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink
+        Me.EP.ContainerControl = Me
         '
         'JournalVoucher
         '
@@ -940,8 +940,8 @@ Partial Class JournalVoucher
     Friend WithEvents EP As System.Windows.Forms.ErrorProvider
     Friend WithEvents lblamtbal As Label
     Friend WithEvents lblfinebal As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
+    Friend WithEvents LBLAMT As Label
+    Friend WithEvents LBLFINE As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents TXTPRINTSRNO As TextBox
     Friend WithEvents GSRNO As DataGridViewTextBoxColumn

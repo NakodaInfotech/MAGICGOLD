@@ -655,4 +655,18 @@ Public Class CashBook
         End Try
     End Sub
 
+    Private Sub CashBook_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        Try
+            If ClientName = "MONOGRAM" Or ClientName = "BALAJI" Then
+                LBLFINE.Visible = False
+                lblfinebal.Visible = False
+                LBLAMT.Visible = False
+                lblamtbal.Visible = False
+                GBALFINEWT.Visible = False
+                GBALAMOUNT.Visible = False
+            End If
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
 End Class

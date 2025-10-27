@@ -2025,7 +2025,7 @@ Public Class MDIMain
                 DAYTRANSFER_MASTER.Enabled = False
             End If
 
-            If ClientName = "MONOGRAM" Then
+            If ClientName = "MONOGRAM" Or ClientName = "BALAJI" Then
                 ITEM_TOOL.Visible = False
                 ITEM_TOOLSTRIP.Visible = False
                 RECEIPT_TOOL.Visible = False
@@ -2036,8 +2036,10 @@ Public Class MDIMain
                 MELTING_TOOLSTRIP.Visible = False
                 MFG_TOOL.Visible = False
                 MFG_TOOLSTRIP.Visible = False
-                JV_TOOL.Visible = False
-                JV_TOOLSTRIP.Visible = False
+                If ClientName = "MONOGRAM" Then
+                    JV_TOOL.Visible = False
+                    JV_TOOLSTRIP.Visible = False
+                End If
                 FILLING_TOOL.Visible = False
                 FILLING_TOOLSTRIP.Visible = False
                 PREPOLISH_TOOL.Visible = False
@@ -2045,16 +2047,18 @@ Public Class MDIMain
                 SETTING_TOOL.Visible = False
                 SETTING_TOOLSTRIP.Visible = False
 
-                DAILYKHATA_MASTER.Visible = False
                 RECEIPT_MASTER.Visible = False
                 ISSUE_MASTER.Visible = False
-                JOURNAL_MASTER.Visible = False
+                If ClientName = "MONOGRAM" Then JOURNAL_MASTER.Visible = False
                 SALARY_MASTER.Visible = False
                 SALARY_TOOLSEPERATOR.Visible = False
                 MELTING_MASTER.Visible = False
                 MFG_MASTER.Visible = False
                 STOCKTRANSFER_MASTER.Visible = False
                 STOCKTRANSFER_TOOLSEPERATOR.Visible = False
+                LABELLING_MASTER.Visible = False
+                SO_MASTER.Visible = False
+                SETTING_MASTER.Visible = False
 
             End If
 
