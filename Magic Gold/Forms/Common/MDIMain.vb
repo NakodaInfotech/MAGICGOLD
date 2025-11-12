@@ -599,6 +599,7 @@ Public Class MDIMain
                         PARTYSCRAPREPORT.Enabled = True
                         FACISSDIFFREPORT.Enabled = True
                         ORDERREPORT.Enabled = True
+                        INTCALC_MENU.Enabled = True
                     End If
 
                 ElseIf DTROW(0).ToString = "STOCK REPORTS" Then
@@ -2375,6 +2376,26 @@ Public Class MDIMain
             Dim OBJLABEL As New LabellingDetails
             OBJLABEL.MdiParent = Me
             OBJLABEL.Show()
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
+
+    Private Sub INTCALC_DTLS_Click(sender As Object, e As EventArgs) Handles INTCALC_DTLS.Click
+        Try
+            Dim OBJINT As New InterestCalc
+            OBJINT.MdiParent = Me
+            OBJINT.Show()
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
+
+    Private Sub INTCALC_SUMM_Click(sender As Object, e As EventArgs) Handles INTCALC_SUMM.Click
+        Try
+            Dim OBJINT As New InterestCalcSummary
+            OBJINT.MdiParent = Me
+            OBJINT.Show()
         Catch ex As Exception
             Throw ex
         End Try

@@ -622,8 +622,8 @@ Public Class ACCOUNTMASTER
         If txtadd.Text.Trim <> "" Then txtshipadd.Text = txtadd.Text.Trim
     End Sub
 
-    Private Sub txtopbalwt_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtopbalwt.KeyPress
-        numdot(e, txtopbalwt, Me)
+    Private Sub txtopbalwt_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtopbalwt.KeyPress, txtcstno.KeyPress
+        numdot(e, sender, Me)
     End Sub
 
     Private Sub chkcopy_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkcopy.CheckedChanged

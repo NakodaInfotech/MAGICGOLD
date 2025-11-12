@@ -25,10 +25,6 @@ Partial Class MDIMain
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.MenuStrip = New System.Windows.Forms.MenuStrip()
         Me.Mastersmenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ACC_MASTER = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ACCADD = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ACCEDIT = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator11 = New System.Windows.Forms.ToolStripSeparator()
         Me.GROUP_MASTER = New System.Windows.Forms.ToolStripMenuItem()
         Me.GROUPADD = New System.Windows.Forms.ToolStripMenuItem()
         Me.GROUPEDIT = New System.Windows.Forms.ToolStripMenuItem()
@@ -38,7 +34,6 @@ Partial Class MDIMain
         Me.SALESMANEDIT = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator30 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripSeparator15 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ITEM_MASTER = New System.Windows.Forms.ToolStripMenuItem()
         Me.ITEMTYPE_MASTER = New System.Windows.Forms.ToolStripMenuItem()
         Me.ITEMTYPEADD = New System.Windows.Forms.ToolStripMenuItem()
         Me.ITEMTYPEEDIT = New System.Windows.Forms.ToolStripMenuItem()
@@ -106,29 +101,12 @@ Partial Class MDIMain
         Me.ToolStripSeparator61 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripSeparator43 = New System.Windows.Forms.ToolStripSeparator()
         Me.Transactionsmenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DAILYKHATA_MASTER = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RECEIPT_MASTER = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ISSUE_MASTER = New System.Windows.Forms.ToolStripMenuItem()
-        Me.JOURNAL_MASTER = New System.Windows.Forms.ToolStripMenuItem()
-        Me.JOURNALADD = New System.Windows.Forms.ToolStripMenuItem()
-        Me.JOURNALEDIT = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator64 = New System.Windows.Forms.ToolStripSeparator()
-        Me.CASHREC_MASTER = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CASHRECADD = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CASHRECEDIT = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator65 = New System.Windows.Forms.ToolStripSeparator()
-        Me.CASHISSUE_MASTER = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CASHISSUEADD = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CASHISSUEEDIT = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator66 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripSeparator63 = New System.Windows.Forms.ToolStripSeparator()
         Me.SALARY_MASTER = New System.Windows.Forms.ToolStripMenuItem()
         Me.SALARYADD = New System.Windows.Forms.ToolStripMenuItem()
         Me.SALARYEDIT = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator68 = New System.Windows.Forms.ToolStripSeparator()
         Me.SALARY_TOOLSEPERATOR = New System.Windows.Forms.ToolStripSeparator()
-        Me.MELTING_MASTER = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MFG_MASTER = New System.Windows.Forms.ToolStripMenuItem()
         Me.LABELLING_MASTER = New System.Windows.Forms.ToolStripMenuItem()
         Me.LABELLINGADD = New System.Windows.Forms.ToolStripMenuItem()
         Me.LABELLINGEDIT = New System.Windows.Forms.ToolStripMenuItem()
@@ -138,10 +116,6 @@ Partial Class MDIMain
         Me.STOCKTRANSFEREDIT = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator70 = New System.Windows.Forms.ToolStripSeparator()
         Me.STOCKTRANSFER_TOOLSEPERATOR = New System.Windows.Forms.ToolStripSeparator()
-        Me.SO_MASTER = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SOADD = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SOEDIT = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.MATERIALREC_MASTER = New System.Windows.Forms.ToolStripMenuItem()
         Me.MATERIALRECADD = New System.Windows.Forms.ToolStripMenuItem()
         Me.MATERIALRECEDIT = New System.Windows.Forms.ToolStripMenuItem()
@@ -183,6 +157,8 @@ Partial Class MDIMain
         Me.PARTYWASTAGEREPORT = New System.Windows.Forms.ToolStripMenuItem()
         Me.PARTYSCRAPREPORT = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator67 = New System.Windows.Forms.ToolStripSeparator()
+        Me.INTCALC_MENU = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripSeparator17 = New System.Windows.Forms.ToolStripSeparator()
         Me.STOCKREPORT = New System.Windows.Forms.ToolStripMenuItem()
         Me.STOCKS = New System.Windows.Forms.ToolStripMenuItem()
@@ -263,6 +239,13 @@ Partial Class MDIMain
         Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.XtraTabbedMdiManager1 = New DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(Me.components)
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.StatusStrip2 = New System.Windows.Forms.StatusStrip()
+        Me.LBLPENDING = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.INTCALC_DTLS = New System.Windows.Forms.ToolStripMenuItem()
+        Me.INTCALC_SUMM = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
@@ -292,12 +275,32 @@ Partial Class MDIMain
         Me.PREPOLISH_TOOLSTRIP = New System.Windows.Forms.ToolStripSeparator()
         Me.SETTING_TOOL = New System.Windows.Forms.ToolStripButton()
         Me.SETTING_TOOLSTRIP = New System.Windows.Forms.ToolStripSeparator()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.StatusStrip2 = New System.Windows.Forms.StatusStrip()
-        Me.LBLPENDING = New System.Windows.Forms.Label()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.InterestCalculatorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ACC_MASTER = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ACCADD = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ACCEDIT = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator11 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ITEM_MASTER = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DAILYKHATA_MASTER = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RECEIPT_MASTER = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ISSUE_MASTER = New System.Windows.Forms.ToolStripMenuItem()
+        Me.JOURNAL_MASTER = New System.Windows.Forms.ToolStripMenuItem()
+        Me.JOURNALADD = New System.Windows.Forms.ToolStripMenuItem()
+        Me.JOURNALEDIT = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator64 = New System.Windows.Forms.ToolStripSeparator()
+        Me.CASHREC_MASTER = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CASHRECADD = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CASHRECEDIT = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator65 = New System.Windows.Forms.ToolStripSeparator()
+        Me.CASHISSUE_MASTER = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CASHISSUEADD = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CASHISSUEEDIT = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator66 = New System.Windows.Forms.ToolStripSeparator()
+        Me.MELTING_MASTER = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MFG_MASTER = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SO_MASTER = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SOADD = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SOEDIT = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.MenuStrip.SuspendLayout()
         CType(Me.XtraTabbedMdiManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
@@ -319,34 +322,6 @@ Partial Class MDIMain
         Me.Mastersmenu.Name = "Mastersmenu"
         Me.Mastersmenu.Size = New System.Drawing.Size(63, 20)
         Me.Mastersmenu.Text = "&Masters"
-        '
-        'ACC_MASTER
-        '
-        Me.ACC_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ACCADD, Me.ACCEDIT, Me.ToolStripSeparator11})
-        Me.ACC_MASTER.Enabled = False
-        Me.ACC_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.customercenter
-        Me.ACC_MASTER.Name = "ACC_MASTER"
-        Me.ACC_MASTER.Size = New System.Drawing.Size(180, 22)
-        Me.ACC_MASTER.Text = "&Account Master"
-        '
-        'ACCADD
-        '
-        Me.ACCADD.Enabled = False
-        Me.ACCADD.Name = "ACCADD"
-        Me.ACCADD.Size = New System.Drawing.Size(184, 22)
-        Me.ACCADD.Text = "&Add New Account"
-        '
-        'ACCEDIT
-        '
-        Me.ACCEDIT.Enabled = False
-        Me.ACCEDIT.Name = "ACCEDIT"
-        Me.ACCEDIT.Size = New System.Drawing.Size(184, 22)
-        Me.ACCEDIT.Text = "&Edit Existing Account"
-        '
-        'ToolStripSeparator11
-        '
-        Me.ToolStripSeparator11.Name = "ToolStripSeparator11"
-        Me.ToolStripSeparator11.Size = New System.Drawing.Size(181, 6)
         '
         'GROUP_MASTER
         '
@@ -403,14 +378,6 @@ Partial Class MDIMain
         '
         Me.ToolStripSeparator15.Name = "ToolStripSeparator15"
         Me.ToolStripSeparator15.Size = New System.Drawing.Size(177, 6)
-        '
-        'ITEM_MASTER
-        '
-        Me.ITEM_MASTER.Enabled = False
-        Me.ITEM_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.goldmine
-        Me.ITEM_MASTER.Name = "ITEM_MASTER"
-        Me.ITEM_MASTER.Size = New System.Drawing.Size(180, 22)
-        Me.ITEM_MASTER.Text = "&Item Master"
         '
         'ITEMTYPE_MASTER
         '
@@ -841,118 +808,6 @@ Partial Class MDIMain
         Me.Transactionsmenu.Size = New System.Drawing.Size(87, 20)
         Me.Transactionsmenu.Text = "&Transactions"
         '
-        'DAILYKHATA_MASTER
-        '
-        Me.DAILYKHATA_MASTER.Enabled = False
-        Me.DAILYKHATA_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.newbusinesschecklist
-        Me.DAILYKHATA_MASTER.Name = "DAILYKHATA_MASTER"
-        Me.DAILYKHATA_MASTER.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.K), System.Windows.Forms.Keys)
-        Me.DAILYKHATA_MASTER.Size = New System.Drawing.Size(234, 22)
-        Me.DAILYKHATA_MASTER.Text = "Daily &Khata"
-        '
-        'RECEIPT_MASTER
-        '
-        Me.RECEIPT_MASTER.Enabled = False
-        Me.RECEIPT_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.payments
-        Me.RECEIPT_MASTER.Name = "RECEIPT_MASTER"
-        Me.RECEIPT_MASTER.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.R), System.Windows.Forms.Keys)
-        Me.RECEIPT_MASTER.Size = New System.Drawing.Size(234, 22)
-        Me.RECEIPT_MASTER.Text = "&Receipt voucher"
-        '
-        'ISSUE_MASTER
-        '
-        Me.ISSUE_MASTER.Enabled = False
-        Me.ISSUE_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.tab_moneyout
-        Me.ISSUE_MASTER.Name = "ISSUE_MASTER"
-        Me.ISSUE_MASTER.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.I), System.Windows.Forms.Keys)
-        Me.ISSUE_MASTER.Size = New System.Drawing.Size(234, 22)
-        Me.ISSUE_MASTER.Text = "&Invoice Voucher"
-        '
-        'JOURNAL_MASTER
-        '
-        Me.JOURNAL_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.JOURNALADD, Me.JOURNALEDIT, Me.ToolStripSeparator64})
-        Me.JOURNAL_MASTER.Enabled = False
-        Me.JOURNAL_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.icon_qbase
-        Me.JOURNAL_MASTER.Name = "JOURNAL_MASTER"
-        Me.JOURNAL_MASTER.Size = New System.Drawing.Size(234, 22)
-        Me.JOURNAL_MASTER.Text = "Journal Entry"
-        '
-        'JOURNALADD
-        '
-        Me.JOURNALADD.Enabled = False
-        Me.JOURNALADD.Name = "JOURNALADD"
-        Me.JOURNALADD.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.J), System.Windows.Forms.Keys)
-        Me.JOURNALADD.Size = New System.Drawing.Size(186, 22)
-        Me.JOURNALADD.Text = "&Add New Entry"
-        '
-        'JOURNALEDIT
-        '
-        Me.JOURNALEDIT.Enabled = False
-        Me.JOURNALEDIT.Name = "JOURNALEDIT"
-        Me.JOURNALEDIT.Size = New System.Drawing.Size(186, 22)
-        Me.JOURNALEDIT.Text = "&Edit Existing Entry"
-        '
-        'ToolStripSeparator64
-        '
-        Me.ToolStripSeparator64.Name = "ToolStripSeparator64"
-        Me.ToolStripSeparator64.Size = New System.Drawing.Size(183, 6)
-        '
-        'CASHREC_MASTER
-        '
-        Me.CASHREC_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CASHRECADD, Me.CASHRECEDIT, Me.ToolStripSeparator65})
-        Me.CASHREC_MASTER.Enabled = False
-        Me.CASHREC_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.payments
-        Me.CASHREC_MASTER.Name = "CASHREC_MASTER"
-        Me.CASHREC_MASTER.Size = New System.Drawing.Size(234, 22)
-        Me.CASHREC_MASTER.Text = "Receipt Entry"
-        '
-        'CASHRECADD
-        '
-        Me.CASHRECADD.Enabled = False
-        Me.CASHRECADD.Name = "CASHRECADD"
-        Me.CASHRECADD.Size = New System.Drawing.Size(168, 22)
-        Me.CASHRECADD.Text = "&Add New Entry"
-        '
-        'CASHRECEDIT
-        '
-        Me.CASHRECEDIT.Enabled = False
-        Me.CASHRECEDIT.Name = "CASHRECEDIT"
-        Me.CASHRECEDIT.Size = New System.Drawing.Size(168, 22)
-        Me.CASHRECEDIT.Text = "&Edit Existing Entry"
-        '
-        'ToolStripSeparator65
-        '
-        Me.ToolStripSeparator65.Name = "ToolStripSeparator65"
-        Me.ToolStripSeparator65.Size = New System.Drawing.Size(165, 6)
-        '
-        'CASHISSUE_MASTER
-        '
-        Me.CASHISSUE_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CASHISSUEADD, Me.CASHISSUEEDIT, Me.ToolStripSeparator66})
-        Me.CASHISSUE_MASTER.Enabled = False
-        Me.CASHISSUE_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.payments
-        Me.CASHISSUE_MASTER.Name = "CASHISSUE_MASTER"
-        Me.CASHISSUE_MASTER.Size = New System.Drawing.Size(234, 22)
-        Me.CASHISSUE_MASTER.Text = "Issue Entry"
-        '
-        'CASHISSUEADD
-        '
-        Me.CASHISSUEADD.Enabled = False
-        Me.CASHISSUEADD.Name = "CASHISSUEADD"
-        Me.CASHISSUEADD.Size = New System.Drawing.Size(168, 22)
-        Me.CASHISSUEADD.Text = "&Add New Entry"
-        '
-        'CASHISSUEEDIT
-        '
-        Me.CASHISSUEEDIT.Enabled = False
-        Me.CASHISSUEEDIT.Name = "CASHISSUEEDIT"
-        Me.CASHISSUEEDIT.Size = New System.Drawing.Size(168, 22)
-        Me.CASHISSUEEDIT.Text = "&Edit Existing Entry"
-        '
-        'ToolStripSeparator66
-        '
-        Me.ToolStripSeparator66.Name = "ToolStripSeparator66"
-        Me.ToolStripSeparator66.Size = New System.Drawing.Size(165, 6)
-        '
         'ToolStripSeparator63
         '
         Me.ToolStripSeparator63.Name = "ToolStripSeparator63"
@@ -989,24 +844,6 @@ Partial Class MDIMain
         '
         Me.SALARY_TOOLSEPERATOR.Name = "SALARY_TOOLSEPERATOR"
         Me.SALARY_TOOLSEPERATOR.Size = New System.Drawing.Size(231, 6)
-        '
-        'MELTING_MASTER
-        '
-        Me.MELTING_MASTER.Enabled = False
-        Me.MELTING_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.Bullion_Bar
-        Me.MELTING_MASTER.Name = "MELTING_MASTER"
-        Me.MELTING_MASTER.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.M), System.Windows.Forms.Keys)
-        Me.MELTING_MASTER.Size = New System.Drawing.Size(234, 22)
-        Me.MELTING_MASTER.Text = "&Melting"
-        '
-        'MFG_MASTER
-        '
-        Me.MFG_MASTER.Enabled = False
-        Me.MFG_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.treasure_icon
-        Me.MFG_MASTER.Name = "MFG_MASTER"
-        Me.MFG_MASTER.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.MFG_MASTER.Size = New System.Drawing.Size(234, 22)
-        Me.MFG_MASTER.Text = "Manufacturing &Process"
         '
         'LABELLING_MASTER
         '
@@ -1064,35 +901,6 @@ Partial Class MDIMain
         '
         Me.STOCKTRANSFER_TOOLSEPERATOR.Name = "STOCKTRANSFER_TOOLSEPERATOR"
         Me.STOCKTRANSFER_TOOLSEPERATOR.Size = New System.Drawing.Size(231, 6)
-        '
-        'SO_MASTER
-        '
-        Me.SO_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SOADD, Me.SOEDIT, Me.ToolStripSeparator1})
-        Me.SO_MASTER.Enabled = False
-        Me.SO_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.tab_inventory
-        Me.SO_MASTER.Name = "SO_MASTER"
-        Me.SO_MASTER.Size = New System.Drawing.Size(234, 22)
-        Me.SO_MASTER.Text = "Order Master"
-        '
-        'SOADD
-        '
-        Me.SOADD.Enabled = False
-        Me.SOADD.Name = "SOADD"
-        Me.SOADD.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
-        Me.SOADD.Size = New System.Drawing.Size(194, 22)
-        Me.SOADD.Text = "&Add New Order"
-        '
-        'SOEDIT
-        '
-        Me.SOEDIT.Enabled = False
-        Me.SOEDIT.Name = "SOEDIT"
-        Me.SOEDIT.Size = New System.Drawing.Size(194, 22)
-        Me.SOEDIT.Text = "&Edit Existing Order"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(191, 6)
         '
         'MATERIALREC_MASTER
         '
@@ -1297,7 +1105,7 @@ Partial Class MDIMain
         '
         'ACCOUNTREPORT
         '
-        Me.ACCOUNTREPORT.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TBWTREPORT, Me.TBAMTREPORT, Me.TBWTAMTREPORT, Me.LEDGERREPORT, Me.KARIGARREPORT, Me.SETTINGREPORT, Me.ToolStripSeparator57, Me.PARTYWASTAGEREPORT, Me.PARTYSCRAPREPORT, Me.ToolStripSeparator67, Me.InterestCalculatorToolStripMenuItem, Me.ToolStripSeparator6})
+        Me.ACCOUNTREPORT.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TBWTREPORT, Me.TBAMTREPORT, Me.TBWTAMTREPORT, Me.LEDGERREPORT, Me.KARIGARREPORT, Me.SETTINGREPORT, Me.ToolStripSeparator57, Me.PARTYWASTAGEREPORT, Me.PARTYSCRAPREPORT, Me.ToolStripSeparator67, Me.INTCALC_MENU, Me.ToolStripSeparator6})
         Me.ACCOUNTREPORT.Enabled = False
         Me.ACCOUNTREPORT.Name = "ACCOUNTREPORT"
         Me.ACCOUNTREPORT.Size = New System.Drawing.Size(258, 22)
@@ -1369,6 +1177,19 @@ Partial Class MDIMain
         '
         Me.ToolStripSeparator67.Name = "ToolStripSeparator67"
         Me.ToolStripSeparator67.Size = New System.Drawing.Size(223, 6)
+        '
+        'INTCALC_MENU
+        '
+        Me.INTCALC_MENU.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.INTCALC_DTLS, Me.INTCALC_SUMM, Me.ToolStripSeparator7})
+        Me.INTCALC_MENU.Enabled = False
+        Me.INTCALC_MENU.Name = "INTCALC_MENU"
+        Me.INTCALC_MENU.Size = New System.Drawing.Size(226, 22)
+        Me.INTCALC_MENU.Text = "Interest Calculator"
+        '
+        'ToolStripSeparator6
+        '
+        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
+        Me.ToolStripSeparator6.Size = New System.Drawing.Size(223, 6)
         '
         'ToolStripSeparator17
         '
@@ -1893,6 +1714,52 @@ Partial Class MDIMain
         '
         Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Money Twins"
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'StatusStrip2
+        '
+        Me.StatusStrip2.Location = New System.Drawing.Point(0, 623)
+        Me.StatusStrip2.Name = "StatusStrip2"
+        Me.StatusStrip2.Size = New System.Drawing.Size(1243, 22)
+        Me.StatusStrip2.TabIndex = 18
+        Me.StatusStrip2.Text = "StatusStrip2"
+        '
+        'LBLPENDING
+        '
+        Me.LBLPENDING.AutoSize = True
+        Me.LBLPENDING.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.LBLPENDING.Font = New System.Drawing.Font("Cambria", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLPENDING.ForeColor = System.Drawing.Color.Maroon
+        Me.LBLPENDING.Location = New System.Drawing.Point(927, 626)
+        Me.LBLPENDING.Name = "LBLPENDING"
+        Me.LBLPENDING.Size = New System.Drawing.Size(136, 17)
+        Me.LBLPENDING.TabIndex = 67
+        Me.LBLPENDING.Text = "No Pending Entries"
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 20
+        '
+        'INTCALC_DTLS
+        '
+        Me.INTCALC_DTLS.Name = "INTCALC_DTLS"
+        Me.INTCALC_DTLS.Size = New System.Drawing.Size(194, 22)
+        Me.INTCALC_DTLS.Text = "Interest Calc Details"
+        '
+        'INTCALC_SUMM
+        '
+        Me.INTCALC_SUMM.Name = "INTCALC_SUMM"
+        Me.INTCALC_SUMM.Size = New System.Drawing.Size(194, 22)
+        Me.INTCALC_SUMM.Text = "Interest Calc Summary"
+        '
+        'ToolStripSeparator7
+        '
+        Me.ToolStripSeparator7.Name = "ToolStripSeparator7"
+        Me.ToolStripSeparator7.Size = New System.Drawing.Size(191, 6)
+        '
         'ToolStrip1
         '
         Me.ToolStrip1.AutoSize = False
@@ -2130,45 +1997,200 @@ Partial Class MDIMain
         Me.SETTING_TOOLSTRIP.Name = "SETTING_TOOLSTRIP"
         Me.SETTING_TOOLSTRIP.Size = New System.Drawing.Size(6, 48)
         '
-        'OpenFileDialog1
+        'ACC_MASTER
         '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        Me.ACC_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ACCADD, Me.ACCEDIT, Me.ToolStripSeparator11})
+        Me.ACC_MASTER.Enabled = False
+        Me.ACC_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.customercenter
+        Me.ACC_MASTER.Name = "ACC_MASTER"
+        Me.ACC_MASTER.Size = New System.Drawing.Size(180, 22)
+        Me.ACC_MASTER.Text = "&Account Master"
         '
-        'StatusStrip2
+        'ACCADD
         '
-        Me.StatusStrip2.Location = New System.Drawing.Point(0, 623)
-        Me.StatusStrip2.Name = "StatusStrip2"
-        Me.StatusStrip2.Size = New System.Drawing.Size(1243, 22)
-        Me.StatusStrip2.TabIndex = 18
-        Me.StatusStrip2.Text = "StatusStrip2"
+        Me.ACCADD.Enabled = False
+        Me.ACCADD.Name = "ACCADD"
+        Me.ACCADD.Size = New System.Drawing.Size(184, 22)
+        Me.ACCADD.Text = "&Add New Account"
         '
-        'LBLPENDING
+        'ACCEDIT
         '
-        Me.LBLPENDING.AutoSize = True
-        Me.LBLPENDING.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.LBLPENDING.Font = New System.Drawing.Font("Cambria", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLPENDING.ForeColor = System.Drawing.Color.Maroon
-        Me.LBLPENDING.Location = New System.Drawing.Point(927, 626)
-        Me.LBLPENDING.Name = "LBLPENDING"
-        Me.LBLPENDING.Size = New System.Drawing.Size(136, 17)
-        Me.LBLPENDING.TabIndex = 67
-        Me.LBLPENDING.Text = "No Pending Entries"
+        Me.ACCEDIT.Enabled = False
+        Me.ACCEDIT.Name = "ACCEDIT"
+        Me.ACCEDIT.Size = New System.Drawing.Size(184, 22)
+        Me.ACCEDIT.Text = "&Edit Existing Account"
         '
-        'Timer1
+        'ToolStripSeparator11
         '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 20
+        Me.ToolStripSeparator11.Name = "ToolStripSeparator11"
+        Me.ToolStripSeparator11.Size = New System.Drawing.Size(181, 6)
         '
-        'InterestCalculatorToolStripMenuItem
+        'ITEM_MASTER
         '
-        Me.InterestCalculatorToolStripMenuItem.Name = "InterestCalculatorToolStripMenuItem"
-        Me.InterestCalculatorToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
-        Me.InterestCalculatorToolStripMenuItem.Text = "Interest Calculator"
+        Me.ITEM_MASTER.Enabled = False
+        Me.ITEM_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.goldmine
+        Me.ITEM_MASTER.Name = "ITEM_MASTER"
+        Me.ITEM_MASTER.Size = New System.Drawing.Size(180, 22)
+        Me.ITEM_MASTER.Text = "&Item Master"
         '
-        'ToolStripSeparator6
+        'DAILYKHATA_MASTER
         '
-        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
-        Me.ToolStripSeparator6.Size = New System.Drawing.Size(223, 6)
+        Me.DAILYKHATA_MASTER.Enabled = False
+        Me.DAILYKHATA_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.newbusinesschecklist
+        Me.DAILYKHATA_MASTER.Name = "DAILYKHATA_MASTER"
+        Me.DAILYKHATA_MASTER.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.K), System.Windows.Forms.Keys)
+        Me.DAILYKHATA_MASTER.Size = New System.Drawing.Size(234, 22)
+        Me.DAILYKHATA_MASTER.Text = "Daily &Khata"
+        '
+        'RECEIPT_MASTER
+        '
+        Me.RECEIPT_MASTER.Enabled = False
+        Me.RECEIPT_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.payments
+        Me.RECEIPT_MASTER.Name = "RECEIPT_MASTER"
+        Me.RECEIPT_MASTER.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.R), System.Windows.Forms.Keys)
+        Me.RECEIPT_MASTER.Size = New System.Drawing.Size(234, 22)
+        Me.RECEIPT_MASTER.Text = "&Receipt voucher"
+        '
+        'ISSUE_MASTER
+        '
+        Me.ISSUE_MASTER.Enabled = False
+        Me.ISSUE_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.tab_moneyout
+        Me.ISSUE_MASTER.Name = "ISSUE_MASTER"
+        Me.ISSUE_MASTER.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.I), System.Windows.Forms.Keys)
+        Me.ISSUE_MASTER.Size = New System.Drawing.Size(234, 22)
+        Me.ISSUE_MASTER.Text = "&Invoice Voucher"
+        '
+        'JOURNAL_MASTER
+        '
+        Me.JOURNAL_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.JOURNALADD, Me.JOURNALEDIT, Me.ToolStripSeparator64})
+        Me.JOURNAL_MASTER.Enabled = False
+        Me.JOURNAL_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.icon_qbase
+        Me.JOURNAL_MASTER.Name = "JOURNAL_MASTER"
+        Me.JOURNAL_MASTER.Size = New System.Drawing.Size(234, 22)
+        Me.JOURNAL_MASTER.Text = "Journal Entry"
+        '
+        'JOURNALADD
+        '
+        Me.JOURNALADD.Enabled = False
+        Me.JOURNALADD.Name = "JOURNALADD"
+        Me.JOURNALADD.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.J), System.Windows.Forms.Keys)
+        Me.JOURNALADD.Size = New System.Drawing.Size(186, 22)
+        Me.JOURNALADD.Text = "&Add New Entry"
+        '
+        'JOURNALEDIT
+        '
+        Me.JOURNALEDIT.Enabled = False
+        Me.JOURNALEDIT.Name = "JOURNALEDIT"
+        Me.JOURNALEDIT.Size = New System.Drawing.Size(186, 22)
+        Me.JOURNALEDIT.Text = "&Edit Existing Entry"
+        '
+        'ToolStripSeparator64
+        '
+        Me.ToolStripSeparator64.Name = "ToolStripSeparator64"
+        Me.ToolStripSeparator64.Size = New System.Drawing.Size(183, 6)
+        '
+        'CASHREC_MASTER
+        '
+        Me.CASHREC_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CASHRECADD, Me.CASHRECEDIT, Me.ToolStripSeparator65})
+        Me.CASHREC_MASTER.Enabled = False
+        Me.CASHREC_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.payments
+        Me.CASHREC_MASTER.Name = "CASHREC_MASTER"
+        Me.CASHREC_MASTER.Size = New System.Drawing.Size(234, 22)
+        Me.CASHREC_MASTER.Text = "Receipt Entry"
+        '
+        'CASHRECADD
+        '
+        Me.CASHRECADD.Enabled = False
+        Me.CASHRECADD.Name = "CASHRECADD"
+        Me.CASHRECADD.Size = New System.Drawing.Size(168, 22)
+        Me.CASHRECADD.Text = "&Add New Entry"
+        '
+        'CASHRECEDIT
+        '
+        Me.CASHRECEDIT.Enabled = False
+        Me.CASHRECEDIT.Name = "CASHRECEDIT"
+        Me.CASHRECEDIT.Size = New System.Drawing.Size(168, 22)
+        Me.CASHRECEDIT.Text = "&Edit Existing Entry"
+        '
+        'ToolStripSeparator65
+        '
+        Me.ToolStripSeparator65.Name = "ToolStripSeparator65"
+        Me.ToolStripSeparator65.Size = New System.Drawing.Size(165, 6)
+        '
+        'CASHISSUE_MASTER
+        '
+        Me.CASHISSUE_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CASHISSUEADD, Me.CASHISSUEEDIT, Me.ToolStripSeparator66})
+        Me.CASHISSUE_MASTER.Enabled = False
+        Me.CASHISSUE_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.payments
+        Me.CASHISSUE_MASTER.Name = "CASHISSUE_MASTER"
+        Me.CASHISSUE_MASTER.Size = New System.Drawing.Size(234, 22)
+        Me.CASHISSUE_MASTER.Text = "Issue Entry"
+        '
+        'CASHISSUEADD
+        '
+        Me.CASHISSUEADD.Enabled = False
+        Me.CASHISSUEADD.Name = "CASHISSUEADD"
+        Me.CASHISSUEADD.Size = New System.Drawing.Size(168, 22)
+        Me.CASHISSUEADD.Text = "&Add New Entry"
+        '
+        'CASHISSUEEDIT
+        '
+        Me.CASHISSUEEDIT.Enabled = False
+        Me.CASHISSUEEDIT.Name = "CASHISSUEEDIT"
+        Me.CASHISSUEEDIT.Size = New System.Drawing.Size(168, 22)
+        Me.CASHISSUEEDIT.Text = "&Edit Existing Entry"
+        '
+        'ToolStripSeparator66
+        '
+        Me.ToolStripSeparator66.Name = "ToolStripSeparator66"
+        Me.ToolStripSeparator66.Size = New System.Drawing.Size(165, 6)
+        '
+        'MELTING_MASTER
+        '
+        Me.MELTING_MASTER.Enabled = False
+        Me.MELTING_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.Bullion_Bar
+        Me.MELTING_MASTER.Name = "MELTING_MASTER"
+        Me.MELTING_MASTER.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.M), System.Windows.Forms.Keys)
+        Me.MELTING_MASTER.Size = New System.Drawing.Size(234, 22)
+        Me.MELTING_MASTER.Text = "&Melting"
+        '
+        'MFG_MASTER
+        '
+        Me.MFG_MASTER.Enabled = False
+        Me.MFG_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.treasure_icon
+        Me.MFG_MASTER.Name = "MFG_MASTER"
+        Me.MFG_MASTER.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
+        Me.MFG_MASTER.Size = New System.Drawing.Size(234, 22)
+        Me.MFG_MASTER.Text = "Manufacturing &Process"
+        '
+        'SO_MASTER
+        '
+        Me.SO_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SOADD, Me.SOEDIT, Me.ToolStripSeparator1})
+        Me.SO_MASTER.Enabled = False
+        Me.SO_MASTER.Image = Global.Magic_Gold.My.Resources.Resources.tab_inventory
+        Me.SO_MASTER.Name = "SO_MASTER"
+        Me.SO_MASTER.Size = New System.Drawing.Size(234, 22)
+        Me.SO_MASTER.Text = "Order Master"
+        '
+        'SOADD
+        '
+        Me.SOADD.Enabled = False
+        Me.SOADD.Name = "SOADD"
+        Me.SOADD.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
+        Me.SOADD.Size = New System.Drawing.Size(194, 22)
+        Me.SOADD.Text = "&Add New Order"
+        '
+        'SOEDIT
+        '
+        Me.SOEDIT.Enabled = False
+        Me.SOEDIT.Name = "SOEDIT"
+        Me.SOEDIT.Size = New System.Drawing.Size(194, 22)
+        Me.SOEDIT.Text = "&Edit Existing Order"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(191, 6)
         '
         'MDIMain
         '
@@ -2473,6 +2495,9 @@ Partial Class MDIMain
     Friend WithEvents LABELLINGADD As ToolStripMenuItem
     Friend WithEvents LABELLINGEDIT As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator5 As ToolStripSeparator
-    Friend WithEvents InterestCalculatorToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents INTCALC_MENU As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator6 As ToolStripSeparator
+    Friend WithEvents INTCALC_DTLS As ToolStripMenuItem
+    Friend WithEvents INTCALC_SUMM As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator7 As ToolStripSeparator
 End Class
