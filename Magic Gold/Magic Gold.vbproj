@@ -480,6 +480,12 @@
     <Compile Include="Forms\Transactions\Accounts\Cash Book\CashBookDetails.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Transactions\Accounts\Cash Book\CashBookGridDetails.Designer.vb">
+      <DependentUpon>CashBookGridDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Transactions\Accounts\Cash Book\CashBookGridDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Transactions\Accounts\Journal\JournalVoucher.Designer.vb">
       <DependentUpon>JournalVoucher.vb</DependentUpon>
     </Compile>
@@ -490,6 +496,12 @@
       <DependentUpon>JournalVoucherDetails.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Transactions\Accounts\Journal\JournalVoucherDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Transactions\Accounts\Journal\JournalVoucherGridDetails.Designer.vb">
+      <DependentUpon>JournalVoucherGridDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Transactions\Accounts\Journal\JournalVoucherGridDetails.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Transactions\Accounts\Salary\Salary.Designer.vb">
@@ -1343,6 +1355,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Transactions\Accounts\Cash Book\CashBookDetails.resx">
       <DependentUpon>CashBookDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Transactions\Accounts\Cash Book\CashBookGridDetails.resx">
+      <DependentUpon>CashBookGridDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Transactions\Accounts\Journal\JournalVoucherGridDetails.resx">
+      <DependentUpon>JournalVoucherGridDetails.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Transactions\Accounts\Salary\Salary.resx">
       <DependentUpon>Salary.vb</DependentUpon>

@@ -105,4 +105,26 @@ Public Class JournalVoucherDetails
         End Try
     End Sub
 
+    Private Sub TOOLGRIDDTLS_Click(sender As Object, e As EventArgs) Handles TOOLGRIDDTLS.Click
+        Try
+            Dim OBJJV As New JournalVoucherGridDetails
+            OBJJV.MdiParent = MDIMain
+            OBJJV.Show()
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
+
+    Private Sub JournalVoucherDetails_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        Try
+            If ClientName = "BALAJI" Then
+                GTOTALGROSSWT.Visible = False
+                GTOTALLESSWT.Visible = False
+                GTOTALNETTWT.Visible = False
+                GTOTALFINEWT.Visible = False
+            End If
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
 End Class

@@ -14,6 +14,8 @@ Public Class JournalVoucher
 
     Sub CALC()
         Try
+            If ClientName = "BALAJI" Then TXTAMOUNT.Text = Format(Val(TXTPCS.Text.Trim) * Val(TXTGROSSWT.Text.Trim), "0.00")
+
             TXTNETTWT.Text = Format(Val(TXTGROSSWT.Text.Trim) - Val(TXTLESSWT.Text.Trim), "0.000")
             TXTFINEWT.Text = Format(Val(TXTNETTWT.Text.Trim) * ((Val(TXTPURITY.Text.Trim) + Val(TXTWASTAGE.Text.Trim)) / 100), "0.000")
         Catch ex As Exception
@@ -769,8 +771,6 @@ Public Class JournalVoucher
                 lblfinebal.Visible = False
                 LBLAMT.Visible = False
                 lblamtbal.Visible = False
-                TXTGROSSWT.Visible = False
-                GGROSSWT.Visible = False
                 TXTTOTALGROSSWT.Visible = False
                 TXTLESSWT.Visible = False
                 GLESSWT.Visible = False
@@ -785,16 +785,22 @@ Public Class JournalVoucher
                 TXTFINEWT.Visible = False
                 GFINEWT.Visible = False
                 TXTTOTALFINEWT.Visible = False
+
                 GITEMDESC.Width = 300
                 TXTITEMDESC.Width = 300
                 TXTPCS.Left = TXTITEMDESC.Left + TXTITEMDESC.Width
                 TXTTOTALPCS.Left = TXTPCS.Left
-                TXTAMOUNT.Left = TXTPCS.Left + TXTPCS.Width
+
+                GGROSSWT.HeaderText = "Rate"
+                TXTGROSSWT.Left = TXTPCS.Left + TXTPCS.Width
+
+                TXTAMOUNT.Left = TXTGROSSWT.Left + TXTGROSSWT.Width
                 TXTAMOUNT.Width = 200
                 GAMOUNT.Width = 200
                 TXTTOTALAMT.Width = 200
                 TXTTOTALAMT.Left = TXTAMOUNT.Left
                 CMBCODE.Left = TXTAMOUNT.Left + TXTAMOUNT.Width
+
                 GBALFINEWT.Visible = False
                 GBALAMOUNT.Visible = False
             End If

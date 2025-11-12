@@ -22,23 +22,26 @@ Partial Class CashBookDetails
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.BlendPanel1 = New VbPowerPack.BlendPanel
-        Me.CMDOK = New System.Windows.Forms.Button
-        Me.cmdcancel = New System.Windows.Forms.Button
-        Me.griddetails = New DevExpress.XtraGrid.GridControl
-        Me.GRIDBILL = New DevExpress.XtraGrid.Views.Grid.GridView
-        Me.GCASHNO = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.GDATE = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.GNAME = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.GTOTALAMT = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton
-        Me.toolStripSeparator = New System.Windows.Forms.ToolStripSeparator
-        Me.ExcelExport = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator
-        Me.TOOLREFRESH = New System.Windows.Forms.ToolStripButton
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator
-        Me.lbl = New System.Windows.Forms.Label
+        Me.BlendPanel1 = New VbPowerPack.BlendPanel()
+        Me.CMDOK = New System.Windows.Forms.Button()
+        Me.cmdcancel = New System.Windows.Forms.Button()
+        Me.griddetails = New DevExpress.XtraGrid.GridControl()
+        Me.GRIDBILL = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.GCASHNO = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GDATE = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GNAME = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GTOTALAMT = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GTYPE = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.toolStripSeparator = New System.Windows.Forms.ToolStripSeparator()
+        Me.ExcelExport = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.TOOLREFRESH = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.lbl = New System.Windows.Forms.Label()
+        Me.TOOLGRIDDETAILS = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.BlendPanel1.SuspendLayout()
         CType(Me.griddetails, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GRIDBILL, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,7 +59,7 @@ Partial Class CashBookDetails
         Me.BlendPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BlendPanel1.Location = New System.Drawing.Point(0, 0)
         Me.BlendPanel1.Name = "BlendPanel1"
-        Me.BlendPanel1.Size = New System.Drawing.Size(532, 572)
+        Me.BlendPanel1.Size = New System.Drawing.Size(634, 581)
         Me.BlendPanel1.TabIndex = 5
         '
         'CMDOK
@@ -66,7 +69,7 @@ Partial Class CashBookDetails
         Me.CMDOK.FlatAppearance.BorderSize = 0
         Me.CMDOK.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CMDOK.ForeColor = System.Drawing.Color.Black
-        Me.CMDOK.Location = New System.Drawing.Point(183, 530)
+        Me.CMDOK.Location = New System.Drawing.Point(234, 543)
         Me.CMDOK.Name = "CMDOK"
         Me.CMDOK.Size = New System.Drawing.Size(80, 28)
         Me.CMDOK.TabIndex = 323
@@ -80,7 +83,7 @@ Partial Class CashBookDetails
         Me.cmdcancel.FlatAppearance.BorderSize = 0
         Me.cmdcancel.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdcancel.ForeColor = System.Drawing.Color.Black
-        Me.cmdcancel.Location = New System.Drawing.Point(269, 530)
+        Me.cmdcancel.Location = New System.Drawing.Point(320, 543)
         Me.cmdcancel.Name = "cmdcancel"
         Me.cmdcancel.Size = New System.Drawing.Size(80, 28)
         Me.cmdcancel.TabIndex = 322
@@ -89,11 +92,11 @@ Partial Class CashBookDetails
         '
         'griddetails
         '
-        Me.griddetails.Location = New System.Drawing.Point(20, 61)
+        Me.griddetails.Location = New System.Drawing.Point(19, 61)
         Me.griddetails.LookAndFeel.UseDefaultLookAndFeel = False
         Me.griddetails.MainView = Me.GRIDBILL
         Me.griddetails.Name = "griddetails"
-        Me.griddetails.Size = New System.Drawing.Size(492, 463)
+        Me.griddetails.Size = New System.Drawing.Size(596, 476)
         Me.griddetails.TabIndex = 315
         Me.griddetails.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GRIDBILL})
         '
@@ -101,13 +104,13 @@ Partial Class CashBookDetails
         '
         Me.GRIDBILL.Appearance.Row.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GRIDBILL.Appearance.Row.Options.UseFont = True
-        Me.GRIDBILL.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GCASHNO, Me.GDATE, Me.GNAME, Me.GTOTALAMT})
+        Me.GRIDBILL.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GCASHNO, Me.GDATE, Me.GNAME, Me.GTOTALAMT, Me.GTYPE})
         Me.GRIDBILL.GridControl = Me.griddetails
-        Me.GRIDBILL.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.VisibleAlways
         Me.GRIDBILL.Name = "GRIDBILL"
         Me.GRIDBILL.OptionsBehavior.AutoExpandAllGroups = True
         Me.GRIDBILL.OptionsBehavior.Editable = False
         Me.GRIDBILL.OptionsView.ColumnAutoWidth = False
+        Me.GRIDBILL.OptionsView.GroupFooterShowMode = DevExpress.XtraGrid.Views.Grid.GroupFooterShowMode.VisibleAlways
         Me.GRIDBILL.OptionsView.ShowAutoFilterRow = True
         Me.GRIDBILL.OptionsView.ShowFooter = True
         Me.GRIDBILL.OptionsView.ShowGroupPanel = False
@@ -116,7 +119,7 @@ Partial Class CashBookDetails
         '
         Me.GCASHNO.Caption = "Cash No"
         Me.GCASHNO.FieldName = "CASHNO"
-        Me.GCASHNO.ImageIndex = 1
+        Me.GCASHNO.ImageOptions.ImageIndex = 1
         Me.GCASHNO.Name = "GCASHNO"
         Me.GCASHNO.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.[False]
         Me.GCASHNO.Visible = True
@@ -149,17 +152,26 @@ Partial Class CashBookDetails
         Me.GTOTALAMT.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
         Me.GTOTALAMT.FieldName = "TOTALAMT"
         Me.GTOTALAMT.Name = "GTOTALAMT"
-        Me.GTOTALAMT.SummaryItem.SummaryType = DevExpress.Data.SummaryItemType.Sum
+        Me.GTOTALAMT.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)})
         Me.GTOTALAMT.Visible = True
         Me.GTOTALAMT.VisibleIndex = 3
         Me.GTOTALAMT.Width = 85
         '
+        'GTYPE
+        '
+        Me.GTYPE.Caption = "Type"
+        Me.GTYPE.FieldName = "TYPE"
+        Me.GTYPE.Name = "GTYPE"
+        Me.GTYPE.Visible = True
+        Me.GTYPE.VisibleIndex = 4
+        Me.GTYPE.Width = 100
+        '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.toolStripSeparator, Me.ExcelExport, Me.ToolStripSeparator2, Me.TOOLREFRESH, Me.ToolStripSeparator1})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.toolStripSeparator, Me.ExcelExport, Me.ToolStripSeparator2, Me.TOOLREFRESH, Me.ToolStripSeparator1, Me.TOOLGRIDDETAILS, Me.ToolStripSeparator3})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(532, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(634, 25)
         Me.ToolStrip1.TabIndex = 318
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -216,10 +228,21 @@ Partial Class CashBookDetails
         Me.lbl.TabIndex = 319
         Me.lbl.Text = "Select an Entry to Change"
         '
+        'TOOLGRIDDETAILS
+        '
+        Me.TOOLGRIDDETAILS.Name = "TOOLGRIDDETAILS"
+        Me.TOOLGRIDDETAILS.Size = New System.Drawing.Size(67, 22)
+        Me.TOOLGRIDDETAILS.Text = "Grid Details"
+        '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 25)
+        '
         'CashBookDetails
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.ClientSize = New System.Drawing.Size(532, 572)
+        Me.ClientSize = New System.Drawing.Size(634, 581)
         Me.Controls.Add(Me.BlendPanel1)
         Me.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.KeyPreview = True
@@ -253,4 +276,7 @@ Partial Class CashBookDetails
     Friend WithEvents TOOLREFRESH As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents lbl As System.Windows.Forms.Label
+    Friend WithEvents GTYPE As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents TOOLGRIDDETAILS As ToolStripLabel
+    Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
 End Class

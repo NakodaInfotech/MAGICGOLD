@@ -166,11 +166,11 @@ Partial Class MDIMain
         Me.FINALPOLISHADD = New System.Windows.Forms.ToolStripMenuItem()
         Me.FINALPOLISHEDIT = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator51 = New System.Windows.Forms.ToolStripSeparator()
-        Me.TOOLSTRIPORDER = New System.Windows.Forms.ToolStripSeparator()
         Me.REPAIR_MASTER = New System.Windows.Forms.ToolStripMenuItem()
         Me.REPAIRADD = New System.Windows.Forms.ToolStripMenuItem()
         Me.REPAIREDIT = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator53 = New System.Windows.Forms.ToolStripSeparator()
+        Me.TOOLSTRIPORDER = New System.Windows.Forms.ToolStripSeparator()
         Me.Reportsmenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.ACCOUNTREPORT = New System.Windows.Forms.ToolStripMenuItem()
         Me.TBWTREPORT = New System.Windows.Forms.ToolStripMenuItem()
@@ -296,6 +296,8 @@ Partial Class MDIMain
         Me.StatusStrip2 = New System.Windows.Forms.StatusStrip()
         Me.LBLPENDING = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.InterestCalculatorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
         Me.MenuStrip.SuspendLayout()
         CType(Me.XtraTabbedMdiManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
@@ -1017,19 +1019,19 @@ Partial Class MDIMain
         'LABELLINGADD
         '
         Me.LABELLINGADD.Name = "LABELLINGADD"
-        Me.LABELLINGADD.Size = New System.Drawing.Size(180, 22)
+        Me.LABELLINGADD.Size = New System.Drawing.Size(168, 22)
         Me.LABELLINGADD.Text = "&Add New Entry"
         '
         'LABELLINGEDIT
         '
         Me.LABELLINGEDIT.Name = "LABELLINGEDIT"
-        Me.LABELLINGEDIT.Size = New System.Drawing.Size(180, 22)
+        Me.LABELLINGEDIT.Size = New System.Drawing.Size(168, 22)
         Me.LABELLINGEDIT.Text = "&Edit Existing Entry"
         '
         'ToolStripSeparator5
         '
         Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-        Me.ToolStripSeparator5.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(165, 6)
         '
         'STOCKTRANSFER_MASTER
         '
@@ -1212,20 +1214,20 @@ Partial Class MDIMain
         '
         Me.SETTINGADD.Enabled = False
         Me.SETTINGADD.Name = "SETTINGADD"
-        Me.SETTINGADD.Size = New System.Drawing.Size(180, 22)
+        Me.SETTINGADD.Size = New System.Drawing.Size(168, 22)
         Me.SETTINGADD.Text = "&Add New Entry"
         '
         'SETTINGEDIT
         '
         Me.SETTINGEDIT.Enabled = False
         Me.SETTINGEDIT.Name = "SETTINGEDIT"
-        Me.SETTINGEDIT.Size = New System.Drawing.Size(180, 22)
+        Me.SETTINGEDIT.Size = New System.Drawing.Size(168, 22)
         Me.SETTINGEDIT.Text = "&Edit Existing Entry"
         '
         'ToolStripSeparator48
         '
         Me.ToolStripSeparator48.Name = "ToolStripSeparator48"
-        Me.ToolStripSeparator48.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator48.Size = New System.Drawing.Size(165, 6)
         '
         'FINALPOLISH_MASTER
         '
@@ -1239,25 +1241,20 @@ Partial Class MDIMain
         '
         Me.FINALPOLISHADD.Enabled = False
         Me.FINALPOLISHADD.Name = "FINALPOLISHADD"
-        Me.FINALPOLISHADD.Size = New System.Drawing.Size(180, 22)
+        Me.FINALPOLISHADD.Size = New System.Drawing.Size(176, 22)
         Me.FINALPOLISHADD.Text = "&Add New Polish"
         '
         'FINALPOLISHEDIT
         '
         Me.FINALPOLISHEDIT.Enabled = False
         Me.FINALPOLISHEDIT.Name = "FINALPOLISHEDIT"
-        Me.FINALPOLISHEDIT.Size = New System.Drawing.Size(180, 22)
+        Me.FINALPOLISHEDIT.Size = New System.Drawing.Size(176, 22)
         Me.FINALPOLISHEDIT.Text = "Edit Existing Polish"
         '
         'ToolStripSeparator51
         '
         Me.ToolStripSeparator51.Name = "ToolStripSeparator51"
-        Me.ToolStripSeparator51.Size = New System.Drawing.Size(177, 6)
-        '
-        'TOOLSTRIPORDER
-        '
-        Me.TOOLSTRIPORDER.Name = "TOOLSTRIPORDER"
-        Me.TOOLSTRIPORDER.Size = New System.Drawing.Size(231, 6)
+        Me.ToolStripSeparator51.Size = New System.Drawing.Size(173, 6)
         '
         'REPAIR_MASTER
         '
@@ -1271,20 +1268,25 @@ Partial Class MDIMain
         '
         Me.REPAIRADD.Enabled = False
         Me.REPAIRADD.Name = "REPAIRADD"
-        Me.REPAIRADD.Size = New System.Drawing.Size(180, 22)
+        Me.REPAIRADD.Size = New System.Drawing.Size(168, 22)
         Me.REPAIRADD.Text = "&Add New Entry"
         '
         'REPAIREDIT
         '
         Me.REPAIREDIT.Enabled = False
         Me.REPAIREDIT.Name = "REPAIREDIT"
-        Me.REPAIREDIT.Size = New System.Drawing.Size(180, 22)
+        Me.REPAIREDIT.Size = New System.Drawing.Size(168, 22)
         Me.REPAIREDIT.Text = "&Edit Existing Entry"
         '
         'ToolStripSeparator53
         '
         Me.ToolStripSeparator53.Name = "ToolStripSeparator53"
-        Me.ToolStripSeparator53.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator53.Size = New System.Drawing.Size(165, 6)
+        '
+        'TOOLSTRIPORDER
+        '
+        Me.TOOLSTRIPORDER.Name = "TOOLSTRIPORDER"
+        Me.TOOLSTRIPORDER.Size = New System.Drawing.Size(231, 6)
         '
         'Reportsmenu
         '
@@ -1295,7 +1297,7 @@ Partial Class MDIMain
         '
         'ACCOUNTREPORT
         '
-        Me.ACCOUNTREPORT.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TBWTREPORT, Me.TBAMTREPORT, Me.TBWTAMTREPORT, Me.LEDGERREPORT, Me.KARIGARREPORT, Me.SETTINGREPORT, Me.ToolStripSeparator57, Me.PARTYWASTAGEREPORT, Me.PARTYSCRAPREPORT, Me.ToolStripSeparator67})
+        Me.ACCOUNTREPORT.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TBWTREPORT, Me.TBAMTREPORT, Me.TBWTAMTREPORT, Me.LEDGERREPORT, Me.KARIGARREPORT, Me.SETTINGREPORT, Me.ToolStripSeparator57, Me.PARTYWASTAGEREPORT, Me.PARTYSCRAPREPORT, Me.ToolStripSeparator67, Me.InterestCalculatorToolStripMenuItem, Me.ToolStripSeparator6})
         Me.ACCOUNTREPORT.Enabled = False
         Me.ACCOUNTREPORT.Name = "ACCOUNTREPORT"
         Me.ACCOUNTREPORT.Size = New System.Drawing.Size(258, 22)
@@ -2157,6 +2159,17 @@ Partial Class MDIMain
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 20
         '
+        'InterestCalculatorToolStripMenuItem
+        '
+        Me.InterestCalculatorToolStripMenuItem.Name = "InterestCalculatorToolStripMenuItem"
+        Me.InterestCalculatorToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.InterestCalculatorToolStripMenuItem.Text = "Interest Calculator"
+        '
+        'ToolStripSeparator6
+        '
+        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
+        Me.ToolStripSeparator6.Size = New System.Drawing.Size(223, 6)
+        '
         'MDIMain
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -2460,4 +2473,6 @@ Partial Class MDIMain
     Friend WithEvents LABELLINGADD As ToolStripMenuItem
     Friend WithEvents LABELLINGEDIT As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator5 As ToolStripSeparator
+    Friend WithEvents InterestCalculatorToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator6 As ToolStripSeparator
 End Class

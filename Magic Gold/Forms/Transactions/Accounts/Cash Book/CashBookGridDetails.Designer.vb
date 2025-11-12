@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class JournalVoucherDetails
+Partial Class CashBookGridDetails
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -27,16 +27,11 @@ Partial Class JournalVoucherDetails
         Me.cmdcancel = New System.Windows.Forms.Button()
         Me.griddetails = New DevExpress.XtraGrid.GridControl()
         Me.GRIDBILL = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.GJVNO = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GCASHNO = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GDATE = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GNAME = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GTOTALPCS = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GTOTALGROSSWT = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GTOTALLESSWT = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GTOTALNETTWT = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GTOTALFINEWT = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GTOTALAMT = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GREMARKS = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GTYPE = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.toolStripSeparator = New System.Windows.Forms.ToolStripSeparator()
@@ -45,8 +40,8 @@ Partial Class JournalVoucherDetails
         Me.TOOLREFRESH = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.lbl = New System.Windows.Forms.Label()
-        Me.TOOLGRIDDTLS = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.GTONAME = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GNARR = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.BlendPanel1.SuspendLayout()
         CType(Me.griddetails, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GRIDBILL, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,19 +59,19 @@ Partial Class JournalVoucherDetails
         Me.BlendPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BlendPanel1.Location = New System.Drawing.Point(0, 0)
         Me.BlendPanel1.Name = "BlendPanel1"
-        Me.BlendPanel1.Size = New System.Drawing.Size(1204, 562)
-        Me.BlendPanel1.TabIndex = 4
+        Me.BlendPanel1.Size = New System.Drawing.Size(1237, 581)
+        Me.BlendPanel1.TabIndex = 6
         '
         'CMDOK
         '
         Me.CMDOK.BackColor = System.Drawing.Color.Transparent
         Me.CMDOK.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CMDOK.FlatAppearance.BorderSize = 0
-        Me.CMDOK.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CMDOK.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.CMDOK.Location = New System.Drawing.Point(527, 529)
+        Me.CMDOK.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CMDOK.ForeColor = System.Drawing.Color.Black
+        Me.CMDOK.Location = New System.Drawing.Point(535, 543)
         Me.CMDOK.Name = "CMDOK"
-        Me.CMDOK.Size = New System.Drawing.Size(72, 26)
+        Me.CMDOK.Size = New System.Drawing.Size(80, 28)
         Me.CMDOK.TabIndex = 323
         Me.CMDOK.Text = "&Ok"
         Me.CMDOK.UseVisualStyleBackColor = False
@@ -86,22 +81,22 @@ Partial Class JournalVoucherDetails
         Me.cmdcancel.BackColor = System.Drawing.Color.Transparent
         Me.cmdcancel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cmdcancel.FlatAppearance.BorderSize = 0
-        Me.cmdcancel.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdcancel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.cmdcancel.Location = New System.Drawing.Point(605, 529)
+        Me.cmdcancel.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdcancel.ForeColor = System.Drawing.Color.Black
+        Me.cmdcancel.Location = New System.Drawing.Point(621, 543)
         Me.cmdcancel.Name = "cmdcancel"
-        Me.cmdcancel.Size = New System.Drawing.Size(72, 26)
+        Me.cmdcancel.Size = New System.Drawing.Size(80, 28)
         Me.cmdcancel.TabIndex = 322
         Me.cmdcancel.Text = "E&xit"
         Me.cmdcancel.UseVisualStyleBackColor = False
         '
         'griddetails
         '
-        Me.griddetails.Location = New System.Drawing.Point(20, 61)
+        Me.griddetails.Location = New System.Drawing.Point(19, 61)
         Me.griddetails.LookAndFeel.UseDefaultLookAndFeel = False
         Me.griddetails.MainView = Me.GRIDBILL
         Me.griddetails.Name = "griddetails"
-        Me.griddetails.Size = New System.Drawing.Size(1164, 463)
+        Me.griddetails.Size = New System.Drawing.Size(1198, 476)
         Me.griddetails.TabIndex = 315
         Me.griddetails.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GRIDBILL})
         '
@@ -109,7 +104,7 @@ Partial Class JournalVoucherDetails
         '
         Me.GRIDBILL.Appearance.Row.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GRIDBILL.Appearance.Row.Options.UseFont = True
-        Me.GRIDBILL.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GJVNO, Me.GDATE, Me.GNAME, Me.GTOTALPCS, Me.GTOTALGROSSWT, Me.GTOTALLESSWT, Me.GTOTALNETTWT, Me.GTOTALFINEWT, Me.GTOTALAMT, Me.GREMARKS})
+        Me.GRIDBILL.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GCASHNO, Me.GDATE, Me.GNAME, Me.GTONAME, Me.GNARR, Me.GTOTALAMT, Me.GTYPE})
         Me.GRIDBILL.GridControl = Me.griddetails
         Me.GRIDBILL.Name = "GRIDBILL"
         Me.GRIDBILL.OptionsBehavior.AutoExpandAllGroups = True
@@ -120,15 +115,15 @@ Partial Class JournalVoucherDetails
         Me.GRIDBILL.OptionsView.ShowFooter = True
         Me.GRIDBILL.OptionsView.ShowGroupPanel = False
         '
-        'GJVNO
+        'GCASHNO
         '
-        Me.GJVNO.Caption = "JV No"
-        Me.GJVNO.FieldName = "JVNO"
-        Me.GJVNO.ImageOptions.ImageIndex = 1
-        Me.GJVNO.Name = "GJVNO"
-        Me.GJVNO.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.[False]
-        Me.GJVNO.Visible = True
-        Me.GJVNO.VisibleIndex = 0
+        Me.GCASHNO.Caption = "Cash No"
+        Me.GCASHNO.FieldName = "CASHNO"
+        Me.GCASHNO.ImageOptions.ImageIndex = 1
+        Me.GCASHNO.Name = "GCASHNO"
+        Me.GCASHNO.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.[False]
+        Me.GCASHNO.Visible = True
+        Me.GCASHNO.VisibleIndex = 0
         '
         'GDATE
         '
@@ -150,66 +145,6 @@ Partial Class JournalVoucherDetails
         Me.GNAME.VisibleIndex = 2
         Me.GNAME.Width = 200
         '
-        'GTOTALPCS
-        '
-        Me.GTOTALPCS.Caption = "Total Pcs"
-        Me.GTOTALPCS.DisplayFormat.FormatString = "0"
-        Me.GTOTALPCS.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-        Me.GTOTALPCS.FieldName = "TOTALPCS"
-        Me.GTOTALPCS.Name = "GTOTALPCS"
-        Me.GTOTALPCS.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)})
-        Me.GTOTALPCS.Visible = True
-        Me.GTOTALPCS.VisibleIndex = 3
-        Me.GTOTALPCS.Width = 80
-        '
-        'GTOTALGROSSWT
-        '
-        Me.GTOTALGROSSWT.Caption = "Total Gross Wt."
-        Me.GTOTALGROSSWT.DisplayFormat.FormatString = "0.000"
-        Me.GTOTALGROSSWT.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-        Me.GTOTALGROSSWT.FieldName = "TOTALGROSSWT"
-        Me.GTOTALGROSSWT.Name = "GTOTALGROSSWT"
-        Me.GTOTALGROSSWT.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)})
-        Me.GTOTALGROSSWT.Visible = True
-        Me.GTOTALGROSSWT.VisibleIndex = 4
-        Me.GTOTALGROSSWT.Width = 95
-        '
-        'GTOTALLESSWT
-        '
-        Me.GTOTALLESSWT.Caption = "Total Less Wt"
-        Me.GTOTALLESSWT.DisplayFormat.FormatString = "0.000"
-        Me.GTOTALLESSWT.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-        Me.GTOTALLESSWT.FieldName = "TOTALLESSWT"
-        Me.GTOTALLESSWT.Name = "GTOTALLESSWT"
-        Me.GTOTALLESSWT.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)})
-        Me.GTOTALLESSWT.Visible = True
-        Me.GTOTALLESSWT.VisibleIndex = 5
-        Me.GTOTALLESSWT.Width = 95
-        '
-        'GTOTALNETTWT
-        '
-        Me.GTOTALNETTWT.Caption = "Total Nett Wt"
-        Me.GTOTALNETTWT.DisplayFormat.FormatString = "0.000"
-        Me.GTOTALNETTWT.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-        Me.GTOTALNETTWT.FieldName = "TOTALNETTWT"
-        Me.GTOTALNETTWT.Name = "GTOTALNETTWT"
-        Me.GTOTALNETTWT.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)})
-        Me.GTOTALNETTWT.Visible = True
-        Me.GTOTALNETTWT.VisibleIndex = 6
-        Me.GTOTALNETTWT.Width = 95
-        '
-        'GTOTALFINEWT
-        '
-        Me.GTOTALFINEWT.Caption = "Total Fine Wt"
-        Me.GTOTALFINEWT.DisplayFormat.FormatString = "0.000"
-        Me.GTOTALFINEWT.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-        Me.GTOTALFINEWT.FieldName = "TOTALFINEWT"
-        Me.GTOTALFINEWT.Name = "GTOTALFINEWT"
-        Me.GTOTALFINEWT.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)})
-        Me.GTOTALFINEWT.Visible = True
-        Me.GTOTALFINEWT.VisibleIndex = 7
-        Me.GTOTALFINEWT.Width = 85
-        '
         'GTOTALAMT
         '
         Me.GTOTALAMT.Caption = "Total Amt"
@@ -219,24 +154,24 @@ Partial Class JournalVoucherDetails
         Me.GTOTALAMT.Name = "GTOTALAMT"
         Me.GTOTALAMT.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)})
         Me.GTOTALAMT.Visible = True
-        Me.GTOTALAMT.VisibleIndex = 8
+        Me.GTOTALAMT.VisibleIndex = 5
         Me.GTOTALAMT.Width = 85
         '
-        'GREMARKS
+        'GTYPE
         '
-        Me.GREMARKS.Caption = "Remarks"
-        Me.GREMARKS.FieldName = "REMARKS"
-        Me.GREMARKS.Name = "GREMARKS"
-        Me.GREMARKS.Visible = True
-        Me.GREMARKS.VisibleIndex = 9
-        Me.GREMARKS.Width = 220
+        Me.GTYPE.Caption = "Type"
+        Me.GTYPE.FieldName = "TYPE"
+        Me.GTYPE.Name = "GTYPE"
+        Me.GTYPE.Visible = True
+        Me.GTYPE.VisibleIndex = 6
+        Me.GTYPE.Width = 100
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.toolStripSeparator, Me.ExcelExport, Me.ToolStripSeparator2, Me.TOOLREFRESH, Me.ToolStripSeparator1, Me.TOOLGRIDDTLS, Me.ToolStripSeparator3})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.toolStripSeparator, Me.ExcelExport, Me.ToolStripSeparator2, Me.TOOLREFRESH, Me.ToolStripSeparator1})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1204, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1237, 25)
         Me.ToolStrip1.TabIndex = 318
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -293,27 +228,34 @@ Partial Class JournalVoucherDetails
         Me.lbl.TabIndex = 319
         Me.lbl.Text = "Select an Entry to Change"
         '
-        'TOOLGRIDDTLS
+        'GTONAME
         '
-        Me.TOOLGRIDDTLS.Name = "TOOLGRIDDTLS"
-        Me.TOOLGRIDDTLS.Size = New System.Drawing.Size(67, 22)
-        Me.TOOLGRIDDTLS.Text = "Grid Details"
+        Me.GTONAME.Caption = "To Name"
+        Me.GTONAME.FieldName = "TONAME"
+        Me.GTONAME.Name = "GTONAME"
+        Me.GTONAME.Visible = True
+        Me.GTONAME.VisibleIndex = 3
+        Me.GTONAME.Width = 300
         '
-        'ToolStripSeparator3
+        'GNARR
         '
-        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 25)
+        Me.GNARR.Caption = "Narration"
+        Me.GNARR.FieldName = "NARRATION"
+        Me.GNARR.Name = "GNARR"
+        Me.GNARR.Visible = True
+        Me.GNARR.VisibleIndex = 4
+        Me.GNARR.Width = 300
         '
-        'JournalVoucherDetails
+        'CashBookGridDetails
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.ClientSize = New System.Drawing.Size(1204, 562)
+        Me.ClientSize = New System.Drawing.Size(1237, 581)
         Me.Controls.Add(Me.BlendPanel1)
         Me.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.KeyPreview = True
-        Me.Name = "JournalVoucherDetails"
+        Me.Name = "CashBookGridDetails"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
-        Me.Text = "Journal Voucher Details"
+        Me.Text = "Cash Book Grid Details"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.BlendPanel1.ResumeLayout(False)
         Me.BlendPanel1.PerformLayout()
@@ -324,29 +266,25 @@ Partial Class JournalVoucherDetails
         Me.ResumeLayout(False)
 
     End Sub
+
     Friend WithEvents BlendPanel1 As VbPowerPack.BlendPanel
-    Friend WithEvents CMDOK As System.Windows.Forms.Button
-    Friend WithEvents cmdcancel As System.Windows.Forms.Button
+    Friend WithEvents CMDOK As Button
+    Friend WithEvents cmdcancel As Button
     Friend WithEvents griddetails As DevExpress.XtraGrid.GridControl
     Friend WithEvents GRIDBILL As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents GJVNO As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GCASHNO As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GDATE As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GNAME As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GTOTALPCS As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GTOTALGROSSWT As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GREMARKS As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
-    Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
-    Friend WithEvents toolStripSeparator As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ExcelExport As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripSeparator2 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents TOOLREFRESH As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents lbl As System.Windows.Forms.Label
-    Friend WithEvents GTOTALFINEWT As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GTOTALAMT As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GTOTALLESSWT As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GTOTALNETTWT As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents TOOLGRIDDTLS As ToolStripLabel
-    Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
+    Friend WithEvents GTYPE As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents ToolStrip1 As ToolStrip
+    Friend WithEvents ToolStripButton1 As ToolStripButton
+    Friend WithEvents toolStripSeparator As ToolStripSeparator
+    Friend WithEvents ExcelExport As ToolStripButton
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
+    Friend WithEvents TOOLREFRESH As ToolStripButton
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents lbl As Label
+    Friend WithEvents GTONAME As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GNARR As DevExpress.XtraGrid.Columns.GridColumn
 End Class

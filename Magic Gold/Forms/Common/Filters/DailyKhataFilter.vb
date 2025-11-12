@@ -84,11 +84,18 @@ Public Class dailykhatafilter
     Private Sub dailykhatafilter_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
         fillac()
         If ClientName = "MONOGRAM" Or ClientName = "ORIENTAL" Or ClientName = "BALAJI" Then
-            chkitem.CheckState = CheckState.Unchecked
-            chkpurity.CheckState = CheckState.Unchecked
-            chkwastage.CheckState = CheckState.Unchecked
-            chkgrosswt.CheckState = CheckState.Unchecked
-            chknettwt.CheckState = CheckState.Unchecked
+            chkitem.Visible = False
+            chkitem.Checked = False
+            chkpurity.Visible = False
+            chkpurity.Checked = False
+            chkbullion.Visible = False
+            chkbullion.Checked = False
+            chkwastage.Visible = False
+            chkwastage.Checked = False
+            chkgrosswt.Visible = False
+            chkgrosswt.Checked = False
+            chknettwt.Visible = False
+            chknettwt.Checked = False
         End If
     End Sub
 
@@ -144,4 +151,7 @@ Public Class dailykhatafilter
         End Try
     End Sub
 
+    Private Sub dailykhatafilter_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
