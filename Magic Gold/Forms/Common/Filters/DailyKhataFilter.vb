@@ -89,6 +89,13 @@ Public Class dailykhatafilter
             chkwastage.CheckState = CheckState.Unchecked
             chkgrosswt.CheckState = CheckState.Unchecked
             chknettwt.CheckState = CheckState.Unchecked
+
+            chkitem.Visible = False
+            chkpurity.Visible = False
+            chkbullion.Visible = False
+            chkwastage.Visible = False
+            chkgrosswt.Visible = False
+            chknettwt.Visible = False
         End If
     End Sub
 
@@ -143,5 +150,6 @@ Public Class dailykhatafilter
             Throw ex
         End Try
     End Sub
+
 
 End Class
