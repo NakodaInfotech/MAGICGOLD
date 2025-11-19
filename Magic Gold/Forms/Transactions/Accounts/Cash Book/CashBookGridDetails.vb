@@ -1,11 +1,11 @@
 ﻿
 Imports System.Data.OleDb
 
-Public Class CashBookDetails
+Public Class CashBookGridDetails
 
     Public FRMSTRING As String
 
-    Private Sub JournalVoucherDetails_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
+    Private Sub CashBookGridDetails_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
         If e.KeyCode = Windows.Forms.Keys.Escape Then Me.Close()
     End Sub
 
@@ -14,7 +14,7 @@ Public Class CashBookDetails
             dt = New DataTable()
             If tempconn.State = ConnectionState.Open Then tempconn.Close()
             tempconn.Open()
-            tempcmd = New OleDbCommand(" SELECT DISTINCT CASHENTRY.CASH_NO AS CASHNO, CASHENTRY.CASH_DATE AS [DATE], ledgermaster.LEDGER_CODE AS [NAME], CASHENTRY.CASH_TOTALAMT AS TOTALAMT, CASHENTRY.CASH_TYPE AS TYPE FROM CASHENTRY INNER JOIN ledgermaster ON CASHENTRY.CASH_LEDGERID = ledgermaster.ledger_id order by CASH_NO", tempconn)
+            tempcmd = New OleDbCommand(" SELECT CASHENTRY.CASH_NO AS CASHNO, CASHENTRY.CASH_DATE AS [DATE], ledgermaster.ledger_code AS NAME, TOLEDGERMASTER.ledger_code AS TONAME, CASHENTRY.CASH_NARR AS NARRATION, CASHENTRY.CASH_AMOUNT AS TOTALAMT, CASHENTRY.CASH_TYPE AS TYPE FROM (CASHENTRY INNER JOIN ledgermaster ON CASHENTRY.CASH_LEDGERID = ledgermaster.ledger_id) INNER JOIN ledgermaster AS TOLEDGERMASTER ON CASHENTRY.CASH_TOLEDGERID = TOLEDGERMASTER.ledger_id order by CASH_NO", tempconn)
             da = New OleDbDataAdapter(tempcmd)
             da.Fill(dt)
             griddetails.DataSource = dt
@@ -51,7 +51,7 @@ Public Class CashBookDetails
         End Try
     End Sub
 
-    Private Sub JournalVoucherDetails_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub CashBookGridDetails_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
             fillgrid("")
         Catch ex As Exception
@@ -108,14 +108,4 @@ Public Class CashBookDetails
         End Try
     End Sub
 
-    Private Sub TOOLGRIDDETAILS_Click(sender As Object, e As EventArgs) Handles TOOLGRIDDETAILS.Click
-        Try
-            Dim OBJDTLS As New CashBookGridDetails
-            OBJDTLS.MdiParent = MDIMain
-            OBJDTLS.FRMSTRING = FRMSTRING
-            OBJDTLS.Show()
-        Catch ex As Exception
-            Throw ex
-        End Try
-    End Sub
 End Class

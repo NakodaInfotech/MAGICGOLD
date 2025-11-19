@@ -208,11 +208,11 @@ Partial Class ACCOUNTMASTER
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(513, 111)
+        Me.Label9.Location = New System.Drawing.Point(532, 111)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(53, 14)
+        Me.Label9.Size = New System.Drawing.Size(34, 14)
         Me.Label9.TabIndex = 135
-        Me.Label9.Text = "C.S.T. No."
+        Me.Label9.Text = "Int %"
         '
         'chkchange
         '
