@@ -46,10 +46,20 @@ Partial Class dailykhatafilter
         Me.Label2 = New System.Windows.Forms.Label()
         Me.cmbitemcode = New System.Windows.Forms.ComboBox()
         Me.BlendPanel1 = New VbPowerPack.BlendPanel()
+        Me.gridbilldetails = New DevExpress.XtraGrid.GridControl()
+        Me.gridbill = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.CHK = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.RepositoryItemCheckEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit()
+        Me.GCODE = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GGROUP = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.CMDPRINT = New System.Windows.Forms.Button()
         Me.CHKALLPARTY = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.BlendPanel1.SuspendLayout()
+        CType(Me.gridbilldetails, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gridbill, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'chknarr
@@ -133,7 +143,7 @@ Partial Class dailykhatafilter
         Me.cmdExit.BackColor = System.Drawing.Color.Transparent
         Me.cmdExit.FlatAppearance.BorderSize = 0
         Me.cmdExit.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmdExit.Location = New System.Drawing.Point(199, 258)
+        Me.cmdExit.Location = New System.Drawing.Point(154, 292)
         Me.cmdExit.Name = "cmdExit"
         Me.cmdExit.Size = New System.Drawing.Size(85, 28)
         Me.cmdExit.TabIndex = 281
@@ -364,6 +374,8 @@ Partial Class dailykhatafilter
         'BlendPanel1
         '
         Me.BlendPanel1.Blend = New VbPowerPack.BlendFill(VbPowerPack.BlendStyle.Vertical, System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer)), System.Drawing.SystemColors.Window)
+        Me.BlendPanel1.Controls.Add(Me.gridbilldetails)
+        Me.BlendPanel1.Controls.Add(Me.CMDPRINT)
         Me.BlendPanel1.Controls.Add(Me.CHKALLPARTY)
         Me.BlendPanel1.Controls.Add(Me.Label5)
         Me.BlendPanel1.Controls.Add(Me.Label2)
@@ -383,8 +395,79 @@ Partial Class dailykhatafilter
         Me.BlendPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BlendPanel1.Location = New System.Drawing.Point(0, 0)
         Me.BlendPanel1.Name = "BlendPanel1"
-        Me.BlendPanel1.Size = New System.Drawing.Size(382, 296)
+        Me.BlendPanel1.Size = New System.Drawing.Size(846, 558)
         Me.BlendPanel1.TabIndex = 366
+        '
+        'gridbilldetails
+        '
+        Me.gridbilldetails.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridbilldetails.Location = New System.Drawing.Point(384, 12)
+        Me.gridbilldetails.LookAndFeel.UseDefaultLookAndFeel = False
+        Me.gridbilldetails.MainView = Me.gridbill
+        Me.gridbilldetails.Name = "gridbilldetails"
+        Me.gridbilldetails.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemCheckEdit1})
+        Me.gridbilldetails.Size = New System.Drawing.Size(450, 526)
+        Me.gridbilldetails.TabIndex = 495
+        Me.gridbilldetails.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gridbill})
+        '
+        'gridbill
+        '
+        Me.gridbill.Appearance.Row.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gridbill.Appearance.Row.Options.UseFont = True
+        Me.gridbill.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.CHK, Me.GCODE, Me.GGROUP})
+        Me.gridbill.GridControl = Me.gridbilldetails
+        Me.gridbill.Name = "gridbill"
+        Me.gridbill.OptionsBehavior.AllowIncrementalSearch = True
+        Me.gridbill.OptionsView.ColumnAutoWidth = False
+        Me.gridbill.OptionsView.ShowAutoFilterRow = True
+        Me.gridbill.OptionsView.ShowGroupPanel = False
+        '
+        'CHK
+        '
+        Me.CHK.ColumnEdit = Me.RepositoryItemCheckEdit1
+        Me.CHK.FieldName = "CHK"
+        Me.CHK.Name = "CHK"
+        Me.CHK.Visible = True
+        Me.CHK.VisibleIndex = 0
+        Me.CHK.Width = 40
+        '
+        'RepositoryItemCheckEdit1
+        '
+        Me.RepositoryItemCheckEdit1.AutoHeight = False
+        Me.RepositoryItemCheckEdit1.Name = "RepositoryItemCheckEdit1"
+        Me.RepositoryItemCheckEdit1.NullStyle = DevExpress.XtraEditors.Controls.StyleIndeterminate.Unchecked
+        '
+        'GCODE
+        '
+        Me.GCODE.Caption = "Code"
+        Me.GCODE.FieldName = "CODE"
+        Me.GCODE.Name = "GCODE"
+        Me.GCODE.OptionsColumn.AllowEdit = False
+        Me.GCODE.Visible = True
+        Me.GCODE.VisibleIndex = 1
+        Me.GCODE.Width = 200
+        '
+        'GGROUP
+        '
+        Me.GGROUP.Caption = "Group Name"
+        Me.GGROUP.FieldName = "GROUPNAME"
+        Me.GGROUP.Name = "GGROUP"
+        Me.GGROUP.OptionsColumn.AllowEdit = False
+        Me.GGROUP.Visible = True
+        Me.GGROUP.VisibleIndex = 2
+        Me.GGROUP.Width = 150
+        '
+        'CMDPRINT
+        '
+        Me.CMDPRINT.BackColor = System.Drawing.Color.Transparent
+        Me.CMDPRINT.FlatAppearance.BorderSize = 0
+        Me.CMDPRINT.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CMDPRINT.Location = New System.Drawing.Point(199, 258)
+        Me.CMDPRINT.Name = "CMDPRINT"
+        Me.CMDPRINT.Size = New System.Drawing.Size(85, 28)
+        Me.CMDPRINT.TabIndex = 366
+        Me.CMDPRINT.Text = "&Print Report"
+        Me.CMDPRINT.UseVisualStyleBackColor = False
         '
         'CHKALLPARTY
         '
@@ -403,7 +486,7 @@ Partial Class dailykhatafilter
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(382, 296)
+        Me.ClientSize = New System.Drawing.Size(846, 558)
         Me.Controls.Add(Me.txtpurity)
         Me.Controls.Add(Me.cmbitemcode)
         Me.Controls.Add(Me.lbl)
@@ -421,6 +504,9 @@ Partial Class dailykhatafilter
         Me.GroupBox2.PerformLayout()
         Me.BlendPanel1.ResumeLayout(False)
         Me.BlendPanel1.PerformLayout()
+        CType(Me.gridbilldetails, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridbill, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemCheckEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -453,4 +539,11 @@ Partial Class dailykhatafilter
     Friend WithEvents cmbitemcode As System.Windows.Forms.ComboBox
     Friend WithEvents BlendPanel1 As VbPowerPack.BlendPanel
     Friend WithEvents CHKALLPARTY As System.Windows.Forms.CheckBox
+    Friend WithEvents CMDPRINT As Button
+    Private WithEvents gridbilldetails As DevExpress.XtraGrid.GridControl
+    Private WithEvents gridbill As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents CHK As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GCODE As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GGROUP As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents RepositoryItemCheckEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit
 End Class

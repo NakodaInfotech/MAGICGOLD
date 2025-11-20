@@ -1,0 +1,13 @@
+✅ Fix 1 – Install using command line with /quiet
+
+If you want to install the 64-bit Access Database Engine 2016 while 32-bit Office is already installed:
+
+Download the installer (AccessDatabaseEngine_X64.exe).
+
+Place it somewhere easy, e.g. C:\Temp.
+
+Open Command Prompt (Run as Administrator).
+
+Run:
+
+C:\Temp\AccessDatabaseEngine_X64.exe /quiet

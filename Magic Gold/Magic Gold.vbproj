@@ -1086,6 +1086,11 @@
     <Compile Include="Grid Reports\TBWtAmount.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Crystal Reports\Accounts\LedgerReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LedgerReport.rpt</DependentUpon>
+    </Compile>
     <Compile Include="Modules\ClsReportDesigner.vb" />
     <Compile Include="Modules\ExcelFunctions.vb" />
     <Compile Include="Modules\functions.vb" />
@@ -1647,6 +1652,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Grid Reports\TBWtAmount.resx">
       <DependentUpon>TBWtAmount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal Reports\Accounts\LedgerReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LedgerReport.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">

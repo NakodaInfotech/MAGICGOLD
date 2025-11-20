@@ -208,22 +208,35 @@ Module Module1
     'CODE TO PROGRAMMATICALLY CREATE D. S. N.
     'Module CreateDSN
 
-    Public Declare Auto Function SQLConfigDataSource Lib "ODBCCP32.DLL" (ByVal hwndParent As Integer, ByVal fRequest As Integer, ByVal ByVallpszDriver As String, ByVal lpszAttributes As String) As Long
+    'Public Declare Auto Function SQLConfigDataSource Lib "ODBCCP64.DLL" (ByVal hwndParent As Integer, ByVal fRequest As Integer, ByVal ByVallpszDriver As String, ByVal lpszAttributes As String) As Long
+
+    'Public Sub Main()
+
+    '    Dim sDriver = "Microsoft Access Driver (*.mdb)"
+    '    Dim sAttributes As New System.Text.StringBuilder
+    '    Const ODBC_ADD_USER_DSN = 4
+    '    Dim intResult As Long
+
+    '    sAttributes.Append("DBQ=" & Application.StartupPath & "\Database\" & tempcmpname & "\" & tempcmpname & ".mdb" & Chr(0))
+    '    sAttributes.Append("DSN=" & "MagicGold" & Chr(0))
+    '    sAttributes.Append("Uid=Admin" & Chr(0) & "pwd=1902" & Chr(0))
+    '    intResult = SQLConfigDataSource(0&, ODBC_ADD_USER_DSN, sDriver, sAttributes.ToString)
+    '    sAttributes = Nothing
+
+    'End Sub 'Main
 
     Public Sub Main()
+        Dim dsnName As String = "MagicGold"
+        Dim dbPath As String = Application.StartupPath & "\Database\" & tempcmpname & "\" & tempcmpname & ".mdb"
 
-        Dim sDriver = "Microsoft Access Driver (*.mdb)"
-        Dim sAttributes As New System.Text.StringBuilder
-        Const ODBC_ADD_USER_DSN = 4
-        Dim intResult As Long
+        Dim args As String =
+        "/A {CONFIGDSN ""Microsoft Access Driver (*.mdb)"" " &
+        """DSN=" & dsnName &
+        "|DBQ=" & dbPath &
+        "|UID=Admin|PWD=1902""}"
 
-        sAttributes.Append("DBQ=" & Application.StartupPath & "\Database\" & tempcmpname & "\" & tempcmpname & ".mdb" & Chr(0))
-        sAttributes.Append("DSN=" & "MagicGold" & Chr(0))
-        sAttributes.Append("Uid=Admin" & Chr(0) & "pwd=1902" & Chr(0))
-        intResult = SQLConfigDataSource(0&, ODBC_ADD_USER_DSN, sDriver, sAttributes.ToString)
-        sAttributes = Nothing
-
-    End Sub 'Main
+        Process.Start("C:\Windows\System32\odbcconf.exe", args)
+    End Sub
 
     '************************************ OLD ************************
     Public tempinvoiceno As Integer             'used for invoice
