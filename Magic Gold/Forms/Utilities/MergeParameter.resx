@@ -112,28 +112,95 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="VbPowerPack" name="VbPowerPack, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
   <data name="BlendPanel1.Blend" type="VbPowerPack.BlendFill, VbPowerPack">
     <value>Vertical, (213, 228, 248), (Window)</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="CMBPARAMETER.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 9.75pt</value>
+  </data>
+  <data name="CMBPARAMETER.Items" xml:space="preserve">
+    <value>LEDGER</value>
+  </data>
+  <data name="CMBPARAMETER.Items1" xml:space="preserve">
+    <value>ITEMNAME</value>
+  </data>
+  <data name="CMBPARAMETER.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 12</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CMBPARAMETER.MaxDropDownItems" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="CMBPARAMETER.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 23</value>
+  </data>
+  <data name="CMBPARAMETER.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CMBPARAMETER.Name" xml:space="preserve">
+    <value>CMBPARAMETER</value>
+  </data>
+  <data name="&gt;&gt;CMBPARAMETER.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CMBPARAMETER.Parent" xml:space="preserve">
+    <value>BlendPanel1</value>
+  </data>
+  <data name="&gt;&gt;CMBPARAMETER.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 9.75pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 15</value>
+  </data>
+  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 15</value>
+  </data>
+  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
+    <value>392</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
+    <value>Label3</value>
+  </data>
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
+    <value>BlendPanel1</value>
+  </data>
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="cmdclear.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 9.75pt</value>
   </data>
   <data name="cmdclear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 84</value>
+    <value>130, 126</value>
   </data>
   <data name="cmdclear.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 28</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="cmdclear.TabIndex" type="System.Int32, mscorlib">
-    <value>390</value>
+    <value>4</value>
   </data>
   <data name="cmdclear.Text" xml:space="preserve">
     <value>&amp;Clear</value>
@@ -142,25 +209,25 @@
     <value>cmdclear</value>
   </data>
   <data name="&gt;&gt;cmdclear.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cmdclear.Parent" xml:space="preserve">
     <value>BlendPanel1</value>
   </data>
   <data name="&gt;&gt;cmdclear.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="cmdsave.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 9.75pt</value>
   </data>
   <data name="cmdsave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 84</value>
+    <value>44, 126</value>
   </data>
   <data name="cmdsave.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 28</value>
   </data>
   <data name="cmdsave.TabIndex" type="System.Int32, mscorlib">
-    <value>389</value>
+    <value>3</value>
   </data>
   <data name="cmdsave.Text" xml:space="preserve">
     <value>&amp;Save</value>
@@ -169,25 +236,25 @@
     <value>cmdsave</value>
   </data>
   <data name="&gt;&gt;cmdsave.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cmdsave.Parent" xml:space="preserve">
     <value>BlendPanel1</value>
   </data>
   <data name="&gt;&gt;cmdsave.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="cmdexit.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 9.75pt</value>
   </data>
   <data name="cmdexit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 84</value>
+    <value>216, 126</value>
   </data>
   <data name="cmdexit.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 28</value>
   </data>
   <data name="cmdexit.TabIndex" type="System.Int32, mscorlib">
-    <value>391</value>
+    <value>5</value>
   </data>
   <data name="cmdexit.Text" xml:space="preserve">
     <value>E&amp;xit</value>
@@ -196,65 +263,64 @@
     <value>cmdexit</value>
   </data>
   <data name="&gt;&gt;cmdexit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cmdexit.Parent" xml:space="preserve">
     <value>BlendPanel1</value>
   </data>
   <data name="&gt;&gt;cmdexit.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
-  <data name="CMBMERGEITEMCODE.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 9pt</value>
+  <data name="CMBMERGENAME.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 9.75pt</value>
   </data>
-  <data name="CMBMERGEITEMCODE.Items" xml:space="preserve">
+  <data name="CMBMERGENAME.Items" xml:space="preserve">
     <value>Advance</value>
   </data>
-  <data name="CMBMERGEITEMCODE.Items1" xml:space="preserve">
+  <data name="CMBMERGENAME.Items1" xml:space="preserve">
     <value>Against Bill</value>
   </data>
-  <data name="CMBMERGEITEMCODE.Items2" xml:space="preserve">
+  <data name="CMBMERGENAME.Items2" xml:space="preserve">
     <value>On Account</value>
   </data>
-  <data name="CMBMERGEITEMCODE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 49</value>
+  <data name="CMBMERGENAME.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 70</value>
   </data>
-  <data name="CMBMERGEITEMCODE.MaxDropDownItems" type="System.Int32, mscorlib">
+  <data name="CMBMERGENAME.MaxDropDownItems" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="CMBMERGEITEMCODE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
+  <data name="CMBMERGENAME.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 23</value>
   </data>
-  <data name="CMBMERGEITEMCODE.TabIndex" type="System.Int32, mscorlib">
-    <value>388</value>
+  <data name="CMBMERGENAME.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;CMBMERGEITEMCODE.Name" xml:space="preserve">
-    <value>CMBMERGEITEMCODE</value>
+  <data name="&gt;&gt;CMBMERGENAME.Name" xml:space="preserve">
+    <value>CMBMERGENAME</value>
   </data>
-  <data name="&gt;&gt;CMBMERGEITEMCODE.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;CMBMERGENAME.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;CMBMERGEITEMCODE.Parent" xml:space="preserve">
+  <data name="&gt;&gt;CMBMERGENAME.Parent" xml:space="preserve">
     <value>BlendPanel1</value>
   </data>
-  <data name="&gt;&gt;CMBMERGEITEMCODE.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;CMBMERGENAME.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 9pt</value>
+    <value>Calibri, 9.75pt</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 52</value>
+    <value>31, 73</value>
   </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 14</value>
+    <value>71, 15</value>
   </data>
   <data name="Label2.TabIndex" type="System.Int32, mscorlib">
     <value>387</value>
@@ -266,79 +332,79 @@
     <value>Label2</value>
   </data>
   <data name="&gt;&gt;Label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
     <value>BlendPanel1</value>
   </data>
   <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
-  <data name="CMBITEMCODE.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 9pt</value>
+  <data name="CMBOLDNAME.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 9.75pt</value>
   </data>
-  <data name="CMBITEMCODE.Items" xml:space="preserve">
+  <data name="CMBOLDNAME.Items" xml:space="preserve">
     <value>Advance</value>
   </data>
-  <data name="CMBITEMCODE.Items1" xml:space="preserve">
+  <data name="CMBOLDNAME.Items1" xml:space="preserve">
     <value>Against Bill</value>
   </data>
-  <data name="CMBITEMCODE.Items2" xml:space="preserve">
+  <data name="CMBOLDNAME.Items2" xml:space="preserve">
     <value>On Account</value>
   </data>
-  <data name="CMBITEMCODE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 21</value>
+  <data name="CMBOLDNAME.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 41</value>
   </data>
-  <data name="CMBITEMCODE.MaxDropDownItems" type="System.Int32, mscorlib">
+  <data name="CMBOLDNAME.MaxDropDownItems" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="CMBITEMCODE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
+  <data name="CMBOLDNAME.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 23</value>
   </data>
-  <data name="CMBITEMCODE.TabIndex" type="System.Int32, mscorlib">
-    <value>386</value>
+  <data name="CMBOLDNAME.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;CMBITEMCODE.Name" xml:space="preserve">
-    <value>CMBITEMCODE</value>
+  <data name="&gt;&gt;CMBOLDNAME.Name" xml:space="preserve">
+    <value>CMBOLDNAME</value>
   </data>
-  <data name="&gt;&gt;CMBITEMCODE.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;CMBOLDNAME.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;CMBITEMCODE.Parent" xml:space="preserve">
+  <data name="&gt;&gt;CMBOLDNAME.Parent" xml:space="preserve">
     <value>BlendPanel1</value>
   </data>
-  <data name="&gt;&gt;CMBITEMCODE.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;CMBOLDNAME.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 9pt</value>
+    <value>Calibri, 9.75pt</value>
   </data>
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 24</value>
+    <value>41, 44</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 14</value>
+    <value>61, 15</value>
   </data>
   <data name="Label1.TabIndex" type="System.Int32, mscorlib">
     <value>385</value>
   </data>
   <data name="Label1.Text" xml:space="preserve">
-    <value>Item Name</value>
+    <value>Old Name</value>
   </data>
   <data name="&gt;&gt;Label1.Name" xml:space="preserve">
     <value>Label1</value>
   </data>
   <data name="&gt;&gt;Label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
     <value>BlendPanel1</value>
   </data>
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="BlendPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -347,10 +413,10 @@
     <value>0, 0</value>
   </data>
   <data name="BlendPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 127</value>
+    <value>341, 166</value>
   </data>
   <data name="BlendPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;BlendPanel1.Name" xml:space="preserve">
     <value>BlendPanel1</value>
@@ -364,17 +430,17 @@
   <data name="&gt;&gt;BlendPanel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="EP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="EP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>341, 127</value>
+    <value>341, 166</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 9.75pt</value>
@@ -383,18 +449,18 @@
     <value>Manual</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Merge Item</value>
+    <value>Merge Parameter</value>
   </data>
   <data name="&gt;&gt;EP.Name" xml:space="preserve">
     <value>EP</value>
   </data>
   <data name="&gt;&gt;EP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MergeItem</value>
+    <value>MergeParameter</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

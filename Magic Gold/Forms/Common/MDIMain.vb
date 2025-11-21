@@ -1684,7 +1684,7 @@ Public Class MDIMain
 
     Private Sub MERGEITEM_MASTER_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MERGEITEM_MASTER.Click
         Try
-            Dim OBJMERGE As New MergeItem
+            Dim OBJMERGE As New MergeParameter
             OBJMERGE.MdiParent = Me
             OBJMERGE.Show()
         Catch ex As Exception
