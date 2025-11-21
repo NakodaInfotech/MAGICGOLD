@@ -48,12 +48,9 @@ Partial Class InterestCalc
         Me.griddetails = New DevExpress.XtraGrid.GridControl()
         Me.gridregister = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.GBILL = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GBILLINITIALS = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GTYPE = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GREGTYPE = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GNAME = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GDATE = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GBALES = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GDEBIT = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GCREDIT = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GNETTBALANCE = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -353,7 +350,7 @@ Partial Class InterestCalc
         Me.gridregister.Appearance.Row.Options.UseFont = True
         Me.gridregister.Appearance.ViewCaption.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridregister.Appearance.ViewCaption.Options.UseFont = True
-        Me.gridregister.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GBILL, Me.GBILLINITIALS, Me.GTYPE, Me.GREGTYPE, Me.GNAME, Me.GDATE, Me.GBALES, Me.GDEBIT, Me.GCREDIT, Me.GNETTBALANCE, Me.GDAYS, Me.GTOPAY, Me.GTOREC, Me.GREMARKS})
+        Me.gridregister.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GBILL, Me.GTYPE, Me.GNAME, Me.GDATE, Me.GDEBIT, Me.GCREDIT, Me.GNETTBALANCE, Me.GDAYS, Me.GTOPAY, Me.GTOREC, Me.GREMARKS})
         Me.gridregister.GridControl = Me.griddetails
         Me.gridregister.Name = "gridregister"
         Me.gridregister.OptionsBehavior.AllowIncrementalSearch = True
@@ -368,18 +365,11 @@ Partial Class InterestCalc
         '
         'GBILL
         '
-        Me.GBILL.Caption = "BILL"
+        Me.GBILL.Caption = "Bill No"
         Me.GBILL.FieldName = "SRNO"
         Me.GBILL.Name = "GBILL"
-        '
-        'GBILLINITIALS
-        '
-        Me.GBILLINITIALS.Caption = "Bill No"
-        Me.GBILLINITIALS.FieldName = "BILLINITIALS"
-        Me.GBILLINITIALS.Name = "GBILLINITIALS"
-        Me.GBILLINITIALS.Visible = True
-        Me.GBILLINITIALS.VisibleIndex = 0
-        Me.GBILLINITIALS.Width = 80
+        Me.GBILL.Visible = True
+        Me.GBILL.VisibleIndex = 0
         '
         'GTYPE
         '
@@ -389,12 +379,6 @@ Partial Class InterestCalc
         Me.GTYPE.Visible = True
         Me.GTYPE.VisibleIndex = 1
         Me.GTYPE.Width = 100
-        '
-        'GREGTYPE
-        '
-        Me.GREGTYPE.Caption = "REGTYPE"
-        Me.GREGTYPE.FieldName = "REGTYPE"
-        Me.GREGTYPE.Name = "GREGTYPE"
         '
         'GNAME
         '
@@ -413,16 +397,6 @@ Partial Class InterestCalc
         Me.GDATE.Visible = True
         Me.GDATE.VisibleIndex = 2
         Me.GDATE.Width = 80
-        '
-        'GBALES
-        '
-        Me.GBALES.Caption = "Bales"
-        Me.GBALES.DisplayFormat.FormatString = "0"
-        Me.GBALES.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
-        Me.GBALES.FieldName = "TOTALBALES"
-        Me.GBALES.Name = "GBALES"
-        Me.GBALES.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)})
-        Me.GBALES.Width = 60
         '
         'GDEBIT
         '
@@ -638,12 +612,9 @@ Partial Class InterestCalc
     Private WithEvents griddetails As DevExpress.XtraGrid.GridControl
     Private WithEvents gridregister As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents GBILL As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GBILLINITIALS As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GTYPE As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GREGTYPE As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GNAME As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GDATE As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GBALES As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GDEBIT As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GCREDIT As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GNETTBALANCE As DevExpress.XtraGrid.Columns.GridColumn

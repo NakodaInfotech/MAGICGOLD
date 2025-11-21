@@ -536,8 +536,8 @@ line1:
                 cmb1.Items.Add(dr(0))
                 cmb.Items.Add(dr(2))
             End While
-            cmb1.SelectedIndex = (0)
-            cmb.SelectedIndex = (0)
+            cmb1.SelectedIndex = (-1)
+            cmb.SelectedIndex = (-1)
         End If
 
     End Sub

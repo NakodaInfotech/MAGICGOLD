@@ -31,77 +31,58 @@ Public Class InterestCalc
 
 
 
-            'Dim OBJCMN As New ClsCommon
-            'Dim WHERE As String = " AND YEARID = " & YearId
-            'Dim OPWHERE As String = " AND YEARID = " & YearId
-            'If CHKDATE.Checked = True Then
-            '    If RBDUEDATE.Checked = True Then
-            '        WHERE = WHERE & " AND DUEDATE > '" & Format(dtfrom.Value.Date, "MM/dd/yyyy") & "' AND DUEDATE <='" & Format(dtto.Value.Date, "MM/dd/yyyy") & "'"
-            '        OPWHERE = OPWHERE & " AND DUEDATE <= '" & Format(dtfrom.Value.Date, "MM/dd/yyyy") & "'"
-            '    ElseIf RBBILLDATE.Checked = True Then
-            '        WHERE = WHERE & " AND DATE >= '" & Format(dtfrom.Value.Date, "MM/dd/yyyy") & "' AND DATE <='" & Format(dtto.Value.Date, "MM/dd/yyyy") & "'"
-            '        OPWHERE = OPWHERE & " AND DATE < '" & Format(dtfrom.Value.Date, "MM/dd/yyyy") & "'"
-            '    End If
-            'Else
-            '    If RBDUEDATE.Checked = True Then
-            '        WHERE = WHERE & " AND DUEDATE > '" & Format(AccFrom, "MM/dd/yyyy") & "' AND DUEDATE <='" & Format(AccTo, "MM/dd/yyyy") & "'"
-            '        OPWHERE = OPWHERE & " AND DUEDATE <= '" & Format(AccFrom.Date, "MM/dd/yyyy") & "'"
-            '    ElseIf RBBILLDATE.Checked = True Then
-            '        WHERE = WHERE & " AND DATE >= '" & Format(AccFrom, "MM/dd/yyyy") & "' AND DATE <='" & Format(AccTo, "MM/dd/yyyy") & "'"
-            '        OPWHERE = OPWHERE & " AND DATE < '" & Format(AccFrom.Date, "MM/dd/yyyy") & "'"
-            '    End If
-            'End If
+            Dim WHERE As String = ""
+            Dim OPWHERE As String = ""
+            If CHKDATE.Checked = True Then
+                WHERE = WHERE & " AND DATE >= #" & Format(dtfrom.Value.Date, "MM/dd/yyyy") & "# AND DATE <=#" & Format(dtto.Value.Date, "MM/dd/yyyy") & "#"
+                OPWHERE = OPWHERE & " AND DATE < #" & Format(dtfrom.Value.Date, "MM/dd/yyyy") & "#"
+            Else
+                WHERE = WHERE & " AND DATE >= #" & Format(startdate.Date, "MM/dd/yyyy") & "# AND DATE <=#" & Format(Now.Date, "MM/dd/yyyy") & "#"
+                OPWHERE = OPWHERE & " AND DATE < #" & Format(startdate.Date, "MM/dd/yyyy") & "#"
+            End If
 
-            'Dim dt As DataTable = OBJCMN.search("1 AS SORTNO, SRNO, REGTYPE, BILLINITIALS, TYPE, NAME, DATE, APPDATE, DUEDATE, TOTALBALES,DEBIT, CREDIT, REMARKS, ISNULL( DATEDIFF(DAY,(SELECT DATE FROM (SELECT     ROW_NUMBER() OVER ( ORDER BY DATE)AS ROWNO, DATE FROM INTERESTVIEW WHERE (NAME = '" & cmbname.Text.Trim & "' AND YEARID = " & YearId & WHERE & " )) AS T WHERE T.ROWNO = NEWT.ROWNO -1 ), NEWT.[DATE]),0) AS [DAYS], 0.0 AS NETTBALANCE, 0.0 AS TOPAY, 0.0 AS TOREC  ", "", " (SELECT ROW_NUMBER() OVER (ORDER BY DATE)AS ROWNO, SRNO, REGTYPE, BILLINITIALS, TYPE, NAME, DATE, APPDATE, DUEDATE,TOTALBALES, DEBIT, CREDIT, REMARKS,  CMPID, LOCATIONID, YEARID FROM INTERESTVIEW WHERE (NAME = '" & cmbname.Text.Trim & "' AND YEARID = " & YearId & WHERE & ")) AS NEWT ", WHERE & " ORDER BY NEWT.NAME, NEWT.DATE  ")
 
-            'Dim DTROW() As DataRow
-            'Dim DTOPENING As DataTable
-            'DTOPENING = OBJCMN.search(" (CASE WHEN (SUM(DEBIT) - SUM(CREDIT)> 0) THEN (SUM(DEBIT) - SUM(CREDIT)) ELSE 0 END )AS DEBITBAL, (CASE WHEN (SUM(CREDIT) - SUM(DEBIT)> 0 )THEN (SUM(CREDIT) - SUM(DEBIT)) ELSE 0 END)  AS CREDITBAL ", "", " INTERESTVIEW ", OPWHERE & " AND NAME = '" & cmbname.Text.Trim & "'")
-            'If DTOPENING.Rows.Count > 0 Then
-            '    If CHKDATE.CheckState = CheckState.Checked Then
-            '        If (Val(DTOPENING.Rows(0).Item("DEBITBAL")) > 0 Or Val(DTOPENING.Rows(0).Item("CREDITBAL")) > 0) Then dt.Rows.Add(0, 0, "", "OPENING", "", "", dtfrom.Value.Date, dtfrom.Value.Date, dtfrom.Value.Date, 0, Val(DTOPENING.Rows(0).Item("DEBITBAL")), Val(DTOPENING.Rows(0).Item("CREDITBAL")), 0, 0, 0, 0)
-            '    Else
-            '        If (Val(DTOPENING.Rows(0).Item("DEBITBAL")) > 0 Or Val(DTOPENING.Rows(0).Item("CREDITBAL")) > 0) Then dt.Rows.Add(0, 0, "", "OPENING", "", "", AccFrom.Date, AccFrom.Date, AccFrom.Date, 0, Val(DTOPENING.Rows(0).Item("DEBITBAL")), Val(DTOPENING.Rows(0).Item("CREDITBAL")), 0, 0, 0, 0)
-            '    End If
-            'End If
-            'If dt.Rows.Count > 0 Then
-            '    Dim CLODAYS As Integer = 0
-            '    If RBDUEDATE.Checked = True Then
-            '        DTROW = dt.Select("DUEDATE = MAX(DUEDATE)")
-            '        Dim NETBAL As Double = dt.Compute("(SUM(DEBIT) - SUM(CREDIT))", "")
-            '        If Val(NETBAL) <> 0 Then CLODAYS = 1
-            '        If CHKDATE.CheckState = CheckState.Checked Then
-            '            CLODAYS = CLODAYS + DateDiff(DateInterval.Day, DTROW(0).Item("DUEDATE"), dtto.Value.Date)
-            '            If CLODAYS > 0 Then dt.Rows.Add(2, 0, "", "CLOSING", "", "", dtto.Value.Date, dtto.Value.Date, dtto.Value.Date, 0, 0, 0, "", CLODAYS, 0, 0, 0)
-            '        Else
-            '            CLODAYS = CLODAYS + DateDiff(DateInterval.Day, DTROW(0).Item("DUEDATE"), AccTo.Date)
-            '            If CLODAYS > 0 Then dt.Rows.Add(2, 0, "", "CLOSING", "", "", AccTo.Date, AccTo.Date, AccTo.Date, 0, 0, 0, "", CLODAYS, 0, 0, 0)
-            '        End If
-            '    ElseIf RBBILLDATE.Checked = True Then
-            '        DTROW = dt.Select("DATE = MAX(DATE)")
-            '        Dim NETBAL As Double = dt.Compute("(SUM(DEBIT) - SUM(CREDIT))", "")
-            '        If Val(NETBAL) <> 0 Then CLODAYS = 1
-            '        If CHKDATE.CheckState = CheckState.Checked Then
-            '            CLODAYS = CLODAYS + DateDiff(DateInterval.Day, DTROW(0).Item("DATE"), dtto.Value.Date)
-            '            If CLODAYS > 0 Then dt.Rows.Add(2, 0, "", "CLOSING", "", "", dtto.Value.Date, dtto.Value.Date, dtto.Value.Date, 0, 0, 0, "", CLODAYS, 0, 0, 0)
-            '        Else
-            '            CLODAYS = CLODAYS + DateDiff(DateInterval.Day, DTROW(0).Item("DATE"), AccTo.Date)
-            '            If CLODAYS > 0 Then dt.Rows.Add(2, 0, "", "CLOSING", "", "", AccTo.Date, AccTo.Date, AccTo.Date, 0, 0, 0, "", CLODAYS, 0, 0, 0)
-            '        End If
 
-            '    ElseIf RBPASSDATE.Checked = True Then
-            '        DTROW = dt.Select("APPDATE = MAX(APPDATE)")
-            '        If CHKDATE.CheckState = CheckState.Checked Then
-            '            CLODAYS = DateDiff(DateInterval.Day, DTROW(0).Item("APPDATE"), dtto.Value.Date)
-            '            If CLODAYS > 0 Then dt.Rows.Add(2, 0, "", "CLOSING", "", "", dtto.Value.Date, dtto.Value.Date, dtto.Value.Date, 0, 0, 0, "", CLODAYS, 0, 0, 0)
-            '        Else
-            '            CLODAYS = DateDiff(DateInterval.Day, DTROW(0).Item("APPDATE"), AccTo.Date)
-            '            If CLODAYS > 0 Then dt.Rows.Add(2, 0, "", "CLOSING", "", "", AccTo.Date, AccTo.Date, AccTo.Date, 0, 0, 0, "", CLODAYS, 0, 0, 0)
-            '        End If
+            Dim dt As New DataTable
+            If tempconn.State = ConnectionState.Open Then tempconn.Close()
+            tempconn.Open()
+            tempcmd = New OleDbCommand("SELECT 1 AS SORTNO, SRNO, TYPE, NAME, DATE, DEBIT, CREDIT, REMARKS, 0 AS [DAYS], 0.0 AS NETTBALANCE, 0.0 AS TOPAY, 0.0 AS TOREC FROM INTERESTVIEW WHERE TYPE <> 'OPENING' " & WHERE & " AND NAME = '" & cmbname.Text.Trim & "' ORDER BY NAME, DATE  ", tempconn)
+            da = New OleDbDataAdapter(tempcmd)
+            da.Fill(dt)
 
-            '    End If
 
-            'End If
+
+
+
+            Dim DTROW() As DataRow
+            Dim DTOPENING As New DataTable
+            If tempconn.State = ConnectionState.Open Then tempconn.Close()
+            tempconn.Open()
+            tempcmd = New OleDbCommand(" SELECT IIF((SUM(DEBIT) - SUM(CREDIT)> 0),(SUM(DEBIT) - SUM(CREDIT)),0)AS DEBITBAL, IIF((SUM(CREDIT) - SUM(DEBIT)> 0),(SUM(CREDIT) - SUM(DEBIT)),0) AS CREDITBAL FROM INTERESTVIEW WHERE 1=1 " & OPWHERE & " AND NAME = '" & cmbname.Text.Trim & "'", tempconn)
+            da = New OleDbDataAdapter(tempcmd)
+            da.Fill(DTOPENING)
+            If DTOPENING.Rows.Count > 0 Then
+                If CHKDATE.CheckState = CheckState.Checked Then
+                    If (Val(DTOPENING.Rows(0).Item("DEBITBAL")) > 0 Or Val(DTOPENING.Rows(0).Item("CREDITBAL")) > 0) Then dt.Rows.Add(0, 0, "OPENING", "", dtfrom.Value.Date, Val(DTOPENING.Rows(0).Item("DEBITBAL")), Val(DTOPENING.Rows(0).Item("CREDITBAL")), "", 0, 0, 0, 0)
+                Else
+                    If (Val(DTOPENING.Rows(0).Item("DEBITBAL")) > 0 Or Val(DTOPENING.Rows(0).Item("CREDITBAL")) > 0) Then dt.Rows.Add(0, 0, "OPENING", "", Format(startdate.Date, "MM/dd/yyyy"), Val(DTOPENING.Rows(0).Item("DEBITBAL")), Val(DTOPENING.Rows(0).Item("CREDITBAL")), "", 0, 0, 0, 0)
+                End If
+            End If
+
+            If dt.Rows.Count > 0 Then
+                Dim CLODAYS As Integer = 0
+
+                DTROW = dt.Select("DATE = MAX(DATE)")
+                Dim NETBAL As Double = dt.Compute("(SUM(DEBIT) - SUM(CREDIT))", "")
+                If Val(NETBAL) <> 0 Then CLODAYS = 1
+                If CHKDATE.CheckState = CheckState.Checked Then
+                    CLODAYS = CLODAYS + DateDiff(DateInterval.Day, DTROW(0).Item("DATE"), dtto.Value.Date)
+                    If CLODAYS > 0 Then dt.Rows.Add(2, 0, "CLOSING", "", dtto.Value.Date, 0, 0, "", CLODAYS, 0, 0, 0)
+                Else
+                    CLODAYS = CLODAYS + DateDiff(DateInterval.Day, DTROW(0).Item("DATE"), Now.Date)
+                    If CLODAYS > 0 Then dt.Rows.Add(2, 0, "CLOSING", "", Now.Date, 0, 0, "", CLODAYS, 0, 0, 0)
+                End If
+            End If
 
             Dim DV As New DataView(dt)
             DV.Sort = "SORTNO ASC, NAME ASC,DATE ASC"
@@ -134,17 +115,17 @@ Public Class InterestCalc
             For i = 0 To gridregister.RowCount - 1
                 dtrow = gridregister.GetDataRow(i)
                 Dim NEWDTROW As DataRow = gridregister.GetDataRow(i + 1)
-                If dtrow("BILLINITIALS") = "OPENING" Then
-                    If NEWDTROW("BILLINITIALS") <> "CLOSING" Then
-                        NEWDTROW("DAYS") = DateDiff(DateInterval.Day, dtrow("DATE"), NEWDTROW("DATE"))
-                    End If
+                'If dtrow("TYPE") = "OPENING" Then
+                If NEWDTROW IsNot Nothing AndAlso NEWDTROW("TYPE") <> "CLOSING" Then
+                    NEWDTROW("DAYS") = DateDiff(DateInterval.Day, dtrow("DATE"), NEWDTROW("DATE"))
                 End If
+                'End If
 
-                If dtrow("BILLINITIALS") = "CLOSING" Then
+                If dtrow("TYPE") = "CLOSING" Then
                     'IF LAST DATE IS SAME AS CLOSING DATE THEN THERE WILL BE NOT CALCULATIONS OF DATS IN CLOSING
                     'THIS IS DONE BY GULKIT DO NOT CHANGE 
                     Dim TEMPDTROW As DataRow = gridregister.GetDataRow(i - 1)
-                    If dtrow("DATE") = TEMPDTROW("DATE") And TEMPDTROW("BILLINITIALS") <> "OPENING" Then
+                    If dtrow("DATE") = TEMPDTROW("DATE") And TEMPDTROW("TYPE") <> "OPENING" Then
                         TEMPDTROW("DAYS") = TEMPDTROW("DAYS") + 1
                         Dim TEMPDTROW1 As DataRow = gridregister.GetDataRow(i - 2)
                         If TEMPDTROW("NETTBALANCE") > 0 Then
@@ -212,7 +193,7 @@ Public Class InterestCalc
                 dr = cmd.ExecuteReader
                 If dr.HasRows Then
                     dr.Read()
-                    TXTPERCENT.Text = Val(dt.Rows(0).Item("INTPER"))
+                    TXTPERCENT.Text = Val(dr("INTPER"))
                 End If
                 conn.Close()
                 dr.Close()
