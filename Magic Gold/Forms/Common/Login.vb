@@ -79,12 +79,12 @@ Public Class LoginForm
                     tempcmd.ExecuteNonQuery()
                     GoTo LINE1
                 End If
-                'ElseIf ClientName = "GR" Then
-                '    If Now.Date > DateTime.Parse("15.04.2024 00:00") Then
-                '        tempcmd = New OleDbCommand("UPDATE VERSION SET VERSION_NO=1.0.0000", tempconn)
-                '        tempcmd.ExecuteNonQuery()
-                '        GoTo LINE1
-                '    End If
+            ElseIf ClientName = "JAYBHAVANI" Then   'DHARMESH BHAI DAHISAR
+                If Now.Date > DateTime.Parse("30.11.2025 00:00") Then
+                    tempcmd = New OleDbCommand("UPDATE VERSION SET VERSION_NO=1.0.0000", tempconn)
+                    tempcmd.ExecuteNonQuery()
+                    GoTo LINE1
+                End If
             ElseIf ClientName = "KANAK" Then
                 If Now.Date > DateTime.Parse("15.04.2026 00:00") Then
                     tempcmd = New OleDbCommand("UPDATE VERSION SET VERSION_NO=1.0.0000", tempconn)
