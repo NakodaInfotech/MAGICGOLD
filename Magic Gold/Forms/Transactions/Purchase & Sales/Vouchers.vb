@@ -2466,7 +2466,7 @@ Public Class vouchers
             Else
                 OBJVOUCHER.WHERECLAUSE = " {VOUCHERS.VOUCHER_ID} = " & Val(txtbillno.Text.Trim) & " and {VOUCHERS.VOUCHER_TYPE} = '" & types & "'"
             End If
-            If ClientName = "KHUSHALI" Or ClientName = "JAIBHAVANI" Then
+            If ClientName = "KHUSHALI" Or ClientName = "JAYBHAVANI" Then
                 If MsgBox("Print small Chitti?", MsgBoxStyle.YesNo) = MsgBoxResult.No Then Exit Sub
                 If PRINTDIALOG.ShowDialog = DialogResult.OK Then PRINTDOC.PrinterSettings = PRINTDIALOG.PrinterSettings Else Exit Sub
                 OBJVOUCHER.SRNO = Val(TEMPBILLNO)
