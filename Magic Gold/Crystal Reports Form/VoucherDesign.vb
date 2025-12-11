@@ -270,6 +270,17 @@ Public Class VoucherDesign
                 OBJ.DataDefinition.FormulaFields("NETTWT").Text = Val(NETTWT)
                 OBJ.DataDefinition.FormulaFields("ITEMNARR").Text = "'" & ITEMNARR & "'"
                 CRPO.ReportSource = OBJ
+
+            ElseIf FRMSTRING = "MFGCHITTI" Then
+
+                OBJ = New MfgChitti
+                OBJ.DataDefinition.FormulaFields("LOTNO").Text = Val(LOTNO)
+                OBJ.DataDefinition.FormulaFields("PARTNO").Text = "'" & PARTNO & "'"
+                OBJ.DataDefinition.FormulaFields("WT").Text = Val(WT)
+                OBJ.DataDefinition.FormulaFields("MELTING").Text = Val(MELTING)
+                OBJ.DataDefinition.FormulaFields("ITEMNARR").Text = "'" & ITEMNARR & "'"
+                CRPO.ReportSource = OBJ
+
             End If
 
 SKIPINVOICE:

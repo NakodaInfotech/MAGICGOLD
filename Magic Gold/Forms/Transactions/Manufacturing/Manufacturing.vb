@@ -3698,12 +3698,13 @@ line1:
             OBJPRINT.ITEMNARR = txtnarration.Text.Trim
             OBJPRINT.MdiParent = MDIMain
             OBJPRINT.FRMSTRING = "MFGCHITTI"
+            OBJPRINT.DIRECTPRINT = True
             OBJPRINT.PRINTSETTING = PRINTDIALOG
             OBJPRINT.Show()
             OBJPRINT.Close()
 
 
-            If ClientName <> "CNC" And ClientName <> "KHUSHALI" Then PRINTBARCODE()
+            If ClientName <> "CNC" And ClientName <> "KHUSHALI" And ClientName <> "JAYBHAVANI" Then PRINTBARCODE()
 
         Catch ex As Exception
             Throw ex
