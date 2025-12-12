@@ -75,7 +75,7 @@ Public Class CashBookDetails
         Try
             Dim PATH As String = ""
             If FileIO.FileSystem.FileExists(PATH) = True Then FileIO.FileSystem.DeleteFile(PATH)
-            PATH = Application.StartupPath & "\Cash/Bank Details.XLS"
+            PATH = Application.StartupPath & "\Cash-Bank Details.XLS"
 
             Dim opti As New DevExpress.XtraPrinting.XlsExportOptions
             opti.ShowGridLines = True
@@ -83,9 +83,9 @@ Public Class CashBookDetails
                 proc.Kill()
             Next
 
-            opti.SheetName = "Cash/Bank Details"
+            opti.SheetName = "Cash-Bank Details"
             GRIDBILL.ExportToXls(PATH, opti)
-            EXCELCMPHEADER(PATH, "Cash/Bank Details", GRIDBILL.VisibleColumns.Count + GRIDBILL.GroupCount)
+            EXCELCMPHEADER(PATH, "Cash-Bank Details", GRIDBILL.VisibleColumns.Count + GRIDBILL.GroupCount)
 
         Catch ex As Exception
             Throw ex
