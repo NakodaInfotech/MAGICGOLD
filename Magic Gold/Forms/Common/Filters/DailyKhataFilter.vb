@@ -171,15 +171,17 @@ Public Class dailykhatafilter
             Dim OBJPRINT As New VoucherDesign
             OBJPRINT.MdiParent = MDIMain
             OBJPRINT.FRMSTRING = "LEDGERPRINT"
+            OBJPRINT.WHERECLAUSE = " 1=1"
+
             If chkdate.Checked = True Then
                 OBJPRINT.PERIOD = Format(dtpfrom.Value.Date, "dd/MM/yyyy") & "-" & Format(dtpto.Value.Date, "dd/MM/yyyy")
                 OBJPRINT.FROMDATE = dtpfrom.Value.Date
+                OBJPRINT.TILLDATE = dtpto.Value.Date
             Else
                 OBJPRINT.PERIOD = Format(startdate.Date, "dd/MM/yyyy") & "-" & Format(Now.Date, "dd/MM/yyyy")
                 OBJPRINT.FROMDATE = startdate.Date
             End If
 
-            OBJPRINT.WHERECLAUSE = " 1=1"
 
             gridbill.ClearColumnsFilter()
             Dim NAMECLAUSE As String = ""

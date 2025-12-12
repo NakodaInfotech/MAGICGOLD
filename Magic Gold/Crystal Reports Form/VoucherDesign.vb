@@ -37,6 +37,7 @@ Public Class VoucherDesign
     Public PARTYGROSSBAL As Double = 0.0
     Public PARTYFINEBAL As Double = 0.0
     Public FROMDATE As Date = startdate
+    Public TILLDATE As Date = enddate
 
     Public WHERECLAUSE As String = ""
     Public PERIOD As String = ""
@@ -217,7 +218,9 @@ Public Class VoucherDesign
                 CRPO.ReportSource = RPTLEDGER
                 RPTLEDGER.DataDefinition.FormulaFields("FROMDATE").Text = "'" & Format(Convert.ToDateTime(FROMDATE).Date, "MM/dd/yyyy") & "'"
                 RPTLEDGER.Subreports(0).DataDefinition.FormulaFields("FROMDATE").Text = "'" & Format(Convert.ToDateTime(FROMDATE).Date, "MM/dd/yyyy") & "'"
+                RPTLEDGER.Subreports(0).DataDefinition.FormulaFields("TILLDATE").Text = "'" & Format(Convert.ToDateTime(TILLDATE).Date, "MM/dd/yyyy") & "'"
                 RPTLEDGER.Subreports(1).DataDefinition.FormulaFields("FROMDATE").Text = "'" & Format(Convert.ToDateTime(FROMDATE).Date, "MM/dd/yyyy") & "'"
+                RPTLEDGER.Subreports(1).DataDefinition.FormulaFields("TILLDATE").Text = "'" & Format(Convert.ToDateTime(TILLDATE).Date, "MM/dd/yyyy") & "'"
 
                 RPTLEDGER.DataDefinition.FormulaFields("PERIOD").Text = "'" & PERIOD & "'"
 
