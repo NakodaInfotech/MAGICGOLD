@@ -3696,6 +3696,7 @@ line1:
             OBJPRINT.WT = Val(txtinput.Text)
             OBJPRINT.MELTING = Val(txtmelting.Text)
             OBJPRINT.ITEMNARR = txtnarration.Text.Trim
+            OBJPRINT.PROCESSNAME = UCase(lblprocess.Text.Trim)
             OBJPRINT.MdiParent = MDIMain
             OBJPRINT.FRMSTRING = "MFGCHITTI"
             OBJPRINT.DIRECTPRINT = True

@@ -33,6 +33,7 @@ Public Class VoucherDesign
     Public LESSWT As Double = 0.0
     Public NETTWT As Double = 0.0
     Public MELTING As Double = 0.0
+    Public PROCESSNAME As String = 0
     Public ITEMNARR As String = 0
     Public PARTYGROSSBAL As Double = 0.0
     Public PARTYFINEBAL As Double = 0.0
@@ -210,6 +211,7 @@ Public Class VoucherDesign
                 RPTMFGCHITTI.DataDefinition.FormulaFields("WT").Text = Val(WT)
                 RPTMFGCHITTI.DataDefinition.FormulaFields("MELTING").Text = Val(MELTING)
                 RPTMFGCHITTI.DataDefinition.FormulaFields("ITEMNARR").Text = "'" & ITEMNARR & "'"
+                RPTMFGCHITTI.DataDefinition.FormulaFields("PROCESS").Text = "'" & PROCESSNAME & "'"
                 CRPO.ReportSource = RPTMFGCHITTI
 
             ElseIf FRMSTRING = "LEDGERPRINT" Then
@@ -282,6 +284,7 @@ Public Class VoucherDesign
                 OBJ.DataDefinition.FormulaFields("WT").Text = Val(WT)
                 OBJ.DataDefinition.FormulaFields("MELTING").Text = Val(MELTING)
                 OBJ.DataDefinition.FormulaFields("ITEMNARR").Text = "'" & ITEMNARR & "'"
+                OBJ.DataDefinition.FormulaFields("PROCESS").Text = "'" & PROCESSNAME & "'"
                 CRPO.ReportSource = OBJ
 
             End If
@@ -303,6 +306,7 @@ SKIPINVOICE:
             Throw ex
         End Try
     End Sub
+
     Private Sub VoucherDesign_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
         Try
             If e.KeyCode = Keys.Escape Then Me.Close()
