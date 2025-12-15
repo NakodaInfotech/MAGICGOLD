@@ -219,6 +219,7 @@ Public Class VoucherDesign
                 CRPO.SelectionFormula = WHERECLAUSE
                 CRPO.ReportSource = RPTLEDGER
                 RPTLEDGER.DataDefinition.FormulaFields("FROMDATE").Text = "'" & Format(Convert.ToDateTime(FROMDATE).Date, "MM/dd/yyyy") & "'"
+                RPTLEDGER.DataDefinition.FormulaFields("TILLDATE").Text = "'" & Format(Convert.ToDateTime(TILLDATE).Date, "MM/dd/yyyy") & "'"
                 RPTLEDGER.Subreports(0).DataDefinition.FormulaFields("FROMDATE").Text = "'" & Format(Convert.ToDateTime(FROMDATE).Date, "MM/dd/yyyy") & "'"
                 RPTLEDGER.Subreports(0).DataDefinition.FormulaFields("TILLDATE").Text = "'" & Format(Convert.ToDateTime(TILLDATE).Date, "MM/dd/yyyy") & "'"
                 RPTLEDGER.Subreports(1).DataDefinition.FormulaFields("FROMDATE").Text = "'" & Format(Convert.ToDateTime(FROMDATE).Date, "MM/dd/yyyy") & "'"
