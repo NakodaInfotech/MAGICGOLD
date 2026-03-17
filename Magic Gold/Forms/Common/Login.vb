@@ -23,7 +23,7 @@ Public Class LoginForm
             ClientName = dt.Rows(0).Item("CLIENTNAME")
 
             If ClientName = "ADITYA" Then
-                If Now.Date > DateTime.Parse("15.03.2026 00:00") Then
+                If Now.Date > DateTime.Parse("15.03.2027 00:00") Then
                     tempcmd = New OleDbCommand("UPDATE VERSION SET VERSION_NO=1.0.0000", tempconn)
                     tempcmd.ExecuteNonQuery()
                     GoTo LINE1
@@ -142,7 +142,7 @@ Public Class LoginForm
                 End If
             ElseIf ClientName = "SHWETA" Then '(KAMLESH PARMAR)
                 ALLOWLABELLING = True
-                If Now.Date > DateTime.Parse("15.10.2025 00:00") Then
+                If Now.Date > DateTime.Parse("15.09.2026 00:00") Then
                     tempcmd = New OleDbCommand("UPDATE VERSION SET VERSION_NO=1.0.0000", tempconn)
                     tempcmd.ExecuteNonQuery()
                     GoTo LINE1
