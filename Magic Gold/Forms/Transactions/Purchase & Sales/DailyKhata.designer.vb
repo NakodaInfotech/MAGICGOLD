@@ -20,32 +20,32 @@ Partial Class dailykhata
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle53 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle54 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle55 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle56 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle57 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle58 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle59 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle60 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle61 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle62 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle73 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle74 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle63 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle64 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle65 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle66 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle67 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle68 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle69 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle70 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle71 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle72 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle75 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle76 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle77 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle78 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dailykhata))
         Me.gridjama = New System.Windows.Forms.DataGridView()
         Me.gridledger = New System.Windows.Forms.DataGridView()
@@ -92,7 +92,6 @@ Partial Class dailykhata
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
@@ -164,6 +163,7 @@ Partial Class dailykhata
         Me.LBLLESSWTTOTAL = New System.Windows.Forms.Label()
         Me.LBLNETTWTTOTAL = New System.Windows.Forms.Label()
         Me.GPBHAVCUT = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         CType(Me.gridjama, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gridledger, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GRIDDESCRIPTION, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -179,29 +179,29 @@ Partial Class dailykhata
         Me.gridjama.AllowUserToDeleteRows = False
         Me.gridjama.AllowUserToResizeColumns = False
         Me.gridjama.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer))
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black
-        Me.gridjama.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle53.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer))
+        DataGridViewCellStyle53.SelectionBackColor = System.Drawing.Color.Black
+        Me.gridjama.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle53
         Me.gridjama.BackgroundColor = System.Drawing.Color.White
         Me.gridjama.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.gridjama.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.gridjama.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle54.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle54.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle54.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle54.SelectionBackColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle54.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.gridjama.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle54
         Me.gridjama.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.gridjama.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle55.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle55.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle55.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle55.SelectionBackColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle55.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.gridjama.DefaultCellStyle = DataGridViewCellStyle55
         Me.gridjama.GridColor = System.Drawing.SystemColors.ControlText
         Me.gridjama.Location = New System.Drawing.Point(520, 110)
         Me.gridjama.Margin = New System.Windows.Forms.Padding(2)
@@ -209,10 +209,10 @@ Partial Class dailykhata
         Me.gridjama.Name = "gridjama"
         Me.gridjama.ReadOnly = True
         Me.gridjama.RowHeadersVisible = False
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Black
-        Me.gridjama.RowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle56.SelectionBackColor = System.Drawing.Color.Black
+        Me.gridjama.RowsDefaultCellStyle = DataGridViewCellStyle56
         Me.gridjama.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.gridjama.Size = New System.Drawing.Size(335, 262)
+        Me.gridjama.Size = New System.Drawing.Size(375, 262)
         Me.gridjama.TabIndex = 1
         '
         'gridledger
@@ -221,29 +221,29 @@ Partial Class dailykhata
         Me.gridledger.AllowUserToDeleteRows = False
         Me.gridledger.AllowUserToResizeColumns = False
         Me.gridledger.AllowUserToResizeRows = False
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer))
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Black
-        Me.gridledger.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle57.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer))
+        DataGridViewCellStyle57.SelectionBackColor = System.Drawing.Color.Black
+        Me.gridledger.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle57
         Me.gridledger.BackgroundColor = System.Drawing.Color.White
         Me.gridledger.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.gridledger.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.gridledger.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle58.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle58.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle58.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle58.SelectionBackColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle58.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.gridledger.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle58
         Me.gridledger.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.gridledger.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle59.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle59.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle59.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle59.SelectionBackColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle59.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.gridledger.DefaultCellStyle = DataGridViewCellStyle59
         Me.gridledger.GridColor = System.Drawing.SystemColors.ControlText
         Me.gridledger.Location = New System.Drawing.Point(8, 128)
         Me.gridledger.Margin = New System.Windows.Forms.Padding(2)
@@ -251,8 +251,8 @@ Partial Class dailykhata
         Me.gridledger.Name = "gridledger"
         Me.gridledger.ReadOnly = True
         Me.gridledger.RowHeadersVisible = False
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Black
-        Me.gridledger.RowsDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle60.SelectionBackColor = System.Drawing.Color.Black
+        Me.gridledger.RowsDefaultCellStyle = DataGridViewCellStyle60
         Me.gridledger.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.gridledger.Size = New System.Drawing.Size(499, 291)
         Me.gridledger.TabIndex = 293
@@ -261,38 +261,38 @@ Partial Class dailykhata
         '
         Me.GRIDDESCRIPTION.AllowUserToResizeColumns = False
         Me.GRIDDESCRIPTION.AllowUserToResizeRows = False
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer))
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Black
-        Me.GRIDDESCRIPTION.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle61.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer))
+        DataGridViewCellStyle61.SelectionBackColor = System.Drawing.Color.Black
+        Me.GRIDDESCRIPTION.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle61
         Me.GRIDDESCRIPTION.BackgroundColor = System.Drawing.Color.White
         Me.GRIDDESCRIPTION.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.GRIDDESCRIPTION.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.GRIDDESCRIPTION.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle62.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle62.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle62.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle62.SelectionBackColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle62.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle62.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.GRIDDESCRIPTION.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle62
         Me.GRIDDESCRIPTION.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GRIDDESCRIPTION.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgcmbitemcode, Me.DGITEMDESC, Me.dggrosswt, Me.DGLESSWT, Me.DGNETTWT, Me.dgpurity, Me.dgwastage, Me.DGFINEWT, Me.dglabour, Me.dgpieces, Me.dgBullion, Me.dgamt})
-        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle21.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GRIDDESCRIPTION.DefaultCellStyle = DataGridViewCellStyle21
+        DataGridViewCellStyle73.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle73.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle73.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle73.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle73.SelectionBackColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle73.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle73.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GRIDDESCRIPTION.DefaultCellStyle = DataGridViewCellStyle73
         Me.GRIDDESCRIPTION.GridColor = System.Drawing.SystemColors.ControlText
         Me.GRIDDESCRIPTION.Location = New System.Drawing.Point(20, 461)
         Me.GRIDDESCRIPTION.Margin = New System.Windows.Forms.Padding(2)
         Me.GRIDDESCRIPTION.MultiSelect = False
         Me.GRIDDESCRIPTION.Name = "GRIDDESCRIPTION"
         Me.GRIDDESCRIPTION.RowHeadersVisible = False
-        DataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.Black
-        Me.GRIDDESCRIPTION.RowsDefaultCellStyle = DataGridViewCellStyle22
+        DataGridViewCellStyle74.SelectionBackColor = System.Drawing.Color.Black
+        Me.GRIDDESCRIPTION.RowsDefaultCellStyle = DataGridViewCellStyle74
         Me.GRIDDESCRIPTION.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.GRIDDESCRIPTION.Size = New System.Drawing.Size(1015, 158)
         Me.GRIDDESCRIPTION.TabIndex = 5
@@ -314,60 +314,60 @@ Partial Class dailykhata
         '
         'dggrosswt
         '
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle11.Format = "N3"
-        DataGridViewCellStyle11.NullValue = "0.000"
-        Me.dggrosswt.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle63.Format = "N3"
+        DataGridViewCellStyle63.NullValue = "0.000"
+        Me.dggrosswt.DefaultCellStyle = DataGridViewCellStyle63
         Me.dggrosswt.HeaderText = "Gr. Wt."
         Me.dggrosswt.Name = "dggrosswt"
         Me.dggrosswt.Width = 70
         '
         'DGLESSWT
         '
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle12.Format = "N3"
-        DataGridViewCellStyle12.NullValue = "0.000"
-        Me.DGLESSWT.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle64.Format = "N3"
+        DataGridViewCellStyle64.NullValue = "0.000"
+        Me.DGLESSWT.DefaultCellStyle = DataGridViewCellStyle64
         Me.DGLESSWT.HeaderText = "Less"
         Me.DGLESSWT.Name = "DGLESSWT"
         Me.DGLESSWT.Width = 70
         '
         'DGNETTWT
         '
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle13.Format = "N3"
-        DataGridViewCellStyle13.NullValue = "0.000"
-        Me.DGNETTWT.DefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle65.Format = "N3"
+        DataGridViewCellStyle65.NullValue = "0.000"
+        Me.DGNETTWT.DefaultCellStyle = DataGridViewCellStyle65
         Me.DGNETTWT.HeaderText = "Nett"
         Me.DGNETTWT.Name = "DGNETTWT"
         Me.DGNETTWT.Width = 70
         '
         'dgpurity
         '
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle14.Format = "N2"
-        DataGridViewCellStyle14.NullValue = "0.00"
-        Me.dgpurity.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle66.Format = "N2"
+        DataGridViewCellStyle66.NullValue = "0.00"
+        Me.dgpurity.DefaultCellStyle = DataGridViewCellStyle66
         Me.dgpurity.HeaderText = "Purity"
         Me.dgpurity.Name = "dgpurity"
         Me.dgpurity.Width = 50
         '
         'dgwastage
         '
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle15.Format = "N3"
-        DataGridViewCellStyle15.NullValue = "0.000"
-        Me.dgwastage.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle67.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle67.Format = "N3"
+        DataGridViewCellStyle67.NullValue = "0.000"
+        Me.dgwastage.DefaultCellStyle = DataGridViewCellStyle67
         Me.dgwastage.HeaderText = "Wast."
         Me.dgwastage.Name = "dgwastage"
         Me.dgwastage.Width = 50
         '
         'DGFINEWT
         '
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle16.Format = "N3"
-        DataGridViewCellStyle16.NullValue = "0.000"
-        Me.DGFINEWT.DefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle68.Format = "N3"
+        DataGridViewCellStyle68.NullValue = "0.000"
+        Me.DGFINEWT.DefaultCellStyle = DataGridViewCellStyle68
         Me.DGFINEWT.HeaderText = "Fine"
         Me.DGFINEWT.Name = "DGFINEWT"
         Me.DGFINEWT.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
@@ -375,39 +375,39 @@ Partial Class dailykhata
         '
         'dglabour
         '
-        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle17.Format = "N2"
-        DataGridViewCellStyle17.NullValue = "0.00"
-        Me.dglabour.DefaultCellStyle = DataGridViewCellStyle17
+        DataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle69.Format = "N2"
+        DataGridViewCellStyle69.NullValue = "0.00"
+        Me.dglabour.DefaultCellStyle = DataGridViewCellStyle69
         Me.dglabour.HeaderText = "Labour"
         Me.dglabour.Name = "dglabour"
         Me.dglabour.Width = 60
         '
         'dgpieces
         '
-        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle18.NullValue = "0"
-        Me.dgpieces.DefaultCellStyle = DataGridViewCellStyle18
+        DataGridViewCellStyle70.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle70.NullValue = "0"
+        Me.dgpieces.DefaultCellStyle = DataGridViewCellStyle70
         Me.dgpieces.HeaderText = "Pieces"
         Me.dgpieces.Name = "dgpieces"
         Me.dgpieces.Width = 60
         '
         'dgBullion
         '
-        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle19.Format = "N2"
-        DataGridViewCellStyle19.NullValue = "0.00"
-        Me.dgBullion.DefaultCellStyle = DataGridViewCellStyle19
+        DataGridViewCellStyle71.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle71.Format = "N2"
+        DataGridViewCellStyle71.NullValue = "0.00"
+        Me.dgBullion.DefaultCellStyle = DataGridViewCellStyle71
         Me.dgBullion.HeaderText = "Bullion"
         Me.dgBullion.Name = "dgBullion"
         Me.dgBullion.Width = 50
         '
         'dgamt
         '
-        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle20.Format = "n2"
-        DataGridViewCellStyle20.NullValue = "0.00"
-        Me.dgamt.DefaultCellStyle = DataGridViewCellStyle20
+        DataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle72.Format = "n2"
+        DataGridViewCellStyle72.NullValue = "0.00"
+        Me.dgamt.DefaultCellStyle = DataGridViewCellStyle72
         Me.dgamt.HeaderText = "Amount"
         Me.dgamt.Name = "dgamt"
         Me.dgamt.Width = 70
@@ -418,40 +418,40 @@ Partial Class dailykhata
         Me.gridissue.AllowUserToDeleteRows = False
         Me.gridissue.AllowUserToResizeColumns = False
         Me.gridissue.AllowUserToResizeRows = False
-        DataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer))
-        DataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.Black
-        Me.gridissue.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle23
+        DataGridViewCellStyle75.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer))
+        DataGridViewCellStyle75.SelectionBackColor = System.Drawing.Color.Black
+        Me.gridissue.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle75
         Me.gridissue.BackgroundColor = System.Drawing.Color.White
         Me.gridissue.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.gridissue.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
-        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle24.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.gridissue.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle24
+        DataGridViewCellStyle76.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle76.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle76.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle76.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle76.SelectionBackColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle76.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle76.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.gridissue.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle76
         Me.gridissue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle25.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.gridissue.DefaultCellStyle = DataGridViewCellStyle25
+        DataGridViewCellStyle77.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle77.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle77.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle77.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle77.SelectionBackColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle77.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle77.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.gridissue.DefaultCellStyle = DataGridViewCellStyle77
         Me.gridissue.GridColor = System.Drawing.SystemColors.ControlText
-        Me.gridissue.Location = New System.Drawing.Point(868, 110)
+        Me.gridissue.Location = New System.Drawing.Point(899, 110)
         Me.gridissue.Margin = New System.Windows.Forms.Padding(2)
         Me.gridissue.MultiSelect = False
         Me.gridissue.Name = "gridissue"
         Me.gridissue.ReadOnly = True
         Me.gridissue.RowHeadersVisible = False
-        DataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.Black
-        Me.gridissue.RowsDefaultCellStyle = DataGridViewCellStyle26
+        DataGridViewCellStyle78.SelectionBackColor = System.Drawing.Color.Black
+        Me.gridissue.RowsDefaultCellStyle = DataGridViewCellStyle78
         Me.gridissue.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.gridissue.Size = New System.Drawing.Size(335, 262)
+        Me.gridissue.Size = New System.Drawing.Size(375, 262)
         Me.gridissue.TabIndex = 2
         '
         'ToolStrip1
@@ -461,7 +461,7 @@ Partial Class dailykhata
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TOOLSAVE, Me.TOOLPRINT, Me.TOOLPRINTDAILYKHATA, Me.TOOLSETTLEMENT, Me.TOOLDELETE, Me.TOOLDELETELEDGER, Me.TOOLCHANGEDATE, Me.ToolStripSeparator3, Me.TOOLCHANGEENTRYDATE, Me.ToolStripSeparator4, Me.TOOLFIRST, Me.toolStripSeparator, Me.toolprevious, Me.ToolStripSeparator1, Me.toolnext, Me.ToolStripSeparator2, Me.TOOLLAST})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1234, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1284, 25)
         Me.ToolStrip1.TabIndex = 302
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -655,7 +655,7 @@ Partial Class dailykhata
         Me.Label21.Location = New System.Drawing.Point(522, 65)
         Me.Label21.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(334, 20)
+        Me.Label21.Size = New System.Drawing.Size(369, 20)
         Me.Label21.TabIndex = 310
         Me.Label21.Text = "Jama / Receipt"
         Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -666,10 +666,10 @@ Partial Class dailykhata
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.DarkCyan
-        Me.Label1.Location = New System.Drawing.Point(869, 65)
+        Me.Label1.Location = New System.Drawing.Point(899, 65)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(334, 20)
+        Me.Label1.Size = New System.Drawing.Size(365, 20)
         Me.Label1.TabIndex = 311
         Me.Label1.Text = "Naame / Issue"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -680,7 +680,7 @@ Partial Class dailykhata
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.DarkCyan
-        Me.Label2.Location = New System.Drawing.Point(872, 90)
+        Me.Label2.Location = New System.Drawing.Point(902, 90)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(45, 15)
@@ -722,7 +722,7 @@ Partial Class dailykhata
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.DarkCyan
-        Me.Label6.Location = New System.Drawing.Point(872, 400)
+        Me.Label6.Location = New System.Drawing.Point(902, 400)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(45, 15)
@@ -733,22 +733,12 @@ Partial Class dailykhata
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.InfoText
-        Me.GroupBox1.Location = New System.Drawing.Point(861, 58)
+        Me.GroupBox1.Location = New System.Drawing.Point(896, 58)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(1, 360)
         Me.GroupBox1.TabIndex = 318
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.BackColor = System.Drawing.SystemColors.InfoText
-        Me.GroupBox2.Location = New System.Drawing.Point(1211, 58)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1, 360)
-        Me.GroupBox2.TabIndex = 319
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "GroupBox2"
         '
         'GroupBox3
         '
@@ -765,7 +755,7 @@ Partial Class dailykhata
         Me.GroupBox4.BackColor = System.Drawing.SystemColors.InfoText
         Me.GroupBox4.Location = New System.Drawing.Point(512, 418)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(700, 1)
+        Me.GroupBox4.Size = New System.Drawing.Size(768, 1)
         Me.GroupBox4.TabIndex = 321
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "GroupBox4"
@@ -775,7 +765,7 @@ Partial Class dailykhata
         Me.GroupBox5.BackColor = System.Drawing.SystemColors.InfoText
         Me.GroupBox5.Location = New System.Drawing.Point(512, 394)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(700, 1)
+        Me.GroupBox5.Size = New System.Drawing.Size(768, 1)
         Me.GroupBox5.TabIndex = 322
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "GroupBox5"
@@ -785,7 +775,7 @@ Partial Class dailykhata
         Me.GroupBox6.BackColor = System.Drawing.SystemColors.InfoText
         Me.GroupBox6.Location = New System.Drawing.Point(513, 58)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(699, 1)
+        Me.GroupBox6.Size = New System.Drawing.Size(767, 1)
         Me.GroupBox6.TabIndex = 323
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "GroupBox6"
@@ -796,7 +786,7 @@ Partial Class dailykhata
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.DarkCyan
-        Me.Label5.Location = New System.Drawing.Point(872, 374)
+        Me.Label5.Location = New System.Drawing.Point(902, 374)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(34, 15)
@@ -1089,10 +1079,10 @@ Partial Class dailykhata
         Me.lblbalbfamtjama.BackColor = System.Drawing.Color.Transparent
         Me.lblbalbfamtjama.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblbalbfamtjama.ForeColor = System.Drawing.Color.DarkCyan
-        Me.lblbalbfamtjama.Location = New System.Drawing.Point(748, 90)
+        Me.lblbalbfamtjama.Location = New System.Drawing.Point(787, 90)
         Me.lblbalbfamtjama.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblbalbfamtjama.Name = "lblbalbfamtjama"
-        Me.lblbalbfamtjama.Size = New System.Drawing.Size(94, 13)
+        Me.lblbalbfamtjama.Size = New System.Drawing.Size(85, 13)
         Me.lblbalbfamtjama.TabIndex = 353
         Me.lblbalbfamtjama.Text = "0.000"
         Me.lblbalbfamtjama.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1102,10 +1092,10 @@ Partial Class dailykhata
         Me.lblbalcfamtjama.BackColor = System.Drawing.Color.Transparent
         Me.lblbalcfamtjama.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblbalcfamtjama.ForeColor = System.Drawing.Color.DarkCyan
-        Me.lblbalcfamtjama.Location = New System.Drawing.Point(768, 400)
+        Me.lblbalcfamtjama.Location = New System.Drawing.Point(787, 400)
         Me.lblbalcfamtjama.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblbalcfamtjama.Name = "lblbalcfamtjama"
-        Me.lblbalcfamtjama.Size = New System.Drawing.Size(74, 13)
+        Me.lblbalcfamtjama.Size = New System.Drawing.Size(85, 13)
         Me.lblbalcfamtjama.TabIndex = 355
         Me.lblbalcfamtjama.Text = "0.000"
         Me.lblbalcfamtjama.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1128,7 +1118,7 @@ Partial Class dailykhata
         Me.lblbalcfamtissue.BackColor = System.Drawing.Color.Transparent
         Me.lblbalcfamtissue.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblbalcfamtissue.ForeColor = System.Drawing.Color.DarkCyan
-        Me.lblbalcfamtissue.Location = New System.Drawing.Point(1109, 400)
+        Me.lblbalcfamtissue.Location = New System.Drawing.Point(1177, 400)
         Me.lblbalcfamtissue.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblbalcfamtissue.Name = "lblbalcfamtissue"
         Me.lblbalcfamtissue.Size = New System.Drawing.Size(80, 13)
@@ -1141,7 +1131,7 @@ Partial Class dailykhata
         Me.lblbalcfgrosswtissue.BackColor = System.Drawing.Color.Transparent
         Me.lblbalcfgrosswtissue.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblbalcfgrosswtissue.ForeColor = System.Drawing.Color.DarkCyan
-        Me.lblbalcfgrosswtissue.Location = New System.Drawing.Point(945, 400)
+        Me.lblbalcfgrosswtissue.Location = New System.Drawing.Point(975, 400)
         Me.lblbalcfgrosswtissue.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblbalcfgrosswtissue.Name = "lblbalcfgrosswtissue"
         Me.lblbalcfgrosswtissue.Size = New System.Drawing.Size(74, 13)
@@ -1154,7 +1144,7 @@ Partial Class dailykhata
         Me.lblbalbfamtissue.BackColor = System.Drawing.Color.Transparent
         Me.lblbalbfamtissue.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblbalbfamtissue.ForeColor = System.Drawing.Color.DarkCyan
-        Me.lblbalbfamtissue.Location = New System.Drawing.Point(1096, 90)
+        Me.lblbalbfamtissue.Location = New System.Drawing.Point(1164, 90)
         Me.lblbalbfamtissue.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblbalbfamtissue.Name = "lblbalbfamtissue"
         Me.lblbalbfamtissue.Size = New System.Drawing.Size(91, 13)
@@ -1167,7 +1157,7 @@ Partial Class dailykhata
         Me.lblbalbfgrosswtissue.BackColor = System.Drawing.Color.Transparent
         Me.lblbalbfgrosswtissue.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblbalbfgrosswtissue.ForeColor = System.Drawing.Color.DarkCyan
-        Me.lblbalbfgrosswtissue.Location = New System.Drawing.Point(946, 90)
+        Me.lblbalbfgrosswtissue.Location = New System.Drawing.Point(976, 90)
         Me.lblbalbfgrosswtissue.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblbalbfgrosswtissue.Name = "lblbalbfgrosswtissue"
         Me.lblbalbfgrosswtissue.Size = New System.Drawing.Size(70, 13)
@@ -1180,7 +1170,7 @@ Partial Class dailykhata
         Me.lbltotalamtjama.BackColor = System.Drawing.Color.Transparent
         Me.lbltotalamtjama.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbltotalamtjama.ForeColor = System.Drawing.Color.DarkCyan
-        Me.lbltotalamtjama.Location = New System.Drawing.Point(758, 374)
+        Me.lbltotalamtjama.Location = New System.Drawing.Point(787, 374)
         Me.lbltotalamtjama.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbltotalamtjama.Name = "lbltotalamtjama"
         Me.lbltotalamtjama.Size = New System.Drawing.Size(85, 13)
@@ -1219,7 +1209,7 @@ Partial Class dailykhata
         Me.lbltotalnettissue.BackColor = System.Drawing.Color.Transparent
         Me.lbltotalnettissue.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbltotalnettissue.ForeColor = System.Drawing.Color.DarkCyan
-        Me.lbltotalnettissue.Location = New System.Drawing.Point(1023, 374)
+        Me.lbltotalnettissue.Location = New System.Drawing.Point(1053, 374)
         Me.lbltotalnettissue.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbltotalnettissue.Name = "lbltotalnettissue"
         Me.lbltotalnettissue.Size = New System.Drawing.Size(83, 13)
@@ -1232,7 +1222,7 @@ Partial Class dailykhata
         Me.lbltotalamtissue.BackColor = System.Drawing.Color.Transparent
         Me.lbltotalamtissue.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbltotalamtissue.ForeColor = System.Drawing.Color.DarkCyan
-        Me.lbltotalamtissue.Location = New System.Drawing.Point(1109, 374)
+        Me.lbltotalamtissue.Location = New System.Drawing.Point(1177, 374)
         Me.lbltotalamtissue.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbltotalamtissue.Name = "lbltotalamtissue"
         Me.lbltotalamtissue.Size = New System.Drawing.Size(79, 13)
@@ -1245,7 +1235,7 @@ Partial Class dailykhata
         Me.lbltotalgrossissue.BackColor = System.Drawing.Color.Transparent
         Me.lbltotalgrossissue.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbltotalgrossissue.ForeColor = System.Drawing.Color.DarkCyan
-        Me.lbltotalgrossissue.Location = New System.Drawing.Point(946, 374)
+        Me.lbltotalgrossissue.Location = New System.Drawing.Point(976, 374)
         Me.lbltotalgrossissue.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbltotalgrossissue.Name = "lbltotalgrossissue"
         Me.lbltotalgrossissue.Size = New System.Drawing.Size(73, 13)
@@ -1397,7 +1387,7 @@ Partial Class dailykhata
         Me.lblbalbfnettwtissue.BackColor = System.Drawing.Color.Transparent
         Me.lblbalbfnettwtissue.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblbalbfnettwtissue.ForeColor = System.Drawing.Color.DarkCyan
-        Me.lblbalbfnettwtissue.Location = New System.Drawing.Point(1020, 90)
+        Me.lblbalbfnettwtissue.Location = New System.Drawing.Point(1050, 90)
         Me.lblbalbfnettwtissue.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblbalbfnettwtissue.Name = "lblbalbfnettwtissue"
         Me.lblbalbfnettwtissue.Size = New System.Drawing.Size(83, 13)
@@ -1423,7 +1413,7 @@ Partial Class dailykhata
         Me.lblbalcfnettwtissue.BackColor = System.Drawing.Color.Transparent
         Me.lblbalcfnettwtissue.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblbalcfnettwtissue.ForeColor = System.Drawing.Color.DarkCyan
-        Me.lblbalcfnettwtissue.Location = New System.Drawing.Point(1023, 400)
+        Me.lblbalcfnettwtissue.Location = New System.Drawing.Point(1053, 400)
         Me.lblbalcfnettwtissue.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblbalcfnettwtissue.Name = "lblbalcfnettwtissue"
         Me.lblbalcfnettwtissue.Size = New System.Drawing.Size(83, 13)
@@ -1610,11 +1600,22 @@ Partial Class dailykhata
         Me.GPBHAVCUT.TabIndex = 392
         Me.GPBHAVCUT.TabStop = False
         '
+        'GroupBox2
+        '
+        Me.GroupBox2.BackColor = System.Drawing.SystemColors.InfoText
+        Me.GroupBox2.Location = New System.Drawing.Point(1279, 58)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(1, 360)
+        Me.GroupBox2.TabIndex = 319
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "GroupBox2"
+        '
         'dailykhata
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1234, 637)
+        Me.ClientSize = New System.Drawing.Size(1284, 637)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GPBHAVCUT)
         Me.Controls.Add(Me.LBLNETTWTTOTAL)
         Me.Controls.Add(Me.LBLLESSWTTOTAL)
@@ -1669,7 +1670,6 @@ Partial Class dailykhata
         Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
-        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label4)
@@ -1728,7 +1728,6 @@ Partial Class dailykhata
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
@@ -1822,4 +1821,5 @@ Partial Class dailykhata
     Friend WithEvents LBLNETTWTTOTAL As Label
     Friend WithEvents LBLLESSWTTOTAL As Label
     Friend WithEvents GPBHAVCUT As GroupBox
+    Friend WithEvents GroupBox2 As GroupBox
 End Class
