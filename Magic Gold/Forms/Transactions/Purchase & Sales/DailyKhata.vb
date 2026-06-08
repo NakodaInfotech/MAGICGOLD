@@ -3691,8 +3691,8 @@ LINE1:
         GRIDDESCRIPTION.CurrentCell = GRIDDESCRIPTION.Rows(0).Cells(dgcmbitemcode.Index)
         GRIDDESCRIPTION.RowCount = 1
 
-        TXTAMOUNT.Top = 526
-        txtbhavcut.Top = 434
+        TXTAMOUNT.Top = lblamount.Top - 4   '536
+        txtbhavcut.Top = lblbhavcut.Top - 4 '434
         lblamount.Text = "Amount :"
         lblbhavcut.Text = "Bhavcut :"
         GRIDDESCRIPTION.Enabled = True
@@ -3742,8 +3742,8 @@ LINE1:
             GRIDDESCRIPTION.Enabled = False
             'lblamount.Text = "Bhavcut :"
             'lblbhavcut.Text = "Amount :"
-            TXTAMOUNT.Top = 526
-            txtbhavcut.Top = 434
+            TXTAMOUNT.Top = lblamount.Top - 4
+            txtbhavcut.Top = lblbhavcut.Top - 4
 
         ElseIf cmbtype.Text = "Bhavcut On Inv Amt." Then
             types = "B"
@@ -3751,8 +3751,8 @@ LINE1:
 
             'lblamount.Text = "Bhavcut :"
             'lblbhavcut.Text = "Amount :"
-            TXTAMOUNT.Top = 434
-            txtbhavcut.Top = 526
+            TXTAMOUNT.Top = lblamount.Top - 4
+            txtbhavcut.Top = lblbhavcut.Top - 4
 
         End If
 
