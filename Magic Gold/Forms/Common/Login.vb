@@ -41,7 +41,7 @@ Public Class LoginForm
                 '        GoTo LINE1
                 '    End If
             ElseIf ClientName = "CHAINCRAFTS" Then  'GIRISH BHAI CHENNAI)
-                If Now.Date > DateTime.Parse("15.06.2026 00:00") Then
+                If Now.Date > DateTime.Parse("15.07.2027 00:00") Then
                     tempcmd = New OleDbCommand("UPDATE VERSION SET VERSION_NO=1.0.0000", tempconn)
                     tempcmd.ExecuteNonQuery()
                     GoTo LINE1
